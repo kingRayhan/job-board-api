@@ -47,28 +47,28 @@ endpoints:
         name: name
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: ifztabguyfptdvmiciqqfwlluayjzfsxhdpwsqhwhzxddarskokmmdnuoxlbjsuuakvfsyherkwizstwanblbjispecvotnsgxottsemdlreqaraorglezhrngaaxkghxkkdtjfkmqusvvgjkdeqhskiyidyrjmevnykvycfaevmghqlbtqmtjfpcihgnyonxikmgfibkpcoknrjfwdjcusaxgymfmbqyutbihteevcrbsrjweyeepcbiyxyvhe
+        example: jnsxtkclbrazywiabqgbperxwemxgsrivcdllarkznfvxllqiptjwhodtzvlghyrlthypqvziyytohcsiprmamlagdudtabhpllicwomcsvvpayujzsbukunuzsuecttthepmeyuwftubswuxdsxhfteqlbqoyaz
         type: string
         custom: []
       email:
         name: email
         description: 'Must be a valid email address. Must not be greater than 255 characters.'
         required: true
-        example: gqnshbtrzagyvcpclouzcfcynglnqf
+        example: om
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: itaque
+        example: ut
         type: string
         custom: []
       password_confirmation:
         name: password_confirmation
         description: 'The value and <code>password</code> must match.'
         required: true
-        example: dolore
+        example: perspiciatis
         type: string
         custom: []
     responses: []
@@ -92,14 +92,14 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: bschaefer@example.org
+        example: vswaniawski@example.com
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: assumenda
+        example: sit
         type: string
         custom: []
     responses: []
@@ -123,7 +123,7 @@ endpoints:
         name: email
         description: '- User email address'
         required: true
-        example: est
+        example: facere
         type: string
         custom: []
     responses: []
@@ -147,28 +147,28 @@ endpoints:
         name: token
         description: '- Reset token'
         required: true
-        example: ipsum
+        example: libero
         type: string
         custom: []
       email:
         name: email
         description: '- User email address'
         required: true
-        example: qui
+        example: iusto
         type: string
         custom: []
       password:
         name: password
         description: '- New password'
         required: true
-        example: numquam
+        example: sit
         type: string
         custom: []
       password_confirmation:
         name: password_confirmation
         description: '- New password again'
         required: true
-        example: nesciunt
+        example: beatae
         type: string
         custom: []
     responses: []
@@ -190,14 +190,14 @@ endpoints:
         name: id
         description: 'The ID of the verify email.'
         required: true
-        example: numquam
+        example: necessitatibus
         type: string
         custom: []
       hash:
         name: hash
         description: ''
         required: true
-        example: voluptas
+        example: molestiae
         type: string
         custom: []
     queryParameters: []

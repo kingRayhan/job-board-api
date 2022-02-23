@@ -1,0 +1,488 @@
+openapi: 3.0.3
+info:
+  title: Laravel
+  description: ''
+  version: 1.0.0
+servers:
+  -
+    url: 'http://localhost:8000'
+paths:
+  /api/auth/me:
+    get:
+      summary: 'Authenticated user'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - Authentication
+  /api/auth/register:
+    post:
+      summary: Register
+      description: 'Handle an incoming registration request.'
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Authentication
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: jnsxtkclbrazywiabqgbperxwemxgsrivcdllarkznfvxllqiptjwhodtzvlghyrlthypqvziyytohcsiprmamlagdudtabhpllicwomcsvvpayujzsbukunuzsuecttthepmeyuwftubswuxdsxhfteqlbqoyaz
+                email:
+                  type: string
+                  description: 'Must be a valid email address. Must not be greater than 255 characters.'
+                  example: om
+                password:
+                  type: string
+                  description: ''
+                  example: ut
+                password_confirmation:
+                  type: string
+                  description: 'The value and <code>password</code> must match.'
+                  example: perspiciatis
+              required:
+                - name
+                - email
+                - password
+                - password_confirmation
+      security: []
+  /api/auth/login:
+    post:
+      summary: Login
+      description: 'Handle an incoming authentication request.'
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Authentication
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                  description: 'Must be a valid email address.'
+                  example: vswaniawski@example.com
+                password:
+                  type: string
+                  description: ''
+                  example: sit
+              required:
+                - email
+                - password
+      security: []
+  /api/auth/forgot-password:
+    post:
+      summary: 'Forgot password'
+      description: 'Handle an incoming password reset link request.'
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Authentication
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                  description: '- User email address'
+                  example: facere
+              required:
+                - email
+      security: []
+  /api/auth/reset-password:
+    post:
+      summary: 'Reset password'
+      description: 'Handle an incoming new password request.'
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Authentication
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                token:
+                  type: string
+                  description: '- Reset token'
+                  example: libero
+                email:
+                  type: string
+                  description: '- User email address'
+                  example: iusto
+                password:
+                  type: string
+                  description: '- New password'
+                  example: sit
+                password_confirmation:
+                  type: string
+                  description: '- New password again'
+                  example: beatae
+              required:
+                - token
+                - email
+                - password
+                - password_confirmation
+      security: []
+  '/api/auth/verify-email/{id}/{hash}':
+    get:
+      summary: 'Verify Email address'
+      description: 'Mark the authenticated user''s email address as verified.'
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - Authentication
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the verify email.'
+        example: necessitatibus
+        required: true
+        schema:
+          type: string
+      -
+        in: path
+        name: hash
+        description: ''
+        example: molestiae
+        required: true
+        schema:
+          type: string
+  /api/auth/email/verification-notification:
+    post:
+      summary: 'Resend email verification email address'
+      description: 'Send a new email verification notification.'
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Authentication
+  /api/auth/logout:
+    post:
+      summary: Logout
+      description: 'Destroy an authenticated session.'
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Authentication
+  /api/jobs:
+    get:
+      summary: 'List of jobs'
+      description: ''
+      parameters:
+        -
+          in: query
+          name: limit
+          description: '- How many resource to show per page. `Default: 10`'
+          example: 12
+          required: false
+          schema:
+            type: integer
+            description: '- How many resource to show per page. `Default: 10`'
+            example: 12
+        -
+          in: query
+          name: user_id
+          description: '- Filtered jobs posted by a particular user.'
+          example: atque
+          required: false
+          schema:
+            type: string
+            description: '- Filtered jobs posted by a particular user.'
+            example: atque
+        -
+          in: query
+          name: page
+          description: '- Page number'
+          example: 16
+          required: false
+          schema:
+            type: integer
+            description: '- Page number'
+            example: 16
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses:
+        422:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: 'The user id must be a valid UUID.'
+                  errors:
+                    user_id:
+                      - 'The user id must be a valid UUID.'
+                properties:
+                  message:
+                    type: string
+                    example: 'The user id must be a valid UUID.'
+                  errors:
+                    type: object
+                    example:
+                      user_id:
+                        - 'The user id must be a valid UUID.'
+      tags:
+        - Jobs
+      security: []
+    post:
+      summary: 'Post job'
+      description: 'Store a newly created resource in storage.'
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Jobs
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                title:
+                  type: string
+                  description: ''
+                  example: sint
+                location:
+                  type: string
+                  description: ''
+                  example: voluptas
+                link:
+                  type: string
+                  description: 'Must be a valid URL.'
+                  example: 'https://stoltenberg.net/similique-qui-veniam-quod-qui.html'
+                company_name:
+                  type: string
+                  description: ''
+                  example: aperiam
+                company_logo:
+                  type: string
+                  description: 'Must be a valid URL.'
+                  example: 'https://www.bauch.org/porro-amet-sequi-omnis-ut-asperiores'
+              required:
+                - title
+                - location
+                - link
+                - company_name
+                - company_logo
+  /api/uploads:
+    post:
+      summary: 'Upload file'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: multipart/form-data
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Upload
+      requestBody:
+        required: false
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                file:
+                  type: string
+                  format: binary
+                  description: '- File'
+tags:
+  -
+    name: Authentication
+    description: 'Authentication apis'
+  -
+    name: Jobs
+    description: 'Apis for job listing'
+  -
+    name: Upload
+    description: 'File uploader apis'
