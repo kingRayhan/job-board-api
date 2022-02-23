@@ -1,0 +1,27 @@
+name: Upload
+description: 'File uploader apis'
+endpoints:
+  -
+    httpMethods:
+      - POST
+    uri: api/uploads
+    metadata:
+      title: 'Upload file'
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Content-Type: multipart/form-data
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters:
+      file:
+        name: file
+        description: '- File'
+        required: false
+        example: null
+        type: file
+        custom: []
+    responses: []
+    responseFields: []

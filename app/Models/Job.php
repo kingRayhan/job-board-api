@@ -10,6 +10,8 @@ class Job extends Model
 {
     use HasFactory, Uuids;
 
+    protected $guarded = ['user_id'];
+
     public function user()
     {
         return $this->belongsTo(User::class);

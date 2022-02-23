@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
+use App\Http\Controllers\Auth\AuthenticatedUserController;
 use App\Http\Controllers\Auth\EmailVerificationNotificationController;
 use App\Http\Controllers\Auth\NewPasswordController;
 use App\Http\Controllers\Auth\PasswordResetLinkController;
@@ -9,9 +10,8 @@ use App\Http\Controllers\Auth\VerifyEmailController;
 use Illuminate\Support\Facades\Route;
 
 Route::group(['prefix' => 'auth'], function (){
-    Route::middleware(['auth:sanctum'])->get('me', function (Request $request) {
-        return Auth::user();
-    });
+
+    Route::get('/me', AuthenticatedUserController::class)->middleware('auth:sanctum');
 
     Route::post('/register', [RegisteredUserController::class, 'store'])
         ->middleware('guest');
@@ -26,6 +26,7 @@ Route::group(['prefix' => 'auth'], function (){
     Route::post('/reset-password', [NewPasswordController::class, 'store'])
         ->middleware('guest')
         ->name('password.update');
+
 
     Route::get('/verify-email/{id}/{hash}', [VerifyEmailController::class, '__invoke'])
         ->middleware(['auth', 'signed', 'throttle:6,1'])

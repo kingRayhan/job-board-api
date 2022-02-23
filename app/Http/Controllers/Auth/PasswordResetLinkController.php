@@ -7,11 +7,19 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Password;
 use Illuminate\Validation\ValidationException;
 
+
+/**
+ * @group Authentication
+ * Authentication apis
+ */
 class PasswordResetLinkController extends Controller
 {
     /**
+     * Forgot password
+     *
      * Handle an incoming password reset link request.
      *
+     * @bodyParam email string required - User email address
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\JsonResponse
      *

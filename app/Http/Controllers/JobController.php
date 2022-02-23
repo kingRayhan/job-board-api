@@ -6,6 +6,7 @@ use App\Http\Requests\StoreJobRequest;
 use App\Http\Requests\UpdateJobRequest;
 use App\Http\Resources\JobListResouce;
 use App\Models\Job;
+use Illuminate\Validation\Rule;
 
 /**
  * @group Jobs
@@ -14,40 +15,44 @@ use App\Models\Job;
 class JobController extends Controller
 {
     /**
-     * Add a word to the list.
+     * List of jobs
      *
-     * This endpoint allows you to add a word to the list.
-     * It's a really useful endpoint, and you should play around
-     * with it for a bit.
-     * <aside class="notice">We mean it; you really should.😕</aside>
-     *
-     * @queryParam limit int How many resource to show per page. `Default: 10`
-     * @queryParam user_id uuid Filtered jobs posted by a particular user.
+     * @queryParam limit int - How many resource to show per page. `Default: 10`
+     * @queryParam user_id string - Filtered jobs posted by a particular user.
+     * @queryParam page int - Page number
      */
     public function index()
     {
+        request()->validate([
+           'user_id' => ['uuid', Rule::exists('users', 'id'), 'nullable']
+        ]);
+
         $jobs = Job::with('user')->whereHas('user', function ($query){
-            if(request()->has('user_id')){
+            if(request()->get('user_id')){
                 return $query->where('id', request()->get('user_id'));
             }
         })
             ->orderBy('pinned', 'desc')
             ->orderBy('created_at', 'desc')
-            ->cursorPaginate(request()->get('limit', 10));
+            ->paginate(request()->get('limit', 10));
 
         return JobListResouce::collection($jobs);
     }
 
 
     /**
+     * Post job
+     *
      * Store a newly created resource in storage.
      *
+     * @authenticated
      * @param  \App\Http\Requests\StoreJobRequest  $request
      * @return \Illuminate\Http\Response
      */
     public function store(StoreJobRequest $request)
     {
-        //
+        auth()->user()->jobs()->create($request->except('user_id'));
+        return response()->noContent();
     }
 
     /**

@@ -11,10 +11,21 @@ use Illuminate\Support\Str;
 use Illuminate\Validation\Rules;
 use Illuminate\Validation\ValidationException;
 
+/**
+ * @group Authentication
+ * Authentication apis
+ */
 class NewPasswordController extends Controller
 {
     /**
+     * Reset password
+     *
      * Handle an incoming new password request.
+     *
+     * @bodyParam token string required - Reset token
+     * @bodyParam email string required - User email address
+     * @bodyParam password string required - New password
+     * @bodyParam password_confirmation string required - New password again
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\JsonResponse

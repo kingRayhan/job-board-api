@@ -1,14 +1,14 @@
-name: Endpoints
-description: ''
+name: Authentication
+description: 'Authentication apis'
 endpoints:
   -
     httpMethods:
       - GET
     uri: api/auth/me
     metadata:
-      title: ''
+      title: 'Authenticated user'
       description: ''
-      authenticated: false
+      authenticated: true
       custom: []
     headers:
       Content-Type: application/json
@@ -31,8 +31,8 @@ endpoints:
       - POST
     uri: api/auth/register
     metadata:
-      title: 'Handle an incoming registration request.'
-      description: ''
+      title: Register
+      description: 'Handle an incoming registration request.'
       authenticated: false
       custom: []
     headers:
@@ -40,7 +40,35 @@ endpoints:
       Accept: application/json
     urlParameters: []
     queryParameters: []
-    bodyParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: 'Must not be greater than 255 characters.'
+        required: true
+        example: ifztabguyfptdvmiciqqfwlluayjzfsxhdpwsqhwhzxddarskokmmdnuoxlbjsuuakvfsyherkwizstwanblbjispecvotnsgxottsemdlreqaraorglezhrngaaxkghxkkdtjfkmqusvvgjkdeqhskiyidyrjmevnykvycfaevmghqlbtqmtjfpcihgnyonxikmgfibkpcoknrjfwdjcusaxgymfmbqyutbihteevcrbsrjweyeepcbiyxyvhe
+        type: string
+        custom: []
+      email:
+        name: email
+        description: 'Must be a valid email address. Must not be greater than 255 characters.'
+        required: true
+        example: gqnshbtrzagyvcpclouzcfcynglnqf
+        type: string
+        custom: []
+      password:
+        name: password
+        description: ''
+        required: true
+        example: itaque
+        type: string
+        custom: []
+      password_confirmation:
+        name: password_confirmation
+        description: 'The value and <code>password</code> must match.'
+        required: true
+        example: dolore
+        type: string
+        custom: []
     responses: []
     responseFields: []
   -
@@ -48,8 +76,8 @@ endpoints:
       - POST
     uri: api/auth/login
     metadata:
-      title: 'Handle an incoming authentication request.'
-      description: ''
+      title: Login
+      description: 'Handle an incoming authentication request.'
       authenticated: false
       custom: []
     headers:
@@ -62,14 +90,14 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: lebsack.brenna@example.com
+        example: bschaefer@example.org
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: est
+        example: assumenda
         type: string
         custom: []
     responses: []
@@ -79,8 +107,8 @@ endpoints:
       - POST
     uri: api/auth/forgot-password
     metadata:
-      title: 'Handle an incoming password reset link request.'
-      description: ''
+      title: 'Forgot password'
+      description: 'Handle an incoming password reset link request.'
       authenticated: false
       custom: []
     headers:
@@ -88,7 +116,14 @@ endpoints:
       Accept: application/json
     urlParameters: []
     queryParameters: []
-    bodyParameters: []
+    bodyParameters:
+      email:
+        name: email
+        description: '- User email address'
+        required: true
+        example: est
+        type: string
+        custom: []
     responses: []
     responseFields: []
   -
@@ -96,8 +131,8 @@ endpoints:
       - POST
     uri: api/auth/reset-password
     metadata:
-      title: 'Handle an incoming new password request.'
-      description: ''
+      title: 'Reset password'
+      description: 'Handle an incoming new password request.'
       authenticated: false
       custom: []
     headers:
@@ -105,7 +140,35 @@ endpoints:
       Accept: application/json
     urlParameters: []
     queryParameters: []
-    bodyParameters: []
+    bodyParameters:
+      token:
+        name: token
+        description: '- Reset token'
+        required: true
+        example: ipsum
+        type: string
+        custom: []
+      email:
+        name: email
+        description: '- User email address'
+        required: true
+        example: qui
+        type: string
+        custom: []
+      password:
+        name: password
+        description: '- New password'
+        required: true
+        example: numquam
+        type: string
+        custom: []
+      password_confirmation:
+        name: password_confirmation
+        description: '- New password again'
+        required: true
+        example: nesciunt
+        type: string
+        custom: []
     responses: []
     responseFields: []
   -
@@ -113,8 +176,8 @@ endpoints:
       - GET
     uri: 'api/auth/verify-email/{id}/{hash}'
     metadata:
-      title: 'Mark the authenticated user''s email address as verified.'
-      description: ''
+      title: 'Verify Email address'
+      description: 'Mark the authenticated user''s email address as verified.'
       authenticated: false
       custom: []
     headers:
@@ -125,14 +188,14 @@ endpoints:
         name: id
         description: 'The ID of the verify email.'
         required: true
-        example: aliquam
+        example: numquam
         type: string
         custom: []
       hash:
         name: hash
         description: ''
         required: true
-        example: ipsa
+        example: voluptas
         type: string
         custom: []
     queryParameters: []
@@ -152,9 +215,9 @@ endpoints:
       - POST
     uri: api/auth/email/verification-notification
     metadata:
-      title: 'Send a new email verification notification.'
-      description: ''
-      authenticated: false
+      title: 'Resend email verification email address'
+      description: 'Send a new email verification notification.'
+      authenticated: true
       custom: []
     headers:
       Content-Type: application/json
@@ -169,9 +232,9 @@ endpoints:
       - POST
     uri: api/auth/logout
     metadata:
-      title: 'Destroy an authenticated session.'
-      description: ''
-      authenticated: false
+      title: Logout
+      description: 'Destroy an authenticated session.'
+      authenticated: true
       custom: []
     headers:
       Content-Type: application/json

@@ -7,9 +7,16 @@ use App\Providers\RouteServiceProvider;
 use Illuminate\Auth\Events\Verified;
 use Illuminate\Foundation\Auth\EmailVerificationRequest;
 
+
+/**
+ * @group Authentication
+ * Authentication apis
+ */
 class VerifyEmailController extends Controller
 {
     /**
+     * Verify Email address
+     *
      * Mark the authenticated user's email address as verified.
      *
      * @param  \Illuminate\Foundation\Auth\EmailVerificationRequest  $request

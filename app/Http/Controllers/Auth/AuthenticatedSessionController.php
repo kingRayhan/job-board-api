@@ -8,9 +8,16 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
+
+/**
+ * @group Authentication
+ * Authentication apis
+ */
 class AuthenticatedSessionController extends Controller
 {
     /**
+     * Login
+     *
      * Handle an incoming authentication request.
      *
      * @param  \App\Http\Requests\Auth\LoginRequest  $request
@@ -32,7 +39,11 @@ class AuthenticatedSessionController extends Controller
     }
 
     /**
+     * Logout
+     *
      * Destroy an authenticated session.
+     *
+     * @authenticated
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response

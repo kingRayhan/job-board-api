@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\JobController;
+use App\Http\Controllers\UploadController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -21,4 +22,8 @@ require __DIR__.'/auth.php';
 Route::group(['prefix' => 'jobs'], function (){
     Route::get('', [JobController::class, 'index']);
     Route::post('', [JobController::class, 'store'])->middleware('auth:sanctum');
+});
+
+Route::group(['prefix' => 'uploads'], function (){
+   Route::post('', [UploadController::class, 'upload'])->middleware('auth:sanctum');
 });
