@@ -159,7 +159,7 @@ return [
          * Whether to automatically create a docs endpoint for you to view your generated docs.
          * If this is false, you can still set up routing manually.
          */
-        'add_routes' => false,
+        'add_routes' => true,
 
         /*
          * URL path to use for the docs endpoint (if `add_routes` is true).
