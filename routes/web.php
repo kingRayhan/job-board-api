@@ -18,8 +18,8 @@ Route::get('/', function () {
 });
 
 // Knuckles\Scribe
-//Route::get('/docs', [\Knuckles\Scribe\Http\Controller::class, 'webpage']);
-//Route::get('/docs/postman', [\Knuckles\Scribe\Http\Controller::class, 'postman'])
-//    ->name('scribe.postman');
-//Route::get('/docs/openapi', [\Knuckles\Scribe\Http\Controller::class, 'openapi'])
-//    ->name('scribe.openapi');
+Route::get('/docs', [\Knuckles\Scribe\Http\Controller::class, 'webpage']);
+Route::get('/docs/postman', [\Knuckles\Scribe\Http\Controller::class, 'postman'])
+    ->name('scribe.postman');
+Route::get('/docs/openapi', [\Knuckles\Scribe\Http\Controller::class, 'openapi'])
+    ->name('scribe.openapi');
