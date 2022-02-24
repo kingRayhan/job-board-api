@@ -23,7 +23,8 @@ class JobFactory extends Factory
             'link' => $this->faker->url(),
             'company_name' => $this->faker->company(),
             'company_logo' => $this->faker->imageUrl(),
-            'user_id' => User::all()->random()->id
+            'user_id' => User::factory(),
+            'type' => 'remote'
         ];
     }
 }

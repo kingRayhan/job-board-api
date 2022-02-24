@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\JobController;
+use App\Http\Controllers\TagController;
 use App\Http\Controllers\UploadController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -26,4 +27,11 @@ Route::group(['prefix' => 'jobs'], function (){
 
 Route::group(['prefix' => 'uploads'], function (){
    Route::post('', [UploadController::class, 'upload'])->middleware('auth:sanctum');
+   Route::delete('', [UploadController::class, 'destroy'])->middleware('auth:sanctum');
+});
+
+
+Route::group(['prefix' => 'tags'], function (){
+    Route::get('', [TagController::class, 'index']);
+    Route::post('', [TagController::class, 'store'])->middleware('auth:sanctum');
 });

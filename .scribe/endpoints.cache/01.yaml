@@ -21,21 +21,21 @@ endpoints:
         name: limit
         description: '- How many resource to show per page. `Default: 10`'
         required: false
-        example: 8
+        example: 2
         type: integer
         custom: []
       user_id:
         name: user_id
         description: '- Filtered jobs posted by a particular user.'
         required: false
-        example: fugiat
+        example: voluptas
         type: string
         custom: []
       page:
         name: page
         description: '- Page number'
         required: false
-        example: 9
+        example: 3
         type: integer
         custom: []
     bodyParameters: []
@@ -47,7 +47,7 @@ endpoints:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '59'
+          x-ratelimit-remaining: '57'
           access-control-allow-origin: '*'
         description: null
     responseFields: []
@@ -70,36 +70,58 @@ endpoints:
         name: title
         description: ''
         required: true
-        example: quasi
+        example: architecto
         type: string
         custom: []
       location:
         name: location
         description: ''
         required: true
-        example: deleniti
+        example: excepturi
         type: string
         custom: []
       link:
         name: link
         description: 'Must be a valid URL.'
         required: true
-        example: 'http://www.botsford.net/ut-voluptatem-voluptatum-qui-consectetur-voluptas-ut.html'
+        example: 'http://www.vandervort.net/optio-dolorum-qui-quia-doloremque-similique-id.html'
         type: string
         custom: []
       company_name:
         name: company_name
         description: ''
         required: true
-        example: reprehenderit
+        example: quidem
+        type: string
+        custom: []
+      description:
+        name: description
+        description: ''
+        required: false
+        example: neque
         type: string
         custom: []
       company_logo:
         name: company_logo
         description: 'Must be a valid URL.'
         required: true
-        example: 'https://www.lang.net/neque-repudiandae-error-quia-corrupti-et-laboriosam'
+        example: 'http://www.mann.com/'
         type: string
+        custom: []
+      type:
+        name: type
+        description: 'Must be one of <code>full_time</code>, <code>part_time</code>, <code>contract</code>, <code>temporary</code>, <code>internship</code>, <code>volunteer</code>, or <code>remote</code>.'
+        required: true
+        example: volunteer
+        type: string
+        custom: []
+      tags:
+        name: tags
+        description: ''
+        required: false
+        example:
+          - assumenda
+        type: 'string[]'
         custom: []
     responses: []
     responseFields: []

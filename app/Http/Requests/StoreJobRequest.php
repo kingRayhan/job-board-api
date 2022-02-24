@@ -3,6 +3,7 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rule;
 
 class StoreJobRequest extends FormRequest
 {
@@ -28,7 +29,20 @@ class StoreJobRequest extends FormRequest
             'location' => ['string', 'required'],
             'link' => ['string', 'url', 'required'],
             'company_name' => ['string', 'required'],
-            'company_logo' => ['string', 'required', 'url']
+            'description' => ['string', 'nullable'],
+            'company_logo' => ['required', 'url'],
+            'type' => ['required', 'string',
+                            Rule::in([
+                                'full_time',
+                                'part_time',
+                                'contract',
+                                'temporary',
+                                'internship',
+                                'volunteer',
+                                'remote'
+                            ])
+                       ],
+            'tags' => ['array', Rule::exists('tags', 'id')]
         ];
     }
 }

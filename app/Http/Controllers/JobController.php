@@ -51,7 +51,12 @@ class JobController extends Controller
      */
     public function store(StoreJobRequest $request)
     {
-        auth()->user()->jobs()->create($request->except('user_id'));
+        $job = auth()->user()->jobs()->create($request->except('user_id'));
+
+        if($request->get('tags')){
+            $job->tags()->sync($request->tags);
+        }
+
         return response()->noContent();
     }
 

@@ -26,7 +26,7 @@
             </style>
 
     <script>
-        var baseUrl = "https://r0-job-board-api.herokuapp.com";
+        var baseUrl = "http://localhost:8000";
         var useCsrf = Boolean();
         var csrfUrl = "/sanctum/csrf-cookie";
     </script>
@@ -114,12 +114,28 @@
                                                     </ul>
                             </ul>
                     <ul id="tocify-header-4" class="tocify-header">
+                <li class="tocify-item level-1" data-unique="tag">
+                    <a href="#tag">Tag</a>
+                </li>
+                                    <ul id="tocify-subheader-tag" class="tocify-subheader">
+                                                    <li class="tocify-item level-2" data-unique="tag-GETapi-tags">
+                        <a href="#tag-GETapi-tags">Tag List</a>
+                    </li>
+                                    <li class="tocify-item level-2" data-unique="tag-POSTapi-tags">
+                        <a href="#tag-POSTapi-tags">Create tag</a>
+                    </li>
+                                                    </ul>
+                            </ul>
+                    <ul id="tocify-header-5" class="tocify-header">
                 <li class="tocify-item level-1" data-unique="upload">
                     <a href="#upload">Upload</a>
                 </li>
                                     <ul id="tocify-subheader-upload" class="tocify-subheader">
                                                     <li class="tocify-item level-2" data-unique="upload-POSTapi-uploads">
                         <a href="#upload-POSTapi-uploads">Upload file</a>
+                    </li>
+                                    <li class="tocify-item level-2" data-unique="upload-DELETEapi-uploads">
+                        <a href="#upload-DELETEapi-uploads">Delete file</a>
                     </li>
                                                     </ul>
                             </ul>
@@ -133,7 +149,7 @@
                             <li><a href="http://github.com/knuckleswtf/scribe">Documentation powered by Scribe ✍</a></li>
                     </ul>
         <ul class="toc-footer" id="last-updated">
-        <li>Last updated: February 23 2022</li>
+        <li>Last updated: February 24 2022</li>
     </ul>
 </div>
 
@@ -147,7 +163,7 @@ You can switch the language used with the tabs at the top right (or from the nav
 <blockquote>
 <p>Base URL</p>
 </blockquote>
-<pre><code class="language-yaml">https://r0-job-board-api.herokuapp.com</code></pre>
+<pre><code class="language-yaml">http://localhost:8000</code></pre>
 
         <h1 id="authenticating-requests">Authenticating requests</h1>
 <p>This API is not authenticated.</p>
@@ -170,14 +186,14 @@ You can switch the language used with the tabs at the top right (or from the nav
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "https://r0-job-board-api.herokuapp.com/api/auth/me" \
+    --get "http://localhost:8000/api/auth/me" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "https://r0-job-board-api.herokuapp.com/api/auth/me"
+    "http://localhost:8000/api/auth/me"
 );
 
 const headers = {
@@ -273,21 +289,21 @@ access-control-allow-origin: *
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
-    "https://r0-job-board-api.herokuapp.com/api/auth/register" \
+    "http://localhost:8000/api/auth/register" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"npejrlnqeksahaziwzanutlkacsjhswqlfhoudoyzfogzkuyusvfhfnfpxgzbdvksljidagoombhzcfebyyfwkhasuuckefxdgvkwzi\",
-    \"email\": \"jdqnqigzuhrojdcddaykhptcbrgwpdiygmleheyebmqizxwwrhjbyurycqifqtdylnypvbbppydhaodlbethyyxsvvtgeddjgamhblbcaibtopbqzvmeffqeoprcdrlgkwfiyiyiomxjiiznewwfbbjzfacgouwyyghkoumsrnnoenjzkdwvtbrrikswyfiqwbhrumx\",
-    \"password\": \"officiis\",
-    \"password_confirmation\": \"enim\"
+    \"name\": \"oqehsdgz\",
+    \"email\": \"nojgresgxzqgvokhoggcamdfhqoskcjnunpqcoyqoussaerthanhltrnvvvavcwbwojbqkzdnjpjrvrkgzojbwktklkyfttrsywxrcqffrhxriyjjetfatbdabdjveispqzllp\",
+    \"password\": \"reiciendis\",
+    \"password_confirmation\": \"autem\"
 }"
 </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "https://r0-job-board-api.herokuapp.com/api/auth/register"
+    "http://localhost:8000/api/auth/register"
 );
 
 const headers = {
@@ -296,10 +312,10 @@ const headers = {
 };
 
 let body = {
-    "name": "npejrlnqeksahaziwzanutlkacsjhswqlfhoudoyzfogzkuyusvfhfnfpxgzbdvksljidagoombhzcfebyyfwkhasuuckefxdgvkwzi",
-    "email": "jdqnqigzuhrojdcddaykhptcbrgwpdiygmleheyebmqizxwwrhjbyurycqifqtdylnypvbbppydhaodlbethyyxsvvtgeddjgamhblbcaibtopbqzvmeffqeoprcdrlgkwfiyiyiomxjiiznewwfbbjzfacgouwyyghkoumsrnnoenjzkdwvtbrrikswyfiqwbhrumx",
-    "password": "officiis",
-    "password_confirmation": "enim"
+    "name": "oqehsdgz",
+    "email": "nojgresgxzqgvokhoggcamdfhqoskcjnunpqcoyqoussaerthanhltrnvvvavcwbwojbqkzdnjpjrvrkgzojbwktklkyfttrsywxrcqffrhxriyjjetfatbdabdjveispqzllp",
+    "password": "reiciendis",
+    "password_confirmation": "autem"
 };
 
 fetch(url, {
@@ -357,7 +373,7 @@ fetch(url, {
                 <input type="text"
                name="name"
                data-endpoint="POSTapi-auth-register"
-               value="npejrlnqeksahaziwzanutlkacsjhswqlfhoudoyzfogzkuyusvfhfnfpxgzbdvksljidagoombhzcfebyyfwkhasuuckefxdgvkwzi"
+               value="oqehsdgz"
                data-component="body" hidden>
     <br>
 <p>Must not be greater than 255 characters.</p>
@@ -367,7 +383,7 @@ fetch(url, {
                 <input type="text"
                name="email"
                data-endpoint="POSTapi-auth-register"
-               value="jdqnqigzuhrojdcddaykhptcbrgwpdiygmleheyebmqizxwwrhjbyurycqifqtdylnypvbbppydhaodlbethyyxsvvtgeddjgamhblbcaibtopbqzvmeffqeoprcdrlgkwfiyiyiomxjiiznewwfbbjzfacgouwyyghkoumsrnnoenjzkdwvtbrrikswyfiqwbhrumx"
+               value="nojgresgxzqgvokhoggcamdfhqoskcjnunpqcoyqoussaerthanhltrnvvvavcwbwojbqkzdnjpjrvrkgzojbwktklkyfttrsywxrcqffrhxriyjjetfatbdabdjveispqzllp"
                data-component="body" hidden>
     <br>
 <p>Must be a valid email address. Must not be greater than 255 characters.</p>
@@ -377,7 +393,7 @@ fetch(url, {
                 <input type="text"
                name="password"
                data-endpoint="POSTapi-auth-register"
-               value="officiis"
+               value="reiciendis"
                data-component="body" hidden>
     <br>
 
@@ -387,7 +403,7 @@ fetch(url, {
                 <input type="text"
                name="password_confirmation"
                data-endpoint="POSTapi-auth-register"
-               value="enim"
+               value="autem"
                data-component="body" hidden>
     <br>
 <p>The value and <code>password</code> must match.</p>
@@ -407,19 +423,19 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
-    "https://r0-job-board-api.herokuapp.com/api/auth/login" \
+    "http://localhost:8000/api/auth/login" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"email\": \"lavern52@example.com\",
-    \"password\": \"voluptatem\"
+    \"email\": \"david.haley@example.net\",
+    \"password\": \"maxime\"
 }"
 </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "https://r0-job-board-api.herokuapp.com/api/auth/login"
+    "http://localhost:8000/api/auth/login"
 );
 
 const headers = {
@@ -428,8 +444,8 @@ const headers = {
 };
 
 let body = {
-    "email": "lavern52@example.com",
-    "password": "voluptatem"
+    "email": "david.haley@example.net",
+    "password": "maxime"
 };
 
 fetch(url, {
@@ -487,7 +503,7 @@ fetch(url, {
                 <input type="text"
                name="email"
                data-endpoint="POSTapi-auth-login"
-               value="lavern52@example.com"
+               value="david.haley@example.net"
                data-component="body" hidden>
     <br>
 <p>Must be a valid email address.</p>
@@ -497,7 +513,7 @@ fetch(url, {
                 <input type="text"
                name="password"
                data-endpoint="POSTapi-auth-login"
-               value="voluptatem"
+               value="maxime"
                data-component="body" hidden>
     <br>
 
@@ -517,18 +533,18 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
-    "https://r0-job-board-api.herokuapp.com/api/auth/forgot-password" \
+    "http://localhost:8000/api/auth/forgot-password" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"email\": \"sed\"
+    \"email\": \"eos\"
 }"
 </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "https://r0-job-board-api.herokuapp.com/api/auth/forgot-password"
+    "http://localhost:8000/api/auth/forgot-password"
 );
 
 const headers = {
@@ -537,7 +553,7 @@ const headers = {
 };
 
 let body = {
-    "email": "sed"
+    "email": "eos"
 };
 
 fetch(url, {
@@ -595,7 +611,7 @@ fetch(url, {
                 <input type="text"
                name="email"
                data-endpoint="POSTapi-auth-forgot-password"
-               value="sed"
+               value="eos"
                data-component="body" hidden>
     <br>
 <ul>
@@ -617,21 +633,21 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
-    "https://r0-job-board-api.herokuapp.com/api/auth/reset-password" \
+    "http://localhost:8000/api/auth/reset-password" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"token\": \"at\",
-    \"email\": \"ut\",
-    \"password\": \"sed\",
-    \"password_confirmation\": \"labore\"
+    \"token\": \"minima\",
+    \"email\": \"commodi\",
+    \"password\": \"vitae\",
+    \"password_confirmation\": \"laborum\"
 }"
 </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "https://r0-job-board-api.herokuapp.com/api/auth/reset-password"
+    "http://localhost:8000/api/auth/reset-password"
 );
 
 const headers = {
@@ -640,10 +656,10 @@ const headers = {
 };
 
 let body = {
-    "token": "at",
-    "email": "ut",
-    "password": "sed",
-    "password_confirmation": "labore"
+    "token": "minima",
+    "email": "commodi",
+    "password": "vitae",
+    "password_confirmation": "laborum"
 };
 
 fetch(url, {
@@ -701,7 +717,7 @@ fetch(url, {
                 <input type="text"
                name="token"
                data-endpoint="POSTapi-auth-reset-password"
-               value="at"
+               value="minima"
                data-component="body" hidden>
     <br>
 <ul>
@@ -713,7 +729,7 @@ fetch(url, {
                 <input type="text"
                name="email"
                data-endpoint="POSTapi-auth-reset-password"
-               value="ut"
+               value="commodi"
                data-component="body" hidden>
     <br>
 <ul>
@@ -725,7 +741,7 @@ fetch(url, {
                 <input type="text"
                name="password"
                data-endpoint="POSTapi-auth-reset-password"
-               value="sed"
+               value="vitae"
                data-component="body" hidden>
     <br>
 <ul>
@@ -737,7 +753,7 @@ fetch(url, {
                 <input type="text"
                name="password_confirmation"
                data-endpoint="POSTapi-auth-reset-password"
-               value="labore"
+               value="laborum"
                data-component="body" hidden>
     <br>
 <ul>
@@ -759,14 +775,14 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "https://r0-job-board-api.herokuapp.com/api/auth/verify-email/exercitationem/vel" \
+    --get "http://localhost:8000/api/auth/verify-email/dignissimos/incidunt" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "https://r0-job-board-api.herokuapp.com/api/auth/verify-email/exercitationem/vel"
+    "http://localhost:8000/api/auth/verify-email/dignissimos/incidunt"
 );
 
 const headers = {
@@ -845,7 +861,7 @@ access-control-allow-origin: *
                 <input type="text"
                name="id"
                data-endpoint="GETapi-auth-verify-email--id---hash-"
-               value="exercitationem"
+               value="dignissimos"
                data-component="url" hidden>
     <br>
 <p>The ID of the verify email.</p>
@@ -855,7 +871,7 @@ access-control-allow-origin: *
                 <input type="text"
                name="hash"
                data-endpoint="GETapi-auth-verify-email--id---hash-"
-               value="vel"
+               value="incidunt"
                data-component="url" hidden>
     <br>
 
@@ -876,14 +892,14 @@ access-control-allow-origin: *
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
-    "https://r0-job-board-api.herokuapp.com/api/auth/email/verification-notification" \
+    "http://localhost:8000/api/auth/email/verification-notification" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "https://r0-job-board-api.herokuapp.com/api/auth/email/verification-notification"
+    "http://localhost:8000/api/auth/email/verification-notification"
 );
 
 const headers = {
@@ -963,14 +979,14 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
-    "https://r0-job-board-api.herokuapp.com/api/auth/logout" \
+    "http://localhost:8000/api/auth/logout" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "https://r0-job-board-api.herokuapp.com/api/auth/logout"
+    "http://localhost:8000/api/auth/logout"
 );
 
 const headers = {
@@ -1053,20 +1069,20 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "https://r0-job-board-api.herokuapp.com/api/jobs?limit=8&amp;user_id=fugiat&amp;page=9" \
+    --get "http://localhost:8000/api/jobs?limit=2&amp;user_id=voluptas&amp;page=3" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "https://r0-job-board-api.herokuapp.com/api/jobs"
+    "http://localhost:8000/api/jobs"
 );
 
 const params = {
-    "limit": "8",
-    "user_id": "fugiat",
-    "page": "9",
+    "limit": "2",
+    "user_id": "voluptas",
+    "page": "3",
 };
 Object.keys(params)
     .forEach(key =&gt; url.searchParams.append(key, params[key]));
@@ -1094,7 +1110,7 @@ fetch(url, {
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 59
+x-ratelimit-remaining: 57
 access-control-allow-origin: *
  </code></pre>
         </details>         <pre>
@@ -1154,7 +1170,7 @@ access-control-allow-origin: *
                 <input type="number"
                name="limit"
                data-endpoint="GETapi-jobs"
-               value="8"
+               value="2"
                data-component="query" hidden>
     <br>
 <ul>
@@ -1166,7 +1182,7 @@ access-control-allow-origin: *
                 <input type="text"
                name="user_id"
                data-endpoint="GETapi-jobs"
-               value="fugiat"
+               value="voluptas"
                data-component="query" hidden>
     <br>
 <ul>
@@ -1178,7 +1194,7 @@ access-control-allow-origin: *
                 <input type="number"
                name="page"
                data-endpoint="GETapi-jobs"
-               value="9"
+               value="3"
                data-component="query" hidden>
     <br>
 <ul>
@@ -1201,22 +1217,27 @@ access-control-allow-origin: *
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
-    "https://r0-job-board-api.herokuapp.com/api/jobs" \
+    "http://localhost:8000/api/jobs" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"title\": \"quasi\",
-    \"location\": \"deleniti\",
-    \"link\": \"http:\\/\\/www.botsford.net\\/ut-voluptatem-voluptatum-qui-consectetur-voluptas-ut.html\",
-    \"company_name\": \"reprehenderit\",
-    \"company_logo\": \"https:\\/\\/www.lang.net\\/neque-repudiandae-error-quia-corrupti-et-laboriosam\"
+    \"title\": \"architecto\",
+    \"location\": \"excepturi\",
+    \"link\": \"http:\\/\\/www.vandervort.net\\/optio-dolorum-qui-quia-doloremque-similique-id.html\",
+    \"company_name\": \"quidem\",
+    \"description\": \"neque\",
+    \"company_logo\": \"http:\\/\\/www.mann.com\\/\",
+    \"type\": \"volunteer\",
+    \"tags\": [
+        \"assumenda\"
+    ]
 }"
 </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "https://r0-job-board-api.herokuapp.com/api/jobs"
+    "http://localhost:8000/api/jobs"
 );
 
 const headers = {
@@ -1225,11 +1246,16 @@ const headers = {
 };
 
 let body = {
-    "title": "quasi",
-    "location": "deleniti",
-    "link": "http:\/\/www.botsford.net\/ut-voluptatem-voluptatum-qui-consectetur-voluptas-ut.html",
-    "company_name": "reprehenderit",
-    "company_logo": "https:\/\/www.lang.net\/neque-repudiandae-error-quia-corrupti-et-laboriosam"
+    "title": "architecto",
+    "location": "excepturi",
+    "link": "http:\/\/www.vandervort.net\/optio-dolorum-qui-quia-doloremque-similique-id.html",
+    "company_name": "quidem",
+    "description": "neque",
+    "company_logo": "http:\/\/www.mann.com\/",
+    "type": "volunteer",
+    "tags": [
+        "assumenda"
+    ]
 };
 
 fetch(url, {
@@ -1295,7 +1321,7 @@ fetch(url, {
                 <input type="text"
                name="title"
                data-endpoint="POSTapi-jobs"
-               value="quasi"
+               value="architecto"
                data-component="body" hidden>
     <br>
 
@@ -1305,7 +1331,7 @@ fetch(url, {
                 <input type="text"
                name="location"
                data-endpoint="POSTapi-jobs"
-               value="deleniti"
+               value="excepturi"
                data-component="body" hidden>
     <br>
 
@@ -1315,7 +1341,7 @@ fetch(url, {
                 <input type="text"
                name="link"
                data-endpoint="POSTapi-jobs"
-               value="http://www.botsford.net/ut-voluptatem-voluptatum-qui-consectetur-voluptas-ut.html"
+               value="http://www.vandervort.net/optio-dolorum-qui-quia-doloremque-similique-id.html"
                data-component="body" hidden>
     <br>
 <p>Must be a valid URL.</p>
@@ -1325,7 +1351,17 @@ fetch(url, {
                 <input type="text"
                name="company_name"
                data-endpoint="POSTapi-jobs"
-               value="reprehenderit"
+               value="quidem"
+               data-component="body" hidden>
+    <br>
+
+        </p>
+                <p>
+            <b><code>description</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
+                <input type="text"
+               name="description"
+               data-endpoint="POSTapi-jobs"
+               value="neque"
                data-component="body" hidden>
     <br>
 
@@ -1335,10 +1371,264 @@ fetch(url, {
                 <input type="text"
                name="company_logo"
                data-endpoint="POSTapi-jobs"
-               value="https://www.lang.net/neque-repudiandae-error-quia-corrupti-et-laboriosam"
+               value="http://www.mann.com/"
                data-component="body" hidden>
     <br>
 <p>Must be a valid URL.</p>
+        </p>
+                <p>
+            <b><code>type</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="type"
+               data-endpoint="POSTapi-jobs"
+               value="volunteer"
+               data-component="body" hidden>
+    <br>
+<p>Must be one of <code>full_time</code>, <code>part_time</code>, <code>contract</code>, <code>temporary</code>, <code>internship</code>, <code>volunteer</code>, or <code>remote</code>.</p>
+        </p>
+                <p>
+            <b><code>tags</code></b>&nbsp;&nbsp;<small>string[]</small>     <i>optional</i> &nbsp;
+                <input type="text"
+               name="tags[0]"
+               data-endpoint="POSTapi-jobs"
+               data-component="body" hidden>
+        <input type="text"
+               name="tags[1]"
+               data-endpoint="POSTapi-jobs"
+               data-component="body" hidden>
+    <br>
+
+        </p>
+        </form>
+
+        <h1 id="tag">Tag</h1>
+
+    <p>Tag apis</p>
+
+            <h2 id="tag-GETapi-tags">Tag List</h2>
+
+<p>
+</p>
+
+<p>Display a listing of the resource.</p>
+
+<span id="example-requests-GETapi-tags">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost:8000/api/tags" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/tags"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-tags">
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary>
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 56
+access-control-allow-origin: *
+ </code></pre>
+        </details>         <pre>
+
+<code class="language-json">{
+    &quot;data&quot;: [
+        {
+            &quot;id&quot;: &quot;a53f220b-f276-4a01-aaca-756cd2a3ef1a&quot;,
+            &quot;name&quot;: &quot;ut&quot;,
+            &quot;slug&quot;: &quot;ut&quot;
+        },
+        {
+            &quot;id&quot;: &quot;92747dd5-289f-41c0-8ad6-05c1317b2c0a&quot;,
+            &quot;name&quot;: &quot;deleniti&quot;,
+            &quot;slug&quot;: &quot;deleniti&quot;
+        }
+    ]
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-tags" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-tags"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-tags"></code></pre>
+</span>
+<span id="execution-error-GETapi-tags" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-tags"></code></pre>
+</span>
+<form id="form-GETapi-tags" data-method="GET"
+      data-path="api/tags"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-tags', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-tags"
+                    onclick="tryItOut('GETapi-tags');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-tags"
+                    onclick="cancelTryOut('GETapi-tags');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-tags" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/tags</code></b>
+        </p>
+                    </form>
+
+            <h2 id="tag-POSTapi-tags">Create tag</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+<p>Store a newly created resource in storage.</p>
+
+<span id="example-requests-POSTapi-tags">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request POST \
+    "http://localhost:8000/api/tags" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"name\": \"rs\",
+    \"slug\": \"et\"
+}"
+</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/tags"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "name": "rs",
+    "slug": "et"
+};
+
+fetch(url, {
+    method: "POST",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-POSTapi-tags">
+</span>
+<span id="execution-results-POSTapi-tags" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-POSTapi-tags"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-tags"></code></pre>
+</span>
+<span id="execution-error-POSTapi-tags" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTapi-tags"></code></pre>
+</span>
+<form id="form-POSTapi-tags" data-method="POST"
+      data-path="api/tags"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('POSTapi-tags', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-POSTapi-tags"
+                    onclick="tryItOut('POSTapi-tags');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-POSTapi-tags"
+                    onclick="cancelTryOut('POSTapi-tags');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-POSTapi-tags" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-black">POST</small>
+            <b><code>api/tags</code></b>
+        </p>
+                <p>
+            <label id="auth-POSTapi-tags" hidden>Authorization header:
+                <b><code>Bearer </code></b><input type="text"
+                                                                name="Authorization"
+                                                                data-prefix="Bearer "
+                                                                data-endpoint="POSTapi-tags"
+                                                                data-component="header"></label>
+        </p>
+                        <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <p>
+            <b><code>name</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="name"
+               data-endpoint="POSTapi-tags"
+               value="rs"
+               data-component="body" hidden>
+    <br>
+<p>Must be at least 3 characters.</p>
+        </p>
+                <p>
+            <b><code>slug</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="slug"
+               data-endpoint="POSTapi-tags"
+               value="et"
+               data-component="body" hidden>
+    <br>
+
         </p>
         </form>
 
@@ -1360,15 +1650,15 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
-    "https://r0-job-board-api.herokuapp.com/api/uploads" \
+    "http://localhost:8000/api/uploads" \
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
-    --form "file=@/tmp/phpfXd1I9" </code></pre></div>
+    --form "file=@/tmp/php02LH9X" </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "https://r0-job-board-api.herokuapp.com/api/uploads"
+    "http://localhost:8000/api/uploads"
 );
 
 const headers = {
@@ -1447,6 +1737,115 @@ fetch(url, {
     <br>
 <ul>
 <li>File</li>
+</ul>
+        </p>
+        </form>
+
+            <h2 id="upload-DELETEapi-uploads">Delete file</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+
+
+<span id="example-requests-DELETEapi-uploads">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request DELETE \
+    "http://localhost:8000/api/uploads" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"url\": \"quis\"
+}"
+</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/uploads"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "url": "quis"
+};
+
+fetch(url, {
+    method: "DELETE",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-DELETEapi-uploads">
+</span>
+<span id="execution-results-DELETEapi-uploads" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-DELETEapi-uploads"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-DELETEapi-uploads"></code></pre>
+</span>
+<span id="execution-error-DELETEapi-uploads" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-DELETEapi-uploads"></code></pre>
+</span>
+<form id="form-DELETEapi-uploads" data-method="DELETE"
+      data-path="api/uploads"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('DELETEapi-uploads', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-DELETEapi-uploads"
+                    onclick="tryItOut('DELETEapi-uploads');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-DELETEapi-uploads"
+                    onclick="cancelTryOut('DELETEapi-uploads');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-DELETEapi-uploads" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-red">DELETE</small>
+            <b><code>api/uploads</code></b>
+        </p>
+                <p>
+            <label id="auth-DELETEapi-uploads" hidden>Authorization header:
+                <b><code>Bearer </code></b><input type="text"
+                                                                name="Authorization"
+                                                                data-prefix="Bearer "
+                                                                data-endpoint="DELETEapi-uploads"
+                                                                data-component="header"></label>
+        </p>
+                        <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <p>
+            <b><code>url</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
+                <input type="text"
+               name="url"
+               data-endpoint="DELETEapi-uploads"
+               value="quis"
+               data-component="body" hidden>
+    <br>
+<ul>
+<li>File url</li>
 </ul>
         </p>
         </form>
