@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreTagRequest;
 use App\Http\Requests\UpdateTagRequest;
+use App\Http\Resources\TagPublicResource;
 use App\Http\Resources\TagResouce;
 use App\Models\Tag;
 
@@ -19,7 +20,7 @@ class TagController extends Controller
      *
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\Resources\Json\AnonymousResourceCollection
      */
     public function index()
     {
@@ -34,12 +35,12 @@ class TagController extends Controller
      *
      * @authenticated
      * @param  \App\Http\Requests\StoreTagRequest  $request
-     * @return \Illuminate\Http\Response
+     * @return TagResouce
      */
     public function store(StoreTagRequest $request)
     {
-        Tag::create($request->all());
-        return response()->noContent();
+        $tag = Tag::create($request->all());
+        return new TagResouce($tag);
     }
 
     /**
