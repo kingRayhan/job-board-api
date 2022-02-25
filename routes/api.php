@@ -23,8 +23,9 @@ require __DIR__.'/auth.php';
 Route::group(['prefix' => 'jobs'], function (){
     Route::get('', [JobController::class, 'index']);
     Route::get('{job:slug}', [JobController::class, 'show']);
-    Route::put('{job:slug}', [JobController::class, 'update'])->middleware('auth:sanctum');;
+    Route::put('{job:id}', [JobController::class, 'update'])->middleware('auth:sanctum');
     Route::post('', [JobController::class, 'store'])->middleware('auth:sanctum');
+    Route::delete('{job:id}', [JobController::class, 'destroy'])->middleware('auth:sanctum');
 });
 
 Route::group(['prefix' => 'uploads'], function (){

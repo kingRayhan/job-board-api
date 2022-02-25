@@ -96,8 +96,7 @@ class UploadController extends Controller
         $admin_api = $this->cloudinary_admin->deleteAssets([
             $public_id
         ]);
-
-        return $admin_api;
+        
         return response()->noContent();
     }
 }

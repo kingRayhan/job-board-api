@@ -112,7 +112,13 @@
                         <a href="#jobs-POSTapi-jobs">Post job</a>
                     </li>
                                     <li class="tocify-item level-2" data-unique="jobs-GETapi-jobs--job_slug-">
-                        <a href="#jobs-GETapi-jobs--job_slug-">Display the specified resource.</a>
+                        <a href="#jobs-GETapi-jobs--job_slug-">Job Details</a>
+                    </li>
+                                    <li class="tocify-item level-2" data-unique="jobs-DELETEapi-jobs--job_id-">
+                        <a href="#jobs-DELETEapi-jobs--job_id-">Delete job</a>
+                    </li>
+                                    <li class="tocify-item level-2" data-unique="jobs-PUTapi-jobs--job_id-">
+                        <a href="#jobs-PUTapi-jobs--job_id-">Update job</a>
                     </li>
                                                     </ul>
                             </ul>
@@ -296,10 +302,10 @@ access-control-allow-origin: *
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"oegocyaoziwaabcyqoudynojsgttvzfitdroetcqhaewkswwpsllmkcixfpywjuaflavzetaokxnouiaamayphoizxsdllcnxjgkcqwijpuyqyzkazkxbzgcpvtdg\",
-    \"email\": \"tqyukmmtgplvhbtmgbrkuarfexdfbhejqozceafnsdjxybqsqpfswglfkycpzdovgsyekxvztahxwvxhbkjmzlyevxdhpxdptvfhnzitncbokujmjgkokewwpqfzzmovhprtonpdxwrsfnbaymmsutkbdkpbnrvatyobvewuehwqzrowuxnostjytzzmmim\",
-    \"password\": \"magnam\",
-    \"password_confirmation\": \"delectus\"
+    \"name\": \"edamxzuyvzegubdavuclwlqxllfukkpzylattlwtgxpneoh\",
+    \"email\": \"iagirpbfzjfrirzgkkyiuxspmhsgnwsaxbpbhevifpsxbcceumhbdksddxfwxpuiuxobyactshumfrvoayjgbkmzsueziwdwtgqlugogamcgzfesythmcrblydictpnpbcwjgplyuhwlphbbsajnbdlghehilmshkrbqganbczfbtpscohliliphghajswbnvgvinwulntmtrzi\",
+    \"password\": \"eum\",
+    \"password_confirmation\": \"harum\"
 }"
 </code></pre></div>
 
@@ -315,10 +321,10 @@ const headers = {
 };
 
 let body = {
-    "name": "oegocyaoziwaabcyqoudynojsgttvzfitdroetcqhaewkswwpsllmkcixfpywjuaflavzetaokxnouiaamayphoizxsdllcnxjgkcqwijpuyqyzkazkxbzgcpvtdg",
-    "email": "tqyukmmtgplvhbtmgbrkuarfexdfbhejqozceafnsdjxybqsqpfswglfkycpzdovgsyekxvztahxwvxhbkjmzlyevxdhpxdptvfhnzitncbokujmjgkokewwpqfzzmovhprtonpdxwrsfnbaymmsutkbdkpbnrvatyobvewuehwqzrowuxnostjytzzmmim",
-    "password": "magnam",
-    "password_confirmation": "delectus"
+    "name": "edamxzuyvzegubdavuclwlqxllfukkpzylattlwtgxpneoh",
+    "email": "iagirpbfzjfrirzgkkyiuxspmhsgnwsaxbpbhevifpsxbcceumhbdksddxfwxpuiuxobyactshumfrvoayjgbkmzsueziwdwtgqlugogamcgzfesythmcrblydictpnpbcwjgplyuhwlphbbsajnbdlghehilmshkrbqganbczfbtpscohliliphghajswbnvgvinwulntmtrzi",
+    "password": "eum",
+    "password_confirmation": "harum"
 };
 
 fetch(url, {
@@ -376,7 +382,7 @@ fetch(url, {
                 <input type="text"
                name="name"
                data-endpoint="POSTapi-auth-register"
-               value="oegocyaoziwaabcyqoudynojsgttvzfitdroetcqhaewkswwpsllmkcixfpywjuaflavzetaokxnouiaamayphoizxsdllcnxjgkcqwijpuyqyzkazkxbzgcpvtdg"
+               value="edamxzuyvzegubdavuclwlqxllfukkpzylattlwtgxpneoh"
                data-component="body" hidden>
     <br>
 <p>Must not be greater than 255 characters.</p>
@@ -386,7 +392,7 @@ fetch(url, {
                 <input type="text"
                name="email"
                data-endpoint="POSTapi-auth-register"
-               value="tqyukmmtgplvhbtmgbrkuarfexdfbhejqozceafnsdjxybqsqpfswglfkycpzdovgsyekxvztahxwvxhbkjmzlyevxdhpxdptvfhnzitncbokujmjgkokewwpqfzzmovhprtonpdxwrsfnbaymmsutkbdkpbnrvatyobvewuehwqzrowuxnostjytzzmmim"
+               value="iagirpbfzjfrirzgkkyiuxspmhsgnwsaxbpbhevifpsxbcceumhbdksddxfwxpuiuxobyactshumfrvoayjgbkmzsueziwdwtgqlugogamcgzfesythmcrblydictpnpbcwjgplyuhwlphbbsajnbdlghehilmshkrbqganbczfbtpscohliliphghajswbnvgvinwulntmtrzi"
                data-component="body" hidden>
     <br>
 <p>Must be a valid email address. Must not be greater than 255 characters.</p>
@@ -396,7 +402,7 @@ fetch(url, {
                 <input type="text"
                name="password"
                data-endpoint="POSTapi-auth-register"
-               value="magnam"
+               value="eum"
                data-component="body" hidden>
     <br>
 
@@ -406,7 +412,7 @@ fetch(url, {
                 <input type="text"
                name="password_confirmation"
                data-endpoint="POSTapi-auth-register"
-               value="delectus"
+               value="harum"
                data-component="body" hidden>
     <br>
 <p>The value and <code>password</code> must match.</p>
@@ -430,8 +436,8 @@ fetch(url, {
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"email\": \"chaim.langosh@example.net\",
-    \"password\": \"quo\"
+    \"email\": \"santiago.mertz@example.net\",
+    \"password\": \"voluptas\"
 }"
 </code></pre></div>
 
@@ -447,8 +453,8 @@ const headers = {
 };
 
 let body = {
-    "email": "chaim.langosh@example.net",
-    "password": "quo"
+    "email": "santiago.mertz@example.net",
+    "password": "voluptas"
 };
 
 fetch(url, {
@@ -506,7 +512,7 @@ fetch(url, {
                 <input type="text"
                name="email"
                data-endpoint="POSTapi-auth-login"
-               value="chaim.langosh@example.net"
+               value="santiago.mertz@example.net"
                data-component="body" hidden>
     <br>
 <p>Must be a valid email address.</p>
@@ -516,7 +522,7 @@ fetch(url, {
                 <input type="text"
                name="password"
                data-endpoint="POSTapi-auth-login"
-               value="quo"
+               value="voluptas"
                data-component="body" hidden>
     <br>
 
@@ -540,7 +546,7 @@ fetch(url, {
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"email\": \"vel\"
+    \"email\": \"quas\"
 }"
 </code></pre></div>
 
@@ -556,7 +562,7 @@ const headers = {
 };
 
 let body = {
-    "email": "vel"
+    "email": "quas"
 };
 
 fetch(url, {
@@ -614,7 +620,7 @@ fetch(url, {
                 <input type="text"
                name="email"
                data-endpoint="POSTapi-auth-forgot-password"
-               value="vel"
+               value="quas"
                data-component="body" hidden>
     <br>
 <ul>
@@ -640,10 +646,10 @@ fetch(url, {
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"token\": \"incidunt\",
-    \"email\": \"voluptas\",
-    \"password\": \"laboriosam\",
-    \"password_confirmation\": \"dignissimos\"
+    \"token\": \"ut\",
+    \"email\": \"ducimus\",
+    \"password\": \"et\",
+    \"password_confirmation\": \"rerum\"
 }"
 </code></pre></div>
 
@@ -659,10 +665,10 @@ const headers = {
 };
 
 let body = {
-    "token": "incidunt",
-    "email": "voluptas",
-    "password": "laboriosam",
-    "password_confirmation": "dignissimos"
+    "token": "ut",
+    "email": "ducimus",
+    "password": "et",
+    "password_confirmation": "rerum"
 };
 
 fetch(url, {
@@ -720,7 +726,7 @@ fetch(url, {
                 <input type="text"
                name="token"
                data-endpoint="POSTapi-auth-reset-password"
-               value="incidunt"
+               value="ut"
                data-component="body" hidden>
     <br>
 <ul>
@@ -732,7 +738,7 @@ fetch(url, {
                 <input type="text"
                name="email"
                data-endpoint="POSTapi-auth-reset-password"
-               value="voluptas"
+               value="ducimus"
                data-component="body" hidden>
     <br>
 <ul>
@@ -744,7 +750,7 @@ fetch(url, {
                 <input type="text"
                name="password"
                data-endpoint="POSTapi-auth-reset-password"
-               value="laboriosam"
+               value="et"
                data-component="body" hidden>
     <br>
 <ul>
@@ -756,7 +762,7 @@ fetch(url, {
                 <input type="text"
                name="password_confirmation"
                data-endpoint="POSTapi-auth-reset-password"
-               value="dignissimos"
+               value="rerum"
                data-component="body" hidden>
     <br>
 <ul>
@@ -778,14 +784,14 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/auth/verify-email/totam/placeat" \
+    --get "http://localhost:8000/api/auth/verify-email/recusandae/sequi" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/auth/verify-email/totam/placeat"
+    "http://localhost:8000/api/auth/verify-email/recusandae/sequi"
 );
 
 const headers = {
@@ -864,7 +870,7 @@ access-control-allow-origin: *
                 <input type="text"
                name="id"
                data-endpoint="GETapi-auth-verify-email--id---hash-"
-               value="totam"
+               value="recusandae"
                data-component="url" hidden>
     <br>
 <p>The ID of the verify email.</p>
@@ -874,7 +880,7 @@ access-control-allow-origin: *
                 <input type="text"
                name="hash"
                data-endpoint="GETapi-auth-verify-email--id---hash-"
-               value="placeat"
+               value="sequi"
                data-component="url" hidden>
     <br>
 
@@ -1072,7 +1078,7 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/jobs?limit=3&amp;user_id=perspiciatis&amp;page=19" \
+    --get "http://localhost:8000/api/jobs?limit=16&amp;user_id=laborum&amp;page=8" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -1083,9 +1089,9 @@ fetch(url, {
 );
 
 const params = {
-    "limit": "3",
-    "user_id": "perspiciatis",
-    "page": "19",
+    "limit": "16",
+    "user_id": "laborum",
+    "page": "8",
 };
 Object.keys(params)
     .forEach(key =&gt; url.searchParams.append(key, params[key]));
@@ -1173,7 +1179,7 @@ access-control-allow-origin: *
                 <input type="number"
                name="limit"
                data-endpoint="GETapi-jobs"
-               value="3"
+               value="16"
                data-component="query" hidden>
     <br>
 <ul>
@@ -1185,7 +1191,7 @@ access-control-allow-origin: *
                 <input type="text"
                name="user_id"
                data-endpoint="GETapi-jobs"
-               value="perspiciatis"
+               value="laborum"
                data-component="query" hidden>
     <br>
 <ul>
@@ -1197,7 +1203,7 @@ access-control-allow-origin: *
                 <input type="number"
                name="page"
                data-endpoint="GETapi-jobs"
-               value="19"
+               value="8"
                data-component="query" hidden>
     <br>
 <ul>
@@ -1224,15 +1230,15 @@ access-control-allow-origin: *
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"title\": \"dignissimos\",
-    \"location\": \"qui\",
-    \"link\": \"https:\\/\\/www.price.com\\/nihil-hic-dolores-rem-necessitatibus\",
-    \"company_name\": \"rerum\",
-    \"description\": \"in\",
-    \"company_logo\": \"https:\\/\\/www.leannon.com\\/voluptate-in-nam-error-accusantium-qui-praesentium-id\",
-    \"type\": \"part_time\",
+    \"title\": \"dolorem\",
+    \"location\": \"autem\",
+    \"link\": \"http:\\/\\/barton.com\\/ut-placeat-ex-ut-qui-eum.html\",
+    \"company_name\": \"itaque\",
+    \"description\": \"et\",
+    \"company_logo\": \"http:\\/\\/www.king.org\\/laborum-dolorem-harum-ratione-et.html\",
+    \"type\": \"contract\",
     \"tags\": [
-        \"voluptate\"
+        \"explicabo\"
     ]
 }"
 </code></pre></div>
@@ -1249,15 +1255,15 @@ const headers = {
 };
 
 let body = {
-    "title": "dignissimos",
-    "location": "qui",
-    "link": "https:\/\/www.price.com\/nihil-hic-dolores-rem-necessitatibus",
-    "company_name": "rerum",
-    "description": "in",
-    "company_logo": "https:\/\/www.leannon.com\/voluptate-in-nam-error-accusantium-qui-praesentium-id",
-    "type": "part_time",
+    "title": "dolorem",
+    "location": "autem",
+    "link": "http:\/\/barton.com\/ut-placeat-ex-ut-qui-eum.html",
+    "company_name": "itaque",
+    "description": "et",
+    "company_logo": "http:\/\/www.king.org\/laborum-dolorem-harum-ratione-et.html",
+    "type": "contract",
     "tags": [
-        "voluptate"
+        "explicabo"
     ]
 };
 
@@ -1324,7 +1330,7 @@ fetch(url, {
                 <input type="text"
                name="title"
                data-endpoint="POSTapi-jobs"
-               value="dignissimos"
+               value="dolorem"
                data-component="body" hidden>
     <br>
 
@@ -1334,7 +1340,7 @@ fetch(url, {
                 <input type="text"
                name="location"
                data-endpoint="POSTapi-jobs"
-               value="qui"
+               value="autem"
                data-component="body" hidden>
     <br>
 
@@ -1344,7 +1350,7 @@ fetch(url, {
                 <input type="text"
                name="link"
                data-endpoint="POSTapi-jobs"
-               value="https://www.price.com/nihil-hic-dolores-rem-necessitatibus"
+               value="http://barton.com/ut-placeat-ex-ut-qui-eum.html"
                data-component="body" hidden>
     <br>
 <p>Must be a valid URL.</p>
@@ -1354,7 +1360,7 @@ fetch(url, {
                 <input type="text"
                name="company_name"
                data-endpoint="POSTapi-jobs"
-               value="rerum"
+               value="itaque"
                data-component="body" hidden>
     <br>
 
@@ -1364,7 +1370,7 @@ fetch(url, {
                 <input type="text"
                name="description"
                data-endpoint="POSTapi-jobs"
-               value="in"
+               value="et"
                data-component="body" hidden>
     <br>
 
@@ -1374,7 +1380,7 @@ fetch(url, {
                 <input type="text"
                name="company_logo"
                data-endpoint="POSTapi-jobs"
-               value="https://www.leannon.com/voluptate-in-nam-error-accusantium-qui-praesentium-id"
+               value="http://www.king.org/laborum-dolorem-harum-ratione-et.html"
                data-component="body" hidden>
     <br>
 <p>Must be a valid URL.</p>
@@ -1384,7 +1390,7 @@ fetch(url, {
                 <input type="text"
                name="type"
                data-endpoint="POSTapi-jobs"
-               value="part_time"
+               value="contract"
                data-component="body" hidden>
     <br>
 <p>Must be one of <code>full_time</code>, <code>part_time</code>, <code>contract</code>, <code>temporary</code>, <code>internship</code>, <code>volunteer</code>, or <code>remote</code>.</p>
@@ -1404,12 +1410,12 @@ fetch(url, {
         </p>
         </form>
 
-            <h2 id="jobs-GETapi-jobs--job_slug-">Display the specified resource.</h2>
+            <h2 id="jobs-GETapi-jobs--job_slug-">Job Details</h2>
 
 <p>
 </p>
 
-
+<p>Display the specified resource.</p>
 
 <span id="example-requests-GETapi-jobs--job_slug-">
 <blockquote>Example request:</blockquote>
@@ -1417,14 +1423,14 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/jobs/quo" \
+    --get "http://localhost:8000/api/jobs/officia" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/jobs/quo"
+    "http://localhost:8000/api/jobs/officia"
 );
 
 const headers = {
@@ -1916,12 +1922,319 @@ access-control-allow-origin: *
                 <input type="text"
                name="job_slug"
                data-endpoint="GETapi-jobs--job_slug-"
-               value="quo"
+               value="officia"
                data-component="url" hidden>
     <br>
 
             </p>
                     </form>
+
+            <h2 id="jobs-DELETEapi-jobs--job_id-">Delete job</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+<p>Remove the specified resource from storage.</p>
+
+<span id="example-requests-DELETEapi-jobs--job_id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request DELETE \
+    "http://localhost:8000/api/jobs/aut" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/jobs/aut"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "DELETE",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-DELETEapi-jobs--job_id-">
+</span>
+<span id="execution-results-DELETEapi-jobs--job_id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-DELETEapi-jobs--job_id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-DELETEapi-jobs--job_id-"></code></pre>
+</span>
+<span id="execution-error-DELETEapi-jobs--job_id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-DELETEapi-jobs--job_id-"></code></pre>
+</span>
+<form id="form-DELETEapi-jobs--job_id-" data-method="DELETE"
+      data-path="api/jobs/{job_id}"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('DELETEapi-jobs--job_id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-DELETEapi-jobs--job_id-"
+                    onclick="tryItOut('DELETEapi-jobs--job_id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-DELETEapi-jobs--job_id-"
+                    onclick="cancelTryOut('DELETEapi-jobs--job_id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-DELETEapi-jobs--job_id-" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-red">DELETE</small>
+            <b><code>api/jobs/{job_id}</code></b>
+        </p>
+                <p>
+            <label id="auth-DELETEapi-jobs--job_id-" hidden>Authorization header:
+                <b><code>Bearer </code></b><input type="text"
+                                                                name="Authorization"
+                                                                data-prefix="Bearer "
+                                                                data-endpoint="DELETEapi-jobs--job_id-"
+                                                                data-component="header"></label>
+        </p>
+                <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <p>
+                <b><code>job_id</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="job_id"
+               data-endpoint="DELETEapi-jobs--job_id-"
+               value="aut"
+               data-component="url" hidden>
+    <br>
+<p>The ID of the job.</p>
+            </p>
+                    </form>
+
+            <h2 id="jobs-PUTapi-jobs--job_id-">Update job</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+<p>Update the specified resource in storage.</p>
+
+<span id="example-requests-PUTapi-jobs--job_id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request PUT \
+    "http://localhost:8000/api/jobs/qui" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"title\": \"accusantium\",
+    \"location\": \"labore\",
+    \"link\": \"http:\\/\\/mckenzie.org\\/quasi-quaerat-quos-commodi-rerum-eum-non-minima\",
+    \"company_name\": \"commodi\",
+    \"description\": \"possimus\",
+    \"company_logo\": \"http:\\/\\/www.stanton.com\\/dolorem-impedit-dolores-dolorem-quas-qui-nihil-porro-veniam\",
+    \"type\": \"contract\",
+    \"tags\": [
+        \"laborum\"
+    ]
+}"
+</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/jobs/qui"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "title": "accusantium",
+    "location": "labore",
+    "link": "http:\/\/mckenzie.org\/quasi-quaerat-quos-commodi-rerum-eum-non-minima",
+    "company_name": "commodi",
+    "description": "possimus",
+    "company_logo": "http:\/\/www.stanton.com\/dolorem-impedit-dolores-dolorem-quas-qui-nihil-porro-veniam",
+    "type": "contract",
+    "tags": [
+        "laborum"
+    ]
+};
+
+fetch(url, {
+    method: "PUT",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-PUTapi-jobs--job_id-">
+</span>
+<span id="execution-results-PUTapi-jobs--job_id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-PUTapi-jobs--job_id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-PUTapi-jobs--job_id-"></code></pre>
+</span>
+<span id="execution-error-PUTapi-jobs--job_id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-PUTapi-jobs--job_id-"></code></pre>
+</span>
+<form id="form-PUTapi-jobs--job_id-" data-method="PUT"
+      data-path="api/jobs/{job_id}"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('PUTapi-jobs--job_id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-PUTapi-jobs--job_id-"
+                    onclick="tryItOut('PUTapi-jobs--job_id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-PUTapi-jobs--job_id-"
+                    onclick="cancelTryOut('PUTapi-jobs--job_id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-PUTapi-jobs--job_id-" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-darkblue">PUT</small>
+            <b><code>api/jobs/{job_id}</code></b>
+        </p>
+                <p>
+            <label id="auth-PUTapi-jobs--job_id-" hidden>Authorization header:
+                <b><code>Bearer </code></b><input type="text"
+                                                                name="Authorization"
+                                                                data-prefix="Bearer "
+                                                                data-endpoint="PUTapi-jobs--job_id-"
+                                                                data-component="header"></label>
+        </p>
+                <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <p>
+                <b><code>job_id</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="job_id"
+               data-endpoint="PUTapi-jobs--job_id-"
+               value="qui"
+               data-component="url" hidden>
+    <br>
+<p>The ID of the job.</p>
+            </p>
+                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <p>
+            <b><code>title</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="title"
+               data-endpoint="PUTapi-jobs--job_id-"
+               value="accusantium"
+               data-component="body" hidden>
+    <br>
+
+        </p>
+                <p>
+            <b><code>location</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="location"
+               data-endpoint="PUTapi-jobs--job_id-"
+               value="labore"
+               data-component="body" hidden>
+    <br>
+
+        </p>
+                <p>
+            <b><code>link</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="link"
+               data-endpoint="PUTapi-jobs--job_id-"
+               value="http://mckenzie.org/quasi-quaerat-quos-commodi-rerum-eum-non-minima"
+               data-component="body" hidden>
+    <br>
+<p>Must be a valid URL.</p>
+        </p>
+                <p>
+            <b><code>company_name</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="company_name"
+               data-endpoint="PUTapi-jobs--job_id-"
+               value="commodi"
+               data-component="body" hidden>
+    <br>
+
+        </p>
+                <p>
+            <b><code>description</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
+                <input type="text"
+               name="description"
+               data-endpoint="PUTapi-jobs--job_id-"
+               value="possimus"
+               data-component="body" hidden>
+    <br>
+
+        </p>
+                <p>
+            <b><code>company_logo</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="company_logo"
+               data-endpoint="PUTapi-jobs--job_id-"
+               value="http://www.stanton.com/dolorem-impedit-dolores-dolorem-quas-qui-nihil-porro-veniam"
+               data-component="body" hidden>
+    <br>
+<p>Must be a valid URL.</p>
+        </p>
+                <p>
+            <b><code>type</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="type"
+               data-endpoint="PUTapi-jobs--job_id-"
+               value="contract"
+               data-component="body" hidden>
+    <br>
+<p>Must be one of <code>full_time</code>, <code>part_time</code>, <code>contract</code>, <code>temporary</code>, <code>internship</code>, <code>volunteer</code>, or <code>remote</code>.</p>
+        </p>
+                <p>
+            <b><code>tags</code></b>&nbsp;&nbsp;<small>string[]</small>     <i>optional</i> &nbsp;
+                <input type="text"
+               name="tags[0]"
+               data-endpoint="PUTapi-jobs--job_id-"
+               data-component="body" hidden>
+        <input type="text"
+               name="tags[1]"
+               data-endpoint="PUTapi-jobs--job_id-"
+               data-component="body" hidden>
+    <br>
+
+        </p>
+        </form>
 
         <h1 id="tag">Tag</h1>
 
@@ -2053,8 +2366,8 @@ access-control-allow-origin: *
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"\",
-    \"slug\": \"dignissimos\"
+    \"name\": \"bnf\",
+    \"slug\": \"illo\"
 }"
 </code></pre></div>
 
@@ -2070,8 +2383,8 @@ const headers = {
 };
 
 let body = {
-    "name": "",
-    "slug": "dignissimos"
+    "name": "bnf",
+    "slug": "illo"
 };
 
 fetch(url, {
@@ -2137,7 +2450,7 @@ fetch(url, {
                 <input type="text"
                name="name"
                data-endpoint="POSTapi-tags"
-               value=""
+               value="bnf"
                data-component="body" hidden>
     <br>
 <p>Must be at least 3 characters.</p>
@@ -2147,7 +2460,7 @@ fetch(url, {
                 <input type="text"
                name="slug"
                data-endpoint="POSTapi-tags"
-               value="dignissimos"
+               value="illo"
                data-component="body" hidden>
     <br>
 
@@ -2175,7 +2488,7 @@ fetch(url, {
     "http://localhost:8000/api/uploads" \
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
-    --form "file=@/tmp/phphTeCjw" </code></pre></div>
+    --form "file=@/tmp/php0TBbfN" </code></pre></div>
 
 
 <div class="javascript-example">
@@ -2277,7 +2590,7 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://localhost:8000/api/uploads?url=culpa" \
+    "http://localhost:8000/api/uploads?url=cumque" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -2288,7 +2601,7 @@ fetch(url, {
 );
 
 const params = {
-    "url": "culpa",
+    "url": "cumque",
 };
 Object.keys(params)
     .forEach(key =&gt; url.searchParams.append(key, params[key]));
@@ -2360,7 +2673,7 @@ fetch(url, {
                 <input type="text"
                name="url"
                data-endpoint="DELETEapi-uploads"
-               value="culpa"
+               value="cumque"
                data-component="query" hidden>
     <br>
 <ul>

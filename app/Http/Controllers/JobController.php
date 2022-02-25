@@ -7,6 +7,7 @@ use App\Http\Requests\UpdateJobRequest;
 use App\Http\Resources\JobDetailsResource;
 use App\Http\Resources\JobListResouce;
 use App\Models\Job;
+use http\Env\Response;
 use Illuminate\Validation\Rule;
 
 /**
@@ -61,6 +62,8 @@ class JobController extends Controller
     }
 
     /**
+     * Job Details
+     *
      * Display the specified resource.
      *
      * @param  \App\Models\Job  $job
@@ -72,36 +75,40 @@ class JobController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
+     * Update job
      *
-     * @param  \App\Models\Job  $job
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Job $job)
-    {
-        //
-    }
-
-    /**
      * Update the specified resource in storage.
      *
+     * @authenticated
      * @param  \App\Http\Requests\UpdateJobRequest  $request
      * @param  \App\Models\Job  $job
      * @return \Illuminate\Http\Response
      */
     public function update(UpdateJobRequest $request, Job $job)
     {
-        //
+        $this->authorize('update', $job);
+
+        $job->update($request->all());
+
+        if($request->get('tags')){
+            $job->tags()->sync($request->tags);
+        }
+
+        return response()->noContent()->setStatusCode(\Symfony\Component\HttpFoundation\Response::HTTP_ACCEPTED);
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Delete job
      *
+     * Remove the specified resource from storage.
+     * @authenticated
      * @param  \App\Models\Job  $job
      * @return \Illuminate\Http\Response
      */
     public function destroy(Job $job)
     {
-        //
+        $this->authorize('delete', $job);
+        $job->deleteOrFail();
+        return response()->noContent()->setStatusCode(\Symfony\Component\HttpFoundation\Response::HTTP_ACCEPTED);
     }
 }

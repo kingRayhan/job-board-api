@@ -49,14 +49,14 @@ endpoints:
         name: name
         description: 'Must be at least 3 characters.'
         required: true
-        example: ''
+        example: bnf
         type: string
         custom: []
       slug:
         name: slug
         description: ''
         required: true
-        example: dignissimos
+        example: illo
         type: string
         custom: []
     responses: []

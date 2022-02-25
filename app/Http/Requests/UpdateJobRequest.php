@@ -3,6 +3,7 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rule;
 
 class UpdateJobRequest extends FormRequest
 {
@@ -13,7 +14,7 @@ class UpdateJobRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +25,24 @@ class UpdateJobRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'title' => ['string', 'required'],
+            'location' => ['string', 'required'],
+            'link' => ['string', 'url', 'required'],
+            'company_name' => ['string', 'required'],
+            'description' => ['string', 'nullable'],
+            'company_logo' => ['required', 'url'],
+            'type' => ['required', 'string',
+                Rule::in([
+                    'full_time',
+                    'part_time',
+                    'contract',
+                    'temporary',
+                    'internship',
+                    'volunteer',
+                    'remote'
+                ])
+            ],
+            'tags' => ['array', Rule::exists('tags', 'id')]
         ];
     }
 }

@@ -21,21 +21,21 @@ endpoints:
         name: limit
         description: '- How many resource to show per page. `Default: 10`'
         required: false
-        example: 3
+        example: 16
         type: integer
         custom: []
       user_id:
         name: user_id
         description: '- Filtered jobs posted by a particular user.'
         required: false
-        example: perspiciatis
+        example: laborum
         type: string
         custom: []
       page:
         name: page
         description: '- Page number'
         required: false
-        example: 19
+        example: 8
         type: integer
         custom: []
     bodyParameters: []
@@ -70,49 +70,49 @@ endpoints:
         name: title
         description: ''
         required: true
-        example: dignissimos
+        example: dolorem
         type: string
         custom: []
       location:
         name: location
         description: ''
         required: true
-        example: qui
+        example: autem
         type: string
         custom: []
       link:
         name: link
         description: 'Must be a valid URL.'
         required: true
-        example: 'https://www.price.com/nihil-hic-dolores-rem-necessitatibus'
+        example: 'http://barton.com/ut-placeat-ex-ut-qui-eum.html'
         type: string
         custom: []
       company_name:
         name: company_name
         description: ''
         required: true
-        example: rerum
+        example: itaque
         type: string
         custom: []
       description:
         name: description
         description: ''
         required: false
-        example: in
+        example: et
         type: string
         custom: []
       company_logo:
         name: company_logo
         description: 'Must be a valid URL.'
         required: true
-        example: 'https://www.leannon.com/voluptate-in-nam-error-accusantium-qui-praesentium-id'
+        example: 'http://www.king.org/laborum-dolorem-harum-ratione-et.html'
         type: string
         custom: []
       type:
         name: type
         description: 'Must be one of <code>full_time</code>, <code>part_time</code>, <code>contract</code>, <code>temporary</code>, <code>internship</code>, <code>volunteer</code>, or <code>remote</code>.'
         required: true
-        example: part_time
+        example: contract
         type: string
         custom: []
       tags:
@@ -120,7 +120,7 @@ endpoints:
         description: ''
         required: false
         example:
-          - voluptate
+          - explicabo
         type: 'string[]'
         custom: []
     responses: []
@@ -130,8 +130,8 @@ endpoints:
       - GET
     uri: 'api/jobs/{job_slug}'
     metadata:
-      title: 'Display the specified resource.'
-      description: ''
+      title: 'Job Details'
+      description: 'Display the specified resource.'
       authenticated: false
       custom: []
     headers:
@@ -142,7 +142,7 @@ endpoints:
         name: job_slug
         description: ''
         required: true
-        example: quo
+        example: officia
         type: string
         custom: []
     queryParameters: []
@@ -572,4 +572,109 @@ endpoints:
           x-ratelimit-remaining: '55'
           access-control-allow-origin: '*'
         description: null
+    responseFields: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/jobs/{job_id}'
+    metadata:
+      title: 'Delete job'
+      description: 'Remove the specified resource from storage.'
+      authenticated: true
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      job_id:
+        name: job_id
+        description: 'The ID of the job.'
+        required: true
+        example: aut
+        type: string
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - PUT
+    uri: 'api/jobs/{job_id}'
+    metadata:
+      title: 'Update job'
+      description: 'Update the specified resource in storage.'
+      authenticated: true
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      job_id:
+        name: job_id
+        description: 'The ID of the job.'
+        required: true
+        example: qui
+        type: string
+        custom: []
+    queryParameters: []
+    bodyParameters:
+      title:
+        name: title
+        description: ''
+        required: true
+        example: accusantium
+        type: string
+        custom: []
+      location:
+        name: location
+        description: ''
+        required: true
+        example: labore
+        type: string
+        custom: []
+      link:
+        name: link
+        description: 'Must be a valid URL.'
+        required: true
+        example: 'http://mckenzie.org/quasi-quaerat-quos-commodi-rerum-eum-non-minima'
+        type: string
+        custom: []
+      company_name:
+        name: company_name
+        description: ''
+        required: true
+        example: commodi
+        type: string
+        custom: []
+      description:
+        name: description
+        description: ''
+        required: false
+        example: possimus
+        type: string
+        custom: []
+      company_logo:
+        name: company_logo
+        description: 'Must be a valid URL.'
+        required: true
+        example: 'http://www.stanton.com/dolorem-impedit-dolores-dolorem-quas-qui-nihil-porro-veniam'
+        type: string
+        custom: []
+      type:
+        name: type
+        description: 'Must be one of <code>full_time</code>, <code>part_time</code>, <code>contract</code>, <code>temporary</code>, <code>internship</code>, <code>volunteer</code>, or <code>remote</code>.'
+        required: true
+        example: contract
+        type: string
+        custom: []
+      tags:
+        name: tags
+        description: ''
+        required: false
+        example:
+          - laborum
+        type: 'string[]'
+        custom: []
+    responses: []
     responseFields: []
