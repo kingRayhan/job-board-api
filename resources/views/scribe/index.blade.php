@@ -111,6 +111,9 @@
                                     <li class="tocify-item level-2" data-unique="jobs-POSTapi-jobs">
                         <a href="#jobs-POSTapi-jobs">Post job</a>
                     </li>
+                                    <li class="tocify-item level-2" data-unique="jobs-GETapi-jobs--job_slug-">
+                        <a href="#jobs-GETapi-jobs--job_slug-">Display the specified resource.</a>
+                    </li>
                                                     </ul>
                             </ul>
                     <ul id="tocify-header-4" class="tocify-header">
@@ -149,7 +152,7 @@
                             <li><a href="http://github.com/knuckleswtf/scribe">Documentation powered by Scribe ✍</a></li>
                     </ul>
         <ul class="toc-footer" id="last-updated">
-        <li>Last updated: February 24 2022</li>
+        <li>Last updated: February 25 2022</li>
     </ul>
 </div>
 
@@ -293,10 +296,10 @@ access-control-allow-origin: *
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"oqehsdgz\",
-    \"email\": \"nojgresgxzqgvokhoggcamdfhqoskcjnunpqcoyqoussaerthanhltrnvvvavcwbwojbqkzdnjpjrvrkgzojbwktklkyfttrsywxrcqffrhxriyjjetfatbdabdjveispqzllp\",
-    \"password\": \"reiciendis\",
-    \"password_confirmation\": \"autem\"
+    \"name\": \"oegocyaoziwaabcyqoudynojsgttvzfitdroetcqhaewkswwpsllmkcixfpywjuaflavzetaokxnouiaamayphoizxsdllcnxjgkcqwijpuyqyzkazkxbzgcpvtdg\",
+    \"email\": \"tqyukmmtgplvhbtmgbrkuarfexdfbhejqozceafnsdjxybqsqpfswglfkycpzdovgsyekxvztahxwvxhbkjmzlyevxdhpxdptvfhnzitncbokujmjgkokewwpqfzzmovhprtonpdxwrsfnbaymmsutkbdkpbnrvatyobvewuehwqzrowuxnostjytzzmmim\",
+    \"password\": \"magnam\",
+    \"password_confirmation\": \"delectus\"
 }"
 </code></pre></div>
 
@@ -312,10 +315,10 @@ const headers = {
 };
 
 let body = {
-    "name": "oqehsdgz",
-    "email": "nojgresgxzqgvokhoggcamdfhqoskcjnunpqcoyqoussaerthanhltrnvvvavcwbwojbqkzdnjpjrvrkgzojbwktklkyfttrsywxrcqffrhxriyjjetfatbdabdjveispqzllp",
-    "password": "reiciendis",
-    "password_confirmation": "autem"
+    "name": "oegocyaoziwaabcyqoudynojsgttvzfitdroetcqhaewkswwpsllmkcixfpywjuaflavzetaokxnouiaamayphoizxsdllcnxjgkcqwijpuyqyzkazkxbzgcpvtdg",
+    "email": "tqyukmmtgplvhbtmgbrkuarfexdfbhejqozceafnsdjxybqsqpfswglfkycpzdovgsyekxvztahxwvxhbkjmzlyevxdhpxdptvfhnzitncbokujmjgkokewwpqfzzmovhprtonpdxwrsfnbaymmsutkbdkpbnrvatyobvewuehwqzrowuxnostjytzzmmim",
+    "password": "magnam",
+    "password_confirmation": "delectus"
 };
 
 fetch(url, {
@@ -373,7 +376,7 @@ fetch(url, {
                 <input type="text"
                name="name"
                data-endpoint="POSTapi-auth-register"
-               value="oqehsdgz"
+               value="oegocyaoziwaabcyqoudynojsgttvzfitdroetcqhaewkswwpsllmkcixfpywjuaflavzetaokxnouiaamayphoizxsdllcnxjgkcqwijpuyqyzkazkxbzgcpvtdg"
                data-component="body" hidden>
     <br>
 <p>Must not be greater than 255 characters.</p>
@@ -383,7 +386,7 @@ fetch(url, {
                 <input type="text"
                name="email"
                data-endpoint="POSTapi-auth-register"
-               value="nojgresgxzqgvokhoggcamdfhqoskcjnunpqcoyqoussaerthanhltrnvvvavcwbwojbqkzdnjpjrvrkgzojbwktklkyfttrsywxrcqffrhxriyjjetfatbdabdjveispqzllp"
+               value="tqyukmmtgplvhbtmgbrkuarfexdfbhejqozceafnsdjxybqsqpfswglfkycpzdovgsyekxvztahxwvxhbkjmzlyevxdhpxdptvfhnzitncbokujmjgkokewwpqfzzmovhprtonpdxwrsfnbaymmsutkbdkpbnrvatyobvewuehwqzrowuxnostjytzzmmim"
                data-component="body" hidden>
     <br>
 <p>Must be a valid email address. Must not be greater than 255 characters.</p>
@@ -393,7 +396,7 @@ fetch(url, {
                 <input type="text"
                name="password"
                data-endpoint="POSTapi-auth-register"
-               value="reiciendis"
+               value="magnam"
                data-component="body" hidden>
     <br>
 
@@ -403,7 +406,7 @@ fetch(url, {
                 <input type="text"
                name="password_confirmation"
                data-endpoint="POSTapi-auth-register"
-               value="autem"
+               value="delectus"
                data-component="body" hidden>
     <br>
 <p>The value and <code>password</code> must match.</p>
@@ -427,8 +430,8 @@ fetch(url, {
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"email\": \"david.haley@example.net\",
-    \"password\": \"maxime\"
+    \"email\": \"chaim.langosh@example.net\",
+    \"password\": \"quo\"
 }"
 </code></pre></div>
 
@@ -444,8 +447,8 @@ const headers = {
 };
 
 let body = {
-    "email": "david.haley@example.net",
-    "password": "maxime"
+    "email": "chaim.langosh@example.net",
+    "password": "quo"
 };
 
 fetch(url, {
@@ -503,7 +506,7 @@ fetch(url, {
                 <input type="text"
                name="email"
                data-endpoint="POSTapi-auth-login"
-               value="david.haley@example.net"
+               value="chaim.langosh@example.net"
                data-component="body" hidden>
     <br>
 <p>Must be a valid email address.</p>
@@ -513,7 +516,7 @@ fetch(url, {
                 <input type="text"
                name="password"
                data-endpoint="POSTapi-auth-login"
-               value="maxime"
+               value="quo"
                data-component="body" hidden>
     <br>
 
@@ -537,7 +540,7 @@ fetch(url, {
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"email\": \"eos\"
+    \"email\": \"vel\"
 }"
 </code></pre></div>
 
@@ -553,7 +556,7 @@ const headers = {
 };
 
 let body = {
-    "email": "eos"
+    "email": "vel"
 };
 
 fetch(url, {
@@ -611,7 +614,7 @@ fetch(url, {
                 <input type="text"
                name="email"
                data-endpoint="POSTapi-auth-forgot-password"
-               value="eos"
+               value="vel"
                data-component="body" hidden>
     <br>
 <ul>
@@ -637,10 +640,10 @@ fetch(url, {
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"token\": \"minima\",
-    \"email\": \"commodi\",
-    \"password\": \"vitae\",
-    \"password_confirmation\": \"laborum\"
+    \"token\": \"incidunt\",
+    \"email\": \"voluptas\",
+    \"password\": \"laboriosam\",
+    \"password_confirmation\": \"dignissimos\"
 }"
 </code></pre></div>
 
@@ -656,10 +659,10 @@ const headers = {
 };
 
 let body = {
-    "token": "minima",
-    "email": "commodi",
-    "password": "vitae",
-    "password_confirmation": "laborum"
+    "token": "incidunt",
+    "email": "voluptas",
+    "password": "laboriosam",
+    "password_confirmation": "dignissimos"
 };
 
 fetch(url, {
@@ -717,7 +720,7 @@ fetch(url, {
                 <input type="text"
                name="token"
                data-endpoint="POSTapi-auth-reset-password"
-               value="minima"
+               value="incidunt"
                data-component="body" hidden>
     <br>
 <ul>
@@ -729,7 +732,7 @@ fetch(url, {
                 <input type="text"
                name="email"
                data-endpoint="POSTapi-auth-reset-password"
-               value="commodi"
+               value="voluptas"
                data-component="body" hidden>
     <br>
 <ul>
@@ -741,7 +744,7 @@ fetch(url, {
                 <input type="text"
                name="password"
                data-endpoint="POSTapi-auth-reset-password"
-               value="vitae"
+               value="laboriosam"
                data-component="body" hidden>
     <br>
 <ul>
@@ -753,7 +756,7 @@ fetch(url, {
                 <input type="text"
                name="password_confirmation"
                data-endpoint="POSTapi-auth-reset-password"
-               value="laborum"
+               value="dignissimos"
                data-component="body" hidden>
     <br>
 <ul>
@@ -775,14 +778,14 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/auth/verify-email/dignissimos/incidunt" \
+    --get "http://localhost:8000/api/auth/verify-email/totam/placeat" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/auth/verify-email/dignissimos/incidunt"
+    "http://localhost:8000/api/auth/verify-email/totam/placeat"
 );
 
 const headers = {
@@ -861,7 +864,7 @@ access-control-allow-origin: *
                 <input type="text"
                name="id"
                data-endpoint="GETapi-auth-verify-email--id---hash-"
-               value="dignissimos"
+               value="totam"
                data-component="url" hidden>
     <br>
 <p>The ID of the verify email.</p>
@@ -871,7 +874,7 @@ access-control-allow-origin: *
                 <input type="text"
                name="hash"
                data-endpoint="GETapi-auth-verify-email--id---hash-"
-               value="incidunt"
+               value="placeat"
                data-component="url" hidden>
     <br>
 
@@ -1069,7 +1072,7 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/jobs?limit=2&amp;user_id=voluptas&amp;page=3" \
+    --get "http://localhost:8000/api/jobs?limit=3&amp;user_id=perspiciatis&amp;page=19" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -1080,9 +1083,9 @@ fetch(url, {
 );
 
 const params = {
-    "limit": "2",
-    "user_id": "voluptas",
-    "page": "3",
+    "limit": "3",
+    "user_id": "perspiciatis",
+    "page": "19",
 };
 Object.keys(params)
     .forEach(key =&gt; url.searchParams.append(key, params[key]));
@@ -1110,7 +1113,7 @@ fetch(url, {
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 57
+x-ratelimit-remaining: 56
 access-control-allow-origin: *
  </code></pre>
         </details>         <pre>
@@ -1170,7 +1173,7 @@ access-control-allow-origin: *
                 <input type="number"
                name="limit"
                data-endpoint="GETapi-jobs"
-               value="2"
+               value="3"
                data-component="query" hidden>
     <br>
 <ul>
@@ -1182,7 +1185,7 @@ access-control-allow-origin: *
                 <input type="text"
                name="user_id"
                data-endpoint="GETapi-jobs"
-               value="voluptas"
+               value="perspiciatis"
                data-component="query" hidden>
     <br>
 <ul>
@@ -1194,7 +1197,7 @@ access-control-allow-origin: *
                 <input type="number"
                name="page"
                data-endpoint="GETapi-jobs"
-               value="3"
+               value="19"
                data-component="query" hidden>
     <br>
 <ul>
@@ -1221,15 +1224,15 @@ access-control-allow-origin: *
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"title\": \"architecto\",
-    \"location\": \"excepturi\",
-    \"link\": \"http:\\/\\/www.vandervort.net\\/optio-dolorum-qui-quia-doloremque-similique-id.html\",
-    \"company_name\": \"quidem\",
-    \"description\": \"neque\",
-    \"company_logo\": \"http:\\/\\/www.mann.com\\/\",
-    \"type\": \"volunteer\",
+    \"title\": \"dignissimos\",
+    \"location\": \"qui\",
+    \"link\": \"https:\\/\\/www.price.com\\/nihil-hic-dolores-rem-necessitatibus\",
+    \"company_name\": \"rerum\",
+    \"description\": \"in\",
+    \"company_logo\": \"https:\\/\\/www.leannon.com\\/voluptate-in-nam-error-accusantium-qui-praesentium-id\",
+    \"type\": \"part_time\",
     \"tags\": [
-        \"assumenda\"
+        \"voluptate\"
     ]
 }"
 </code></pre></div>
@@ -1246,15 +1249,15 @@ const headers = {
 };
 
 let body = {
-    "title": "architecto",
-    "location": "excepturi",
-    "link": "http:\/\/www.vandervort.net\/optio-dolorum-qui-quia-doloremque-similique-id.html",
-    "company_name": "quidem",
-    "description": "neque",
-    "company_logo": "http:\/\/www.mann.com\/",
-    "type": "volunteer",
+    "title": "dignissimos",
+    "location": "qui",
+    "link": "https:\/\/www.price.com\/nihil-hic-dolores-rem-necessitatibus",
+    "company_name": "rerum",
+    "description": "in",
+    "company_logo": "https:\/\/www.leannon.com\/voluptate-in-nam-error-accusantium-qui-praesentium-id",
+    "type": "part_time",
     "tags": [
-        "assumenda"
+        "voluptate"
     ]
 };
 
@@ -1321,7 +1324,7 @@ fetch(url, {
                 <input type="text"
                name="title"
                data-endpoint="POSTapi-jobs"
-               value="architecto"
+               value="dignissimos"
                data-component="body" hidden>
     <br>
 
@@ -1331,7 +1334,7 @@ fetch(url, {
                 <input type="text"
                name="location"
                data-endpoint="POSTapi-jobs"
-               value="excepturi"
+               value="qui"
                data-component="body" hidden>
     <br>
 
@@ -1341,7 +1344,7 @@ fetch(url, {
                 <input type="text"
                name="link"
                data-endpoint="POSTapi-jobs"
-               value="http://www.vandervort.net/optio-dolorum-qui-quia-doloremque-similique-id.html"
+               value="https://www.price.com/nihil-hic-dolores-rem-necessitatibus"
                data-component="body" hidden>
     <br>
 <p>Must be a valid URL.</p>
@@ -1351,7 +1354,7 @@ fetch(url, {
                 <input type="text"
                name="company_name"
                data-endpoint="POSTapi-jobs"
-               value="quidem"
+               value="rerum"
                data-component="body" hidden>
     <br>
 
@@ -1361,7 +1364,7 @@ fetch(url, {
                 <input type="text"
                name="description"
                data-endpoint="POSTapi-jobs"
-               value="neque"
+               value="in"
                data-component="body" hidden>
     <br>
 
@@ -1371,7 +1374,7 @@ fetch(url, {
                 <input type="text"
                name="company_logo"
                data-endpoint="POSTapi-jobs"
-               value="http://www.mann.com/"
+               value="https://www.leannon.com/voluptate-in-nam-error-accusantium-qui-praesentium-id"
                data-component="body" hidden>
     <br>
 <p>Must be a valid URL.</p>
@@ -1381,7 +1384,7 @@ fetch(url, {
                 <input type="text"
                name="type"
                data-endpoint="POSTapi-jobs"
-               value="volunteer"
+               value="part_time"
                data-component="body" hidden>
     <br>
 <p>Must be one of <code>full_time</code>, <code>part_time</code>, <code>contract</code>, <code>temporary</code>, <code>internship</code>, <code>volunteer</code>, or <code>remote</code>.</p>
@@ -1400,6 +1403,525 @@ fetch(url, {
 
         </p>
         </form>
+
+            <h2 id="jobs-GETapi-jobs--job_slug-">Display the specified resource.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETapi-jobs--job_slug-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost:8000/api/jobs/quo" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/jobs/quo"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-jobs--job_slug-">
+            <blockquote>
+            <p>Example response (404):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary>
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 55
+access-control-allow-origin: *
+ </code></pre>
+        </details>         <pre>
+
+<code class="language-json">{
+    &quot;message&quot;: &quot;No query results for model [App\\Models\\Job] 1&quot;,
+    &quot;exception&quot;: &quot;Symfony\\Component\\HttpKernel\\Exception\\NotFoundHttpException&quot;,
+    &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php&quot;,
+    &quot;line&quot;: 355,
+    &quot;trace&quot;: [
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php&quot;,
+            &quot;line&quot;: 331,
+            &quot;function&quot;: &quot;prepareException&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Exceptions\\Handler&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/nunomaduro/collision/src/Adapters/Laravel/ExceptionHandler.php&quot;,
+            &quot;line&quot;: 54,
+            &quot;function&quot;: &quot;render&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Exceptions\\Handler&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php&quot;,
+            &quot;line&quot;: 51,
+            &quot;function&quot;: &quot;render&quot;,
+            &quot;class&quot;: &quot;NunoMaduro\\Collision\\Adapters\\Laravel\\ExceptionHandler&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 172,
+            &quot;function&quot;: &quot;handleException&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php&quot;,
+            &quot;line&quot;: 126,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php&quot;,
+            &quot;line&quot;: 102,
+            &quot;function&quot;: &quot;handleRequest&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Middleware\\ThrottleRequests&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php&quot;,
+            &quot;line&quot;: 54,
+            &quot;function&quot;: &quot;handleRequestUsingNamedLimiter&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Middleware\\ThrottleRequests&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 167,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Middleware\\ThrottleRequests&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 103,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Routing/Router.php&quot;,
+            &quot;line&quot;: 726,
+            &quot;function&quot;: &quot;then&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Routing/Router.php&quot;,
+            &quot;line&quot;: 701,
+            &quot;function&quot;: &quot;runRouteWithinStack&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Routing/Router.php&quot;,
+            &quot;line&quot;: 665,
+            &quot;function&quot;: &quot;runRoute&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Routing/Router.php&quot;,
+            &quot;line&quot;: 654,
+            &quot;function&quot;: &quot;dispatchToRoute&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php&quot;,
+            &quot;line&quot;: 167,
+            &quot;function&quot;: &quot;dispatch&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 128,
+            &quot;function&quot;: &quot;Illuminate\\Foundation\\Http\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Kernel&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php&quot;,
+            &quot;line&quot;: 21,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php&quot;,
+            &quot;line&quot;: 31,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 167,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php&quot;,
+            &quot;line&quot;: 21,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php&quot;,
+            &quot;line&quot;: 40,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 167,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\TrimStrings&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php&quot;,
+            &quot;line&quot;: 27,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 167,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php&quot;,
+            &quot;line&quot;: 86,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 167,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/fruitcake/laravel-cors/src/HandleCors.php&quot;,
+            &quot;line&quot;: 52,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 167,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Fruitcake\\Cors\\HandleCors&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php&quot;,
+            &quot;line&quot;: 39,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 167,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Http\\Middleware\\TrustProxies&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 103,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php&quot;,
+            &quot;line&quot;: 142,
+            &quot;function&quot;: &quot;then&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php&quot;,
+            &quot;line&quot;: 111,
+            &quot;function&quot;: &quot;sendRequestThroughRouter&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Kernel&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php&quot;,
+            &quot;line&quot;: 299,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Kernel&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php&quot;,
+            &quot;line&quot;: 287,
+            &quot;function&quot;: &quot;callLaravelOrLumenRoute&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php&quot;,
+            &quot;line&quot;: 89,
+            &quot;function&quot;: &quot;makeApiCall&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php&quot;,
+            &quot;line&quot;: 45,
+            &quot;function&quot;: &quot;makeResponseCall&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php&quot;,
+            &quot;line&quot;: 35,
+            &quot;function&quot;: &quot;makeResponseCallIfConditionsPass&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php&quot;,
+            &quot;line&quot;: 222,
+            &quot;function&quot;: &quot;__invoke&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php&quot;,
+            &quot;line&quot;: 179,
+            &quot;function&quot;: &quot;iterateThroughStrategies&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Extractor&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php&quot;,
+            &quot;line&quot;: 116,
+            &quot;function&quot;: &quot;fetchResponses&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Extractor&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php&quot;,
+            &quot;line&quot;: 117,
+            &quot;function&quot;: &quot;processRoute&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Extractor&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php&quot;,
+            &quot;line&quot;: 75,
+            &quot;function&quot;: &quot;extractEndpointsInfoFromLaravelApp&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php&quot;,
+            &quot;line&quot;: 51,
+            &quot;function&quot;: &quot;extractEndpointsInfoAndWriteToDisk&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/knuckleswtf/scribe/src/Commands/GenerateDocumentation.php&quot;,
+            &quot;line&quot;: 48,
+            &quot;function&quot;: &quot;get&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php&quot;,
+            &quot;line&quot;: 36,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Commands\\GenerateDocumentation&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Container/Util.php&quot;,
+            &quot;line&quot;: 41,
+            &quot;function&quot;: &quot;Illuminate\\Container\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Container\\BoundMethod&quot;,
+            &quot;type&quot;: &quot;::&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php&quot;,
+            &quot;line&quot;: 93,
+            &quot;function&quot;: &quot;unwrapIfClosure&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Container\\Util&quot;,
+            &quot;type&quot;: &quot;::&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php&quot;,
+            &quot;line&quot;: 37,
+            &quot;function&quot;: &quot;callBoundMethod&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Container\\BoundMethod&quot;,
+            &quot;type&quot;: &quot;::&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Container/Container.php&quot;,
+            &quot;line&quot;: 653,
+            &quot;function&quot;: &quot;call&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Container\\BoundMethod&quot;,
+            &quot;type&quot;: &quot;::&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Console/Command.php&quot;,
+            &quot;line&quot;: 136,
+            &quot;function&quot;: &quot;call&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Container\\Container&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/symfony/console/Command/Command.php&quot;,
+            &quot;line&quot;: 291,
+            &quot;function&quot;: &quot;execute&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Console\\Command&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Console/Command.php&quot;,
+            &quot;line&quot;: 121,
+            &quot;function&quot;: &quot;run&quot;,
+            &quot;class&quot;: &quot;Symfony\\Component\\Console\\Command\\Command&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/symfony/console/Application.php&quot;,
+            &quot;line&quot;: 989,
+            &quot;function&quot;: &quot;run&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Console\\Command&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/symfony/console/Application.php&quot;,
+            &quot;line&quot;: 299,
+            &quot;function&quot;: &quot;doRunCommand&quot;,
+            &quot;class&quot;: &quot;Symfony\\Component\\Console\\Application&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/symfony/console/Application.php&quot;,
+            &quot;line&quot;: 171,
+            &quot;function&quot;: &quot;doRun&quot;,
+            &quot;class&quot;: &quot;Symfony\\Component\\Console\\Application&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Console/Application.php&quot;,
+            &quot;line&quot;: 102,
+            &quot;function&quot;: &quot;run&quot;,
+            &quot;class&quot;: &quot;Symfony\\Component\\Console\\Application&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php&quot;,
+            &quot;line&quot;: 129,
+            &quot;function&quot;: &quot;run&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Console\\Application&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/artisan&quot;,
+            &quot;line&quot;: 37,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Console\\Kernel&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        }
+    ]
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-jobs--job_slug-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-jobs--job_slug-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-jobs--job_slug-"></code></pre>
+</span>
+<span id="execution-error-GETapi-jobs--job_slug-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-jobs--job_slug-"></code></pre>
+</span>
+<form id="form-GETapi-jobs--job_slug-" data-method="GET"
+      data-path="api/jobs/{job_slug}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-jobs--job_slug-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-jobs--job_slug-"
+                    onclick="tryItOut('GETapi-jobs--job_slug-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-jobs--job_slug-"
+                    onclick="cancelTryOut('GETapi-jobs--job_slug-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-jobs--job_slug-" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/jobs/{job_slug}</code></b>
+        </p>
+                    <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <p>
+                <b><code>job_slug</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="job_slug"
+               data-endpoint="GETapi-jobs--job_slug-"
+               value="quo"
+               data-component="url" hidden>
+    <br>
+
+            </p>
+                    </form>
 
         <h1 id="tag">Tag</h1>
 
@@ -1451,7 +1973,7 @@ fetch(url, {
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 56
+x-ratelimit-remaining: 54
 access-control-allow-origin: *
  </code></pre>
         </details>         <pre>
@@ -1531,8 +2053,8 @@ access-control-allow-origin: *
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"rs\",
-    \"slug\": \"et\"
+    \"name\": \"\",
+    \"slug\": \"dignissimos\"
 }"
 </code></pre></div>
 
@@ -1548,8 +2070,8 @@ const headers = {
 };
 
 let body = {
-    "name": "rs",
-    "slug": "et"
+    "name": "",
+    "slug": "dignissimos"
 };
 
 fetch(url, {
@@ -1615,7 +2137,7 @@ fetch(url, {
                 <input type="text"
                name="name"
                data-endpoint="POSTapi-tags"
-               value="rs"
+               value=""
                data-component="body" hidden>
     <br>
 <p>Must be at least 3 characters.</p>
@@ -1625,7 +2147,7 @@ fetch(url, {
                 <input type="text"
                name="slug"
                data-endpoint="POSTapi-tags"
-               value="et"
+               value="dignissimos"
                data-component="body" hidden>
     <br>
 
@@ -1653,7 +2175,7 @@ fetch(url, {
     "http://localhost:8000/api/uploads" \
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
-    --form "file=@/tmp/php02LH9X" </code></pre></div>
+    --form "file=@/tmp/phphTeCjw" </code></pre></div>
 
 
 <div class="javascript-example">
@@ -1755,13 +2277,9 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://localhost:8000/api/uploads" \
+    "http://localhost:8000/api/uploads?url=culpa" \
     --header "Content-Type: application/json" \
-    --header "Accept: application/json" \
-    --data "{
-    \"url\": \"quis\"
-}"
-</code></pre></div>
+    --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
@@ -1769,19 +2287,20 @@ fetch(url, {
     "http://localhost:8000/api/uploads"
 );
 
+const params = {
+    "url": "culpa",
+};
+Object.keys(params)
+    .forEach(key =&gt; url.searchParams.append(key, params[key]));
+
 const headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
 
-let body = {
-    "url": "quis"
-};
-
 fetch(url, {
     method: "DELETE",
     headers,
-    body: JSON.stringify(body),
 }).then(response =&gt; response.json());</code></pre></div>
 
 </span>
@@ -1835,20 +2354,20 @@ fetch(url, {
                                                                 data-endpoint="DELETEapi-uploads"
                                                                 data-component="header"></label>
         </p>
-                        <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
-        <p>
-            <b><code>url</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
+                    <h4 class="fancy-heading-panel"><b>Query Parameters</b></h4>
+                    <p>
+                <b><code>url</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
                 <input type="text"
                name="url"
                data-endpoint="DELETEapi-uploads"
-               value="quis"
-               data-component="body" hidden>
+               value="culpa"
+               data-component="query" hidden>
     <br>
 <ul>
-<li>File url</li>
+<li>File url to delete</li>
 </ul>
-        </p>
-        </form>
+            </p>
+                </form>
 
     
 

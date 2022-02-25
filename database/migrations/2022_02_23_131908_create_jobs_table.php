@@ -25,7 +25,6 @@ return new class extends Migration
             $table->text('description')->nullable();
 
             $table->string('type');
-            $table->string('primary_tag')->nullable();
 
             $table->boolean('highlighted')->default(false);
             $table->boolean('pinned')->default(false);

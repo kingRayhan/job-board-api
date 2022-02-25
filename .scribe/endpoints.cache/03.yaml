@@ -40,14 +40,14 @@ endpoints:
       Content-Type: application/json
       Accept: application/json
     urlParameters: []
-    queryParameters: []
-    bodyParameters:
+    queryParameters:
       url:
         name: url
-        description: '- File url'
+        description: '- File url to delete'
         required: false
-        example: quis
+        example: culpa
         type: string
         custom: []
+    bodyParameters: []
     responses: []
     responseFields: []

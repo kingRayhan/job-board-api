@@ -4,7 +4,7 @@ namespace App\Http\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class JobListResouce extends JsonResource
+class JobDetailsResource extends JsonResource
 {
     /**
      * Transform the resource into an array.
@@ -28,6 +28,8 @@ class JobListResouce extends JsonResource
             'tags' => TagPublicResource::collection($this->tags),
             'highlighted' => $this->highlighted,
             'pinned' => $this->pinned,
+            'type' => $this->type,
+            'description' => $this->description,
             'timestamp' => [
                 'created' => $this->created_at,
                 'updated' => $this->updated_at,

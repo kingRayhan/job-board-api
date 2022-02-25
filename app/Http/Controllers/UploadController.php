@@ -65,7 +65,6 @@ class UploadController extends Controller
             ->uploadApi()
             ->upload($request->file('file')->getRealPath());
 
-
         $url = (string) $this->cloudinary->image($upload['public_id'])
             ->delivery(
                 Delivery::format(Format::auto())
@@ -74,14 +73,14 @@ class UploadController extends Controller
             )->toUrl();
 
         return response()->json([
-            'url' => $url
+            'url' => explode('?', $url)[0]
         ]);
     }
 
 
     /**
      * Delete file
-     * @bodyParam url string - File url
+     * @queryParam url string - File url to delete
      * @authenticated
      * @param Request $request
      * @return \Illuminate\Http\Response
@@ -89,18 +88,16 @@ class UploadController extends Controller
      */
     public function destroy(Request $request)
     {
-        $request->validate([
-            'url' => ['required', 'url']
-        ]);
 
-        $file_url = $request->file_url;
+        $file_url = $request->get('url');
         $split = explode("/", $file_url);
-        $public_id = implode("/", array_slice($split, -2));
+        $public_id = implode("/", array_slice($split, -1));
 
         $admin_api = $this->cloudinary_admin->deleteAssets([
             $public_id
         ]);
 
+        return $admin_api;
         return response()->noContent();
     }
 }

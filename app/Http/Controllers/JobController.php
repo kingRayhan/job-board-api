@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreJobRequest;
 use App\Http\Requests\UpdateJobRequest;
+use App\Http\Resources\JobDetailsResource;
 use App\Http\Resources\JobListResouce;
 use App\Models\Job;
 use Illuminate\Validation\Rule;
@@ -27,7 +28,7 @@ class JobController extends Controller
            'user_id' => ['uuid', Rule::exists('users', 'id'), 'nullable']
         ]);
 
-        $jobs = Job::with('user')->whereHas('user', function ($query){
+        $jobs = Job::with(['user', 'tags'])->whereHas('user', function ($query){
             if(request()->get('user_id')){
                 return $query->where('id', request()->get('user_id'));
             }
@@ -35,7 +36,6 @@ class JobController extends Controller
             ->orderBy('pinned', 'desc')
             ->orderBy('created_at', 'desc')
             ->paginate(request()->get('limit', 10));
-
         return JobListResouce::collection($jobs);
     }
 
@@ -64,11 +64,11 @@ class JobController extends Controller
      * Display the specified resource.
      *
      * @param  \App\Models\Job  $job
-     * @return \Illuminate\Http\Response
+     * @return JobDetailsResource
      */
     public function show(Job $job)
     {
-        //
+        return new JobDetailsResource($job);
     }
 
     /**
