@@ -26,7 +26,7 @@
             </style>
 
     <script>
-        var baseUrl = "http://localhost:8000";
+        var baseUrl = "https://jobs-api.return0.codes";
         var useCsrf = Boolean();
         var csrfUrl = "/sanctum/csrf-cookie";
     </script>
@@ -175,7 +175,7 @@ You can switch the language used with the tabs at the top right (or from the nav
 <blockquote>
 <p>Base URL</p>
 </blockquote>
-<pre><code class="language-yaml">http://localhost:8000</code></pre>
+<pre><code class="language-yaml">https://jobs-api.return0.codes</code></pre>
 
         <h1 id="authenticating-requests">Authenticating requests</h1>
 <p>This API is not authenticated.</p>
@@ -198,14 +198,14 @@ You can switch the language used with the tabs at the top right (or from the nav
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/auth/me" \
+    --get "https://jobs-api.return0.codes/api/auth/me" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/auth/me"
+    "https://jobs-api.return0.codes/api/auth/me"
 );
 
 const headers = {
@@ -301,21 +301,21 @@ access-control-allow-origin: *
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
-    "http://localhost:8000/api/auth/register" \
+    "https://jobs-api.return0.codes/api/auth/register" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"gvaxtzoqtiuvalswpxrfcaxmfyqaomrrhotwvlxmjxclxdqhwcdzktpfndqlosqfpxbazlialrlzyspfzkcmgplbxmuumjidnzwjywthiseogrzvzicf\",
-    \"email\": \"yoxxjbyycqjkpasjneyfqfrcyv\",
-    \"password\": \"ipsam\",
-    \"password_confirmation\": \"ea\"
+    \"name\": \"ystgghlkhdghvrdgciinxdwgdonepkaxyuajefmyyliiadrsvldxtlorywdjktiiyyuhqtsemmzdpthunmdbqjrtaunjqfskvlsyuoxtpkykgvxvxxknpbhpbm\",
+    \"email\": \"rdnzmngcnrqfeexilpcmiakbjohqblscopyanlahzmgncltstxvrqagblxivaqlhdvlsedjzfmuuxvjqqkjhyfrwujdtntwcmoeboqukizonijgezqlggjtbtdgruyysfwwxubrovvmzwmuresuuethueudvdpvcfkrowrdyxsfjqzuvzxfmszpfuhtszdbiggxgpisfeghzqpcnbtpdfnpdnfhpqavzfrdbkzrxwriljbubikldmkfcn\",
+    \"password\": \"repellendus\",
+    \"password_confirmation\": \"sit\"
 }"
 </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/auth/register"
+    "https://jobs-api.return0.codes/api/auth/register"
 );
 
 const headers = {
@@ -324,10 +324,10 @@ const headers = {
 };
 
 let body = {
-    "name": "gvaxtzoqtiuvalswpxrfcaxmfyqaomrrhotwvlxmjxclxdqhwcdzktpfndqlosqfpxbazlialrlzyspfzkcmgplbxmuumjidnzwjywthiseogrzvzicf",
-    "email": "yoxxjbyycqjkpasjneyfqfrcyv",
-    "password": "ipsam",
-    "password_confirmation": "ea"
+    "name": "ystgghlkhdghvrdgciinxdwgdonepkaxyuajefmyyliiadrsvldxtlorywdjktiiyyuhqtsemmzdpthunmdbqjrtaunjqfskvlsyuoxtpkykgvxvxxknpbhpbm",
+    "email": "rdnzmngcnrqfeexilpcmiakbjohqblscopyanlahzmgncltstxvrqagblxivaqlhdvlsedjzfmuuxvjqqkjhyfrwujdtntwcmoeboqukizonijgezqlggjtbtdgruyysfwwxubrovvmzwmuresuuethueudvdpvcfkrowrdyxsfjqzuvzxfmszpfuhtszdbiggxgpisfeghzqpcnbtpdfnpdnfhpqavzfrdbkzrxwriljbubikldmkfcn",
+    "password": "repellendus",
+    "password_confirmation": "sit"
 };
 
 fetch(url, {
@@ -385,7 +385,7 @@ fetch(url, {
                 <input type="text"
                name="name"
                data-endpoint="POSTapi-auth-register"
-               value="gvaxtzoqtiuvalswpxrfcaxmfyqaomrrhotwvlxmjxclxdqhwcdzktpfndqlosqfpxbazlialrlzyspfzkcmgplbxmuumjidnzwjywthiseogrzvzicf"
+               value="ystgghlkhdghvrdgciinxdwgdonepkaxyuajefmyyliiadrsvldxtlorywdjktiiyyuhqtsemmzdpthunmdbqjrtaunjqfskvlsyuoxtpkykgvxvxxknpbhpbm"
                data-component="body" hidden>
     <br>
 <p>Must not be greater than 255 characters.</p>
@@ -395,7 +395,7 @@ fetch(url, {
                 <input type="text"
                name="email"
                data-endpoint="POSTapi-auth-register"
-               value="yoxxjbyycqjkpasjneyfqfrcyv"
+               value="rdnzmngcnrqfeexilpcmiakbjohqblscopyanlahzmgncltstxvrqagblxivaqlhdvlsedjzfmuuxvjqqkjhyfrwujdtntwcmoeboqukizonijgezqlggjtbtdgruyysfwwxubrovvmzwmuresuuethueudvdpvcfkrowrdyxsfjqzuvzxfmszpfuhtszdbiggxgpisfeghzqpcnbtpdfnpdnfhpqavzfrdbkzrxwriljbubikldmkfcn"
                data-component="body" hidden>
     <br>
 <p>Must be a valid email address. Must not be greater than 255 characters.</p>
@@ -405,7 +405,7 @@ fetch(url, {
                 <input type="text"
                name="password"
                data-endpoint="POSTapi-auth-register"
-               value="ipsam"
+               value="repellendus"
                data-component="body" hidden>
     <br>
 
@@ -415,7 +415,7 @@ fetch(url, {
                 <input type="text"
                name="password_confirmation"
                data-endpoint="POSTapi-auth-register"
-               value="ea"
+               value="sit"
                data-component="body" hidden>
     <br>
 <p>The value and <code>password</code> must match.</p>
@@ -435,19 +435,19 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
-    "http://localhost:8000/api/auth/login" \
+    "https://jobs-api.return0.codes/api/auth/login" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"email\": \"mariam.reynolds@example.org\",
-    \"password\": \"omnis\"
+    \"email\": \"slabadie@example.org\",
+    \"password\": \"iusto\"
 }"
 </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/auth/login"
+    "https://jobs-api.return0.codes/api/auth/login"
 );
 
 const headers = {
@@ -456,8 +456,8 @@ const headers = {
 };
 
 let body = {
-    "email": "mariam.reynolds@example.org",
-    "password": "omnis"
+    "email": "slabadie@example.org",
+    "password": "iusto"
 };
 
 fetch(url, {
@@ -515,7 +515,7 @@ fetch(url, {
                 <input type="text"
                name="email"
                data-endpoint="POSTapi-auth-login"
-               value="mariam.reynolds@example.org"
+               value="slabadie@example.org"
                data-component="body" hidden>
     <br>
 <p>Must be a valid email address.</p>
@@ -525,7 +525,7 @@ fetch(url, {
                 <input type="text"
                name="password"
                data-endpoint="POSTapi-auth-login"
-               value="omnis"
+               value="iusto"
                data-component="body" hidden>
     <br>
 
@@ -545,18 +545,18 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
-    "http://localhost:8000/api/auth/forgot-password" \
+    "https://jobs-api.return0.codes/api/auth/forgot-password" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"email\": \"veritatis\"
+    \"email\": \"voluptatem\"
 }"
 </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/auth/forgot-password"
+    "https://jobs-api.return0.codes/api/auth/forgot-password"
 );
 
 const headers = {
@@ -565,7 +565,7 @@ const headers = {
 };
 
 let body = {
-    "email": "veritatis"
+    "email": "voluptatem"
 };
 
 fetch(url, {
@@ -623,7 +623,7 @@ fetch(url, {
                 <input type="text"
                name="email"
                data-endpoint="POSTapi-auth-forgot-password"
-               value="veritatis"
+               value="voluptatem"
                data-component="body" hidden>
     <br>
 <ul>
@@ -645,21 +645,21 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
-    "http://localhost:8000/api/auth/reset-password" \
+    "https://jobs-api.return0.codes/api/auth/reset-password" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"token\": \"et\",
-    \"email\": \"nihil\",
-    \"password\": \"autem\",
-    \"password_confirmation\": \"adipisci\"
+    \"token\": \"officiis\",
+    \"email\": \"illum\",
+    \"password\": \"id\",
+    \"password_confirmation\": \"natus\"
 }"
 </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/auth/reset-password"
+    "https://jobs-api.return0.codes/api/auth/reset-password"
 );
 
 const headers = {
@@ -668,10 +668,10 @@ const headers = {
 };
 
 let body = {
-    "token": "et",
-    "email": "nihil",
-    "password": "autem",
-    "password_confirmation": "adipisci"
+    "token": "officiis",
+    "email": "illum",
+    "password": "id",
+    "password_confirmation": "natus"
 };
 
 fetch(url, {
@@ -729,7 +729,7 @@ fetch(url, {
                 <input type="text"
                name="token"
                data-endpoint="POSTapi-auth-reset-password"
-               value="et"
+               value="officiis"
                data-component="body" hidden>
     <br>
 <ul>
@@ -741,7 +741,7 @@ fetch(url, {
                 <input type="text"
                name="email"
                data-endpoint="POSTapi-auth-reset-password"
-               value="nihil"
+               value="illum"
                data-component="body" hidden>
     <br>
 <ul>
@@ -753,7 +753,7 @@ fetch(url, {
                 <input type="text"
                name="password"
                data-endpoint="POSTapi-auth-reset-password"
-               value="autem"
+               value="id"
                data-component="body" hidden>
     <br>
 <ul>
@@ -765,7 +765,7 @@ fetch(url, {
                 <input type="text"
                name="password_confirmation"
                data-endpoint="POSTapi-auth-reset-password"
-               value="adipisci"
+               value="natus"
                data-component="body" hidden>
     <br>
 <ul>
@@ -787,14 +787,14 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/auth/verify-email/quos/modi" \
+    --get "https://jobs-api.return0.codes/api/auth/verify-email/ut/architecto" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/auth/verify-email/quos/modi"
+    "https://jobs-api.return0.codes/api/auth/verify-email/ut/architecto"
 );
 
 const headers = {
@@ -873,7 +873,7 @@ access-control-allow-origin: *
                 <input type="text"
                name="id"
                data-endpoint="GETapi-auth-verify-email--id---hash-"
-               value="quos"
+               value="ut"
                data-component="url" hidden>
     <br>
 <p>The ID of the verify email.</p>
@@ -883,7 +883,7 @@ access-control-allow-origin: *
                 <input type="text"
                name="hash"
                data-endpoint="GETapi-auth-verify-email--id---hash-"
-               value="modi"
+               value="architecto"
                data-component="url" hidden>
     <br>
 
@@ -904,14 +904,14 @@ access-control-allow-origin: *
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
-    "http://localhost:8000/api/auth/email/verification-notification" \
+    "https://jobs-api.return0.codes/api/auth/email/verification-notification" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/auth/email/verification-notification"
+    "https://jobs-api.return0.codes/api/auth/email/verification-notification"
 );
 
 const headers = {
@@ -991,14 +991,14 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
-    "http://localhost:8000/api/auth/logout" \
+    "https://jobs-api.return0.codes/api/auth/logout" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/auth/logout"
+    "https://jobs-api.return0.codes/api/auth/logout"
 );
 
 const headers = {
@@ -1081,21 +1081,21 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/jobs?limit=18&amp;user_id=reiciendis&amp;tag_id=nostrum&amp;page=8" \
+    --get "https://jobs-api.return0.codes/api/jobs?limit=15&amp;user_id=dicta&amp;tag_id=dolores&amp;page=10" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/jobs"
+    "https://jobs-api.return0.codes/api/jobs"
 );
 
 const params = {
-    "limit": "18",
-    "user_id": "reiciendis",
-    "tag_id": "nostrum",
-    "page": "8",
+    "limit": "15",
+    "user_id": "dicta",
+    "tag_id": "dolores",
+    "page": "10",
 };
 Object.keys(params)
     .forEach(key =&gt; url.searchParams.append(key, params[key]));
@@ -1183,7 +1183,7 @@ access-control-allow-origin: *
                 <input type="number"
                name="limit"
                data-endpoint="GETapi-jobs"
-               value="18"
+               value="15"
                data-component="query" hidden>
     <br>
 <ul>
@@ -1195,7 +1195,7 @@ access-control-allow-origin: *
                 <input type="text"
                name="user_id"
                data-endpoint="GETapi-jobs"
-               value="reiciendis"
+               value="dicta"
                data-component="query" hidden>
     <br>
 <ul>
@@ -1207,7 +1207,7 @@ access-control-allow-origin: *
                 <input type="text"
                name="tag_id"
                data-endpoint="GETapi-jobs"
-               value="nostrum"
+               value="dolores"
                data-component="query" hidden>
     <br>
 <ul>
@@ -1219,7 +1219,7 @@ access-control-allow-origin: *
                 <input type="number"
                name="page"
                data-endpoint="GETapi-jobs"
-               value="8"
+               value="10"
                data-component="query" hidden>
     <br>
 <ul>
@@ -1242,19 +1242,19 @@ access-control-allow-origin: *
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
-    "http://localhost:8000/api/jobs" \
+    "https://jobs-api.return0.codes/api/jobs" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"title\": \"praesentium\",
-    \"location\": \"distinctio\",
-    \"link\": \"http:\\/\\/ebert.com\\/\",
-    \"company_name\": \"facilis\",
-    \"description\": \"est\",
-    \"company_logo\": \"http:\\/\\/www.lehner.biz\\/neque-aspernatur-autem-debitis-aut-accusantium\",
+    \"title\": \"mollitia\",
+    \"location\": \"aut\",
+    \"link\": \"http:\\/\\/www.mosciski.org\\/quia-sapiente-est-quia-fugiat-quis-sit\",
+    \"company_name\": \"repellat\",
+    \"description\": \"in\",
+    \"company_logo\": \"http:\\/\\/www.ondricka.com\\/eaque-maiores-et-quae-mollitia-quo-quisquam-provident\",
     \"type\": \"temporary\",
     \"tags\": [
-        \"sed\"
+        \"dolorem\"
     ]
 }"
 </code></pre></div>
@@ -1262,7 +1262,7 @@ access-control-allow-origin: *
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/jobs"
+    "https://jobs-api.return0.codes/api/jobs"
 );
 
 const headers = {
@@ -1271,15 +1271,15 @@ const headers = {
 };
 
 let body = {
-    "title": "praesentium",
-    "location": "distinctio",
-    "link": "http:\/\/ebert.com\/",
-    "company_name": "facilis",
-    "description": "est",
-    "company_logo": "http:\/\/www.lehner.biz\/neque-aspernatur-autem-debitis-aut-accusantium",
+    "title": "mollitia",
+    "location": "aut",
+    "link": "http:\/\/www.mosciski.org\/quia-sapiente-est-quia-fugiat-quis-sit",
+    "company_name": "repellat",
+    "description": "in",
+    "company_logo": "http:\/\/www.ondricka.com\/eaque-maiores-et-quae-mollitia-quo-quisquam-provident",
     "type": "temporary",
     "tags": [
-        "sed"
+        "dolorem"
     ]
 };
 
@@ -1346,7 +1346,7 @@ fetch(url, {
                 <input type="text"
                name="title"
                data-endpoint="POSTapi-jobs"
-               value="praesentium"
+               value="mollitia"
                data-component="body" hidden>
     <br>
 
@@ -1356,7 +1356,7 @@ fetch(url, {
                 <input type="text"
                name="location"
                data-endpoint="POSTapi-jobs"
-               value="distinctio"
+               value="aut"
                data-component="body" hidden>
     <br>
 
@@ -1366,7 +1366,7 @@ fetch(url, {
                 <input type="text"
                name="link"
                data-endpoint="POSTapi-jobs"
-               value="http://ebert.com/"
+               value="http://www.mosciski.org/quia-sapiente-est-quia-fugiat-quis-sit"
                data-component="body" hidden>
     <br>
 <p>Must be a valid URL.</p>
@@ -1376,7 +1376,7 @@ fetch(url, {
                 <input type="text"
                name="company_name"
                data-endpoint="POSTapi-jobs"
-               value="facilis"
+               value="repellat"
                data-component="body" hidden>
     <br>
 
@@ -1386,7 +1386,7 @@ fetch(url, {
                 <input type="text"
                name="description"
                data-endpoint="POSTapi-jobs"
-               value="est"
+               value="in"
                data-component="body" hidden>
     <br>
 
@@ -1396,7 +1396,7 @@ fetch(url, {
                 <input type="text"
                name="company_logo"
                data-endpoint="POSTapi-jobs"
-               value="http://www.lehner.biz/neque-aspernatur-autem-debitis-aut-accusantium"
+               value="http://www.ondricka.com/eaque-maiores-et-quae-mollitia-quo-quisquam-provident"
                data-component="body" hidden>
     <br>
 <p>Must be a valid URL.</p>
@@ -1439,14 +1439,14 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/jobs/at" \
+    --get "https://jobs-api.return0.codes/api/jobs/cum" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/jobs/at"
+    "https://jobs-api.return0.codes/api/jobs/cum"
 );
 
 const headers = {
@@ -1938,7 +1938,7 @@ access-control-allow-origin: *
                 <input type="text"
                name="job_slug"
                data-endpoint="GETapi-jobs--job_slug-"
-               value="at"
+               value="cum"
                data-component="url" hidden>
     <br>
 
@@ -1959,14 +1959,14 @@ access-control-allow-origin: *
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://localhost:8000/api/jobs/aliquid" \
+    "https://jobs-api.return0.codes/api/jobs/aut" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/jobs/aliquid"
+    "https://jobs-api.return0.codes/api/jobs/aut"
 );
 
 const headers = {
@@ -2036,7 +2036,7 @@ fetch(url, {
                 <input type="text"
                name="job_id"
                data-endpoint="DELETEapi-jobs--job_id-"
-               value="aliquid"
+               value="aut"
                data-component="url" hidden>
     <br>
 <p>The ID of the job.</p>
@@ -2057,19 +2057,19 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "http://localhost:8000/api/jobs/totam" \
+    "https://jobs-api.return0.codes/api/jobs/laboriosam" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"title\": \"necessitatibus\",
-    \"location\": \"eligendi\",
-    \"link\": \"http:\\/\\/www.nienow.org\\/\",
-    \"company_name\": \"vel\",
-    \"description\": \"enim\",
-    \"company_logo\": \"http:\\/\\/bayer.com\\/asperiores-eos-ipsa-et-sint-accusantium-qui.html\",
-    \"type\": \"remote\",
+    \"title\": \"veritatis\",
+    \"location\": \"ex\",
+    \"link\": \"http:\\/\\/www.pacocha.com\\/quis-omnis-sequi-eos-iste-ab\",
+    \"company_name\": \"est\",
+    \"description\": \"neque\",
+    \"company_logo\": \"http:\\/\\/www.considine.biz\\/porro-doloribus-voluptas-qui-occaecati\",
+    \"type\": \"part_time\",
     \"tags\": [
-        \"nobis\"
+        \"impedit\"
     ]
 }"
 </code></pre></div>
@@ -2077,7 +2077,7 @@ fetch(url, {
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/jobs/totam"
+    "https://jobs-api.return0.codes/api/jobs/laboriosam"
 );
 
 const headers = {
@@ -2086,15 +2086,15 @@ const headers = {
 };
 
 let body = {
-    "title": "necessitatibus",
-    "location": "eligendi",
-    "link": "http:\/\/www.nienow.org\/",
-    "company_name": "vel",
-    "description": "enim",
-    "company_logo": "http:\/\/bayer.com\/asperiores-eos-ipsa-et-sint-accusantium-qui.html",
-    "type": "remote",
+    "title": "veritatis",
+    "location": "ex",
+    "link": "http:\/\/www.pacocha.com\/quis-omnis-sequi-eos-iste-ab",
+    "company_name": "est",
+    "description": "neque",
+    "company_logo": "http:\/\/www.considine.biz\/porro-doloribus-voluptas-qui-occaecati",
+    "type": "part_time",
     "tags": [
-        "nobis"
+        "impedit"
     ]
 };
 
@@ -2161,7 +2161,7 @@ fetch(url, {
                 <input type="text"
                name="job_id"
                data-endpoint="PUTapi-jobs--job_id-"
-               value="totam"
+               value="laboriosam"
                data-component="url" hidden>
     <br>
 <p>The ID of the job.</p>
@@ -2172,7 +2172,7 @@ fetch(url, {
                 <input type="text"
                name="title"
                data-endpoint="PUTapi-jobs--job_id-"
-               value="necessitatibus"
+               value="veritatis"
                data-component="body" hidden>
     <br>
 
@@ -2182,7 +2182,7 @@ fetch(url, {
                 <input type="text"
                name="location"
                data-endpoint="PUTapi-jobs--job_id-"
-               value="eligendi"
+               value="ex"
                data-component="body" hidden>
     <br>
 
@@ -2192,7 +2192,7 @@ fetch(url, {
                 <input type="text"
                name="link"
                data-endpoint="PUTapi-jobs--job_id-"
-               value="http://www.nienow.org/"
+               value="http://www.pacocha.com/quis-omnis-sequi-eos-iste-ab"
                data-component="body" hidden>
     <br>
 <p>Must be a valid URL.</p>
@@ -2202,7 +2202,7 @@ fetch(url, {
                 <input type="text"
                name="company_name"
                data-endpoint="PUTapi-jobs--job_id-"
-               value="vel"
+               value="est"
                data-component="body" hidden>
     <br>
 
@@ -2212,7 +2212,7 @@ fetch(url, {
                 <input type="text"
                name="description"
                data-endpoint="PUTapi-jobs--job_id-"
-               value="enim"
+               value="neque"
                data-component="body" hidden>
     <br>
 
@@ -2222,7 +2222,7 @@ fetch(url, {
                 <input type="text"
                name="company_logo"
                data-endpoint="PUTapi-jobs--job_id-"
-               value="http://bayer.com/asperiores-eos-ipsa-et-sint-accusantium-qui.html"
+               value="http://www.considine.biz/porro-doloribus-voluptas-qui-occaecati"
                data-component="body" hidden>
     <br>
 <p>Must be a valid URL.</p>
@@ -2232,7 +2232,7 @@ fetch(url, {
                 <input type="text"
                name="type"
                data-endpoint="PUTapi-jobs--job_id-"
-               value="remote"
+               value="part_time"
                data-component="body" hidden>
     <br>
 <p>Must be one of <code>full_time</code>, <code>part_time</code>, <code>contract</code>, <code>temporary</code>, <code>internship</code>, <code>volunteer</code>, or <code>remote</code>.</p>
@@ -2269,14 +2269,14 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/tags" \
+    --get "https://jobs-api.return0.codes/api/tags" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/tags"
+    "https://jobs-api.return0.codes/api/tags"
 );
 
 const headers = {
@@ -2678,19 +2678,19 @@ access-control-allow-origin: *
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
-    "http://localhost:8000/api/tags" \
+    "https://jobs-api.return0.codes/api/tags" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"asd\",
-    \"slug\": \"asperiores\"
+    \"name\": \"lbz\",
+    \"slug\": \"quasi\"
 }"
 </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/tags"
+    "https://jobs-api.return0.codes/api/tags"
 );
 
 const headers = {
@@ -2699,8 +2699,8 @@ const headers = {
 };
 
 let body = {
-    "name": "asd",
-    "slug": "asperiores"
+    "name": "lbz",
+    "slug": "quasi"
 };
 
 fetch(url, {
@@ -2766,7 +2766,7 @@ fetch(url, {
                 <input type="text"
                name="name"
                data-endpoint="POSTapi-tags"
-               value="asd"
+               value="lbz"
                data-component="body" hidden>
     <br>
 <p>Must be at least 3 characters.</p>
@@ -2776,7 +2776,7 @@ fetch(url, {
                 <input type="text"
                name="slug"
                data-endpoint="POSTapi-tags"
-               value="asperiores"
+               value="quasi"
                data-component="body" hidden>
     <br>
 
@@ -2796,14 +2796,14 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/tags/consequatur/jobs" \
+    --get "https://jobs-api.return0.codes/api/tags/sunt/jobs" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/tags/consequatur/jobs"
+    "https://jobs-api.return0.codes/api/tags/sunt/jobs"
 );
 
 const headers = {
@@ -3295,7 +3295,7 @@ access-control-allow-origin: *
                 <input type="text"
                name="tag_slug"
                data-endpoint="GETapi-tags--tag_slug--jobs"
-               value="consequatur"
+               value="sunt"
                data-component="url" hidden>
     <br>
 
@@ -3320,15 +3320,15 @@ access-control-allow-origin: *
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
-    "http://localhost:8000/api/uploads" \
+    "https://jobs-api.return0.codes/api/uploads" \
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
-    --form "file=@/tmp/phpn7Hsei" </code></pre></div>
+    --form "file=@/tmp/phpaGYMjv" </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/uploads"
+    "https://jobs-api.return0.codes/api/uploads"
 );
 
 const headers = {
@@ -3425,18 +3425,18 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://localhost:8000/api/uploads?url=repellendus" \
+    "https://jobs-api.return0.codes/api/uploads?url=quae" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/uploads"
+    "https://jobs-api.return0.codes/api/uploads"
 );
 
 const params = {
-    "url": "repellendus",
+    "url": "quae",
 };
 Object.keys(params)
     .forEach(key =&gt; url.searchParams.append(key, params[key]));
@@ -3508,7 +3508,7 @@ fetch(url, {
                 <input type="text"
                name="url"
                data-endpoint="DELETEapi-uploads"
-               value="repellendus"
+               value="quae"
                data-component="query" hidden>
     <br>
 <ul>

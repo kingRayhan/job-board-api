@@ -43,7 +43,7 @@ endpoints:
         name: url
         description: '- File url to delete'
         required: false
-        example: repellendus
+        example: quae
         type: string
         custom: []
     bodyParameters: []
