@@ -45,28 +45,28 @@ endpoints:
         name: name
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: xuihfndqttovfdlrpmotmxutocejufrvjocybdwzsibtpzyfyrxowjtsekzzcpefneiecwvztvrksnwoobfecsfqocyprwqgvkzzwenbpiingqsxlnidablftfaxfuahgvbrmxigswksfcdflwirdzxrpmfxyjbaniiujwwapowbiocqnjomtdhlbrznfmqfbqnccrcudrzbbqiijpwptnhcudbnkepmodgtqumfgsdnkxdipyqhq
+        example: gvaxtzoqtiuvalswpxrfcaxmfyqaomrrhotwvlxmjxclxdqhwcdzktpfndqlosqfpxbazlialrlzyspfzkcmgplbxmuumjidnzwjywthiseogrzvzicf
         type: string
         custom: []
       email:
         name: email
         description: 'Must be a valid email address. Must not be greater than 255 characters.'
         required: true
-        example: hwxqubdolleefhxuthvdmdv
+        example: yoxxjbyycqjkpasjneyfqfrcyv
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: tenetur
+        example: ipsam
         type: string
         custom: []
       password_confirmation:
         name: password_confirmation
         description: 'The value and <code>password</code> must match.'
         required: true
-        example: rerum
+        example: ea
         type: string
         custom: []
     responses: []
@@ -90,14 +90,14 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: walker78@example.org
+        example: mariam.reynolds@example.org
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: in
+        example: omnis
         type: string
         custom: []
     responses: []
@@ -121,7 +121,7 @@ endpoints:
         name: email
         description: '- User email address'
         required: true
-        example: odio
+        example: veritatis
         type: string
         custom: []
     responses: []
@@ -145,28 +145,28 @@ endpoints:
         name: token
         description: '- Reset token'
         required: true
-        example: sint
+        example: et
         type: string
         custom: []
       email:
         name: email
         description: '- User email address'
         required: true
-        example: corporis
+        example: nihil
         type: string
         custom: []
       password:
         name: password
         description: '- New password'
         required: true
-        example: est
+        example: autem
         type: string
         custom: []
       password_confirmation:
         name: password_confirmation
         description: '- New password again'
         required: true
-        example: qui
+        example: adipisci
         type: string
         custom: []
     responses: []
@@ -188,14 +188,14 @@ endpoints:
         name: id
         description: 'The ID of the verify email.'
         required: true
-        example: voluptatem
+        example: quos
         type: string
         custom: []
       hash:
         name: hash
         description: ''
         required: true
-        example: beatae
+        example: modi
         type: string
         custom: []
     queryParameters: []

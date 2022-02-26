@@ -49,14 +49,14 @@ endpoints:
         name: name
         description: 'Must be at least 3 characters.'
         required: true
-        example: t
+        example: asd
         type: string
         custom: []
       slug:
         name: slug
         description: ''
         required: true
-        example: aut
+        example: asperiores
         type: string
         custom: []
     responses: []
@@ -64,7 +64,7 @@ endpoints:
   -
     httpMethods:
       - GET
-    uri: 'api/tags/{tag_slug}'
+    uri: 'api/tags/{tag_slug}/jobs'
     metadata:
       title: 'Jobs of a tag'
       description: ''
@@ -78,7 +78,7 @@ endpoints:
         name: tag_slug
         description: ''
         required: true
-        example: minima
+        example: consequatur
         type: string
         custom: []
     queryParameters: []

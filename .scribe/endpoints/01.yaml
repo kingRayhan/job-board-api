@@ -19,28 +19,28 @@ endpoints:
         name: limit
         description: '- How many resource to show per page. `Default: 10`'
         required: false
-        example: 15
+        example: 18
         type: integer
         custom: []
       user_id:
         name: user_id
         description: '- Filtered jobs posted by a particular user.'
         required: false
-        example: aut
+        example: reiciendis
         type: string
         custom: []
       tag_id:
         name: tag_id
         description: '- Filtered jobs by tag id.'
         required: false
-        example: aspernatur
+        example: nostrum
         type: string
         custom: []
       page:
         name: page
         description: '- Page number'
         required: false
-        example: 7
+        example: 8
         type: integer
         custom: []
     bodyParameters: []
@@ -75,42 +75,42 @@ endpoints:
         name: title
         description: ''
         required: true
-        example: dolorem
+        example: praesentium
         type: string
         custom: []
       location:
         name: location
         description: ''
         required: true
-        example: est
+        example: distinctio
         type: string
         custom: []
       link:
         name: link
         description: 'Must be a valid URL.'
         required: true
-        example: 'http://bergstrom.com/'
+        example: 'http://ebert.com/'
         type: string
         custom: []
       company_name:
         name: company_name
         description: ''
         required: true
-        example: eius
+        example: facilis
         type: string
         custom: []
       description:
         name: description
         description: ''
         required: false
-        example: incidunt
+        example: est
         type: string
         custom: []
       company_logo:
         name: company_logo
         description: 'Must be a valid URL.'
         required: true
-        example: 'http://kihn.info/facere-ex-maxime-aspernatur-repellendus-assumenda'
+        example: 'http://www.lehner.biz/neque-aspernatur-autem-debitis-aut-accusantium'
         type: string
         custom: []
       type:
@@ -125,7 +125,7 @@ endpoints:
         description: ''
         required: false
         example:
-          - ut
+          - sed
         type: 'string[]'
         custom: []
     responses: []
@@ -147,7 +147,7 @@ endpoints:
         name: job_slug
         description: ''
         required: true
-        example: rerum
+        example: at
         type: string
         custom: []
     queryParameters: []
@@ -595,7 +595,7 @@ endpoints:
         name: job_id
         description: 'The ID of the job.'
         required: true
-        example: nostrum
+        example: aliquid
         type: string
         custom: []
     queryParameters: []
@@ -619,7 +619,7 @@ endpoints:
         name: job_id
         description: 'The ID of the job.'
         required: true
-        example: inventore
+        example: totam
         type: string
         custom: []
     queryParameters: []
@@ -628,49 +628,49 @@ endpoints:
         name: title
         description: ''
         required: true
-        example: est
+        example: necessitatibus
         type: string
         custom: []
       location:
         name: location
         description: ''
         required: true
-        example: numquam
+        example: eligendi
         type: string
         custom: []
       link:
         name: link
         description: 'Must be a valid URL.'
         required: true
-        example: 'https://www.olson.info/id-dolores-nesciunt-eum-et'
+        example: 'http://www.nienow.org/'
         type: string
         custom: []
       company_name:
         name: company_name
         description: ''
         required: true
-        example: perspiciatis
+        example: vel
         type: string
         custom: []
       description:
         name: description
         description: ''
         required: false
-        example: sit
+        example: enim
         type: string
         custom: []
       company_logo:
         name: company_logo
         description: 'Must be a valid URL.'
         required: true
-        example: 'http://heaney.com/ipsa-eos-quia-architecto-dolorum-aliquid-voluptatum-voluptatibus'
+        example: 'http://bayer.com/asperiores-eos-ipsa-et-sint-accusantium-qui.html'
         type: string
         custom: []
       type:
         name: type
         description: 'Must be one of <code>full_time</code>, <code>part_time</code>, <code>contract</code>, <code>temporary</code>, <code>internship</code>, <code>volunteer</code>, or <code>remote</code>.'
         required: true
-        example: contract
+        example: remote
         type: string
         custom: []
       tags:
@@ -678,7 +678,7 @@ endpoints:
         description: ''
         required: false
         example:
-          - mollitia
+          - nobis
         type: 'string[]'
         custom: []
     responses: []
