@@ -49,14 +49,14 @@ endpoints:
         name: name
         description: 'Must be at least 3 characters.'
         required: true
-        example: lbz
+        example: m
         type: string
         custom: []
       slug:
         name: slug
         description: ''
         required: true
-        example: quasi
+        example: soluta
         type: string
         custom: []
     responses: []
@@ -78,7 +78,7 @@ endpoints:
         name: tag_slug
         description: ''
         required: true
-        example: sunt
+        example: voluptas
         type: string
         custom: []
     queryParameters: []

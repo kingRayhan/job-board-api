@@ -21,7 +21,6 @@ class JobController extends Controller
      *
      * @queryParam limit   int     - How many resource to show per page. `Default: 10`
      * @queryParam user_id string  - Filtered jobs posted by a particular user.
-     * @queryParam tag_id  string  - Filtered jobs by tag id.
      * @queryParam page    int     - Page number
      */
     public function index()
@@ -36,11 +35,11 @@ class JobController extends Controller
                     return $query->where('id', request()->get('user_id'));
                 }
             })
-            ->whereHas('tags', function ($query) {
-                if (request()->get('tag_id')) {
-                    return $query->whereIn('id', [request()->get('tag_id')]);
-                }
-            })
+//            ->whereHas('tags', function ($query) {
+//                if (request()->get('tag_id')) {
+//                    return $query->whereIn('id', [request()->get('tag_id')]);
+//                }
+//            })
             ->orderBy('pinned', 'desc')
             ->orderBy('created_at', 'desc')
             ->paginate(request()->get('limit', 10));

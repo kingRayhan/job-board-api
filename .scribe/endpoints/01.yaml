@@ -19,28 +19,21 @@ endpoints:
         name: limit
         description: '- How many resource to show per page. `Default: 10`'
         required: false
-        example: 15
+        example: 3
         type: integer
         custom: []
       user_id:
         name: user_id
         description: '- Filtered jobs posted by a particular user.'
         required: false
-        example: dicta
-        type: string
-        custom: []
-      tag_id:
-        name: tag_id
-        description: '- Filtered jobs by tag id.'
-        required: false
-        example: dolores
+        example: id
         type: string
         custom: []
       page:
         name: page
         description: '- Page number'
         required: false
-        example: 10
+        example: 17
         type: integer
         custom: []
     bodyParameters: []
@@ -75,49 +68,49 @@ endpoints:
         name: title
         description: ''
         required: true
-        example: mollitia
+        example: perferendis
         type: string
         custom: []
       location:
         name: location
         description: ''
         required: true
-        example: aut
+        example: libero
         type: string
         custom: []
       link:
         name: link
         description: 'Must be a valid URL.'
         required: true
-        example: 'http://www.mosciski.org/quia-sapiente-est-quia-fugiat-quis-sit'
+        example: 'http://purdy.org/ipsa-ipsam-possimus-qui-iure'
         type: string
         custom: []
       company_name:
         name: company_name
         description: ''
         required: true
-        example: repellat
+        example: ut
         type: string
         custom: []
       description:
         name: description
         description: ''
         required: false
-        example: in
+        example: voluptatibus
         type: string
         custom: []
       company_logo:
         name: company_logo
         description: 'Must be a valid URL.'
         required: true
-        example: 'http://www.ondricka.com/eaque-maiores-et-quae-mollitia-quo-quisquam-provident'
+        example: 'http://botsford.org/'
         type: string
         custom: []
       type:
         name: type
         description: 'Must be one of <code>full_time</code>, <code>part_time</code>, <code>contract</code>, <code>temporary</code>, <code>internship</code>, <code>volunteer</code>, or <code>remote</code>.'
         required: true
-        example: temporary
+        example: volunteer
         type: string
         custom: []
       tags:
@@ -125,7 +118,7 @@ endpoints:
         description: ''
         required: false
         example:
-          - dolorem
+          - consectetur
         type: 'string[]'
         custom: []
     responses: []
@@ -147,7 +140,7 @@ endpoints:
         name: job_slug
         description: ''
         required: true
-        example: cum
+        example: ut
         type: string
         custom: []
     queryParameters: []
@@ -595,7 +588,7 @@ endpoints:
         name: job_id
         description: 'The ID of the job.'
         required: true
-        example: aut
+        example: ipsum
         type: string
         custom: []
     queryParameters: []
@@ -619,7 +612,7 @@ endpoints:
         name: job_id
         description: 'The ID of the job.'
         required: true
-        example: laboriosam
+        example: id
         type: string
         custom: []
     queryParameters: []
@@ -628,49 +621,49 @@ endpoints:
         name: title
         description: ''
         required: true
-        example: veritatis
+        example: at
         type: string
         custom: []
       location:
         name: location
         description: ''
         required: true
-        example: ex
+        example: aut
         type: string
         custom: []
       link:
         name: link
         description: 'Must be a valid URL.'
         required: true
-        example: 'http://www.pacocha.com/quis-omnis-sequi-eos-iste-ab'
+        example: 'http://beier.com/omnis-inventore-accusamus-aut-nesciunt-voluptatem-et-ipsum'
         type: string
         custom: []
       company_name:
         name: company_name
         description: ''
         required: true
-        example: est
+        example: et
         type: string
         custom: []
       description:
         name: description
         description: ''
         required: false
-        example: neque
+        example: labore
         type: string
         custom: []
       company_logo:
         name: company_logo
         description: 'Must be a valid URL.'
         required: true
-        example: 'http://www.considine.biz/porro-doloribus-voluptas-qui-occaecati'
+        example: 'https://nolan.biz/ab-ad-consequuntur-fugiat-sed-tenetur-commodi-tenetur.html'
         type: string
         custom: []
       type:
         name: type
         description: 'Must be one of <code>full_time</code>, <code>part_time</code>, <code>contract</code>, <code>temporary</code>, <code>internship</code>, <code>volunteer</code>, or <code>remote</code>.'
         required: true
-        example: part_time
+        example: internship
         type: string
         custom: []
       tags:
@@ -678,7 +671,7 @@ endpoints:
         description: ''
         required: false
         example:
-          - impedit
+          - aut
         type: 'string[]'
         custom: []
     responses: []

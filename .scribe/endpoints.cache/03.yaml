@@ -45,7 +45,7 @@ endpoints:
         name: url
         description: '- File url to delete'
         required: false
-        example: quae
+        example: ab
         type: string
         custom: []
     bodyParameters: []
