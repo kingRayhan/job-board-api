@@ -34,7 +34,7 @@
 <div class="wrapper">
     <h1>Job Board API V3</h1>
     <a href="{{env('FRONTEND_URL')}}">Web Client</a>
-    <a href="{{env('APP_URL') . '/docs'}}">Documentation</a>
+    <a href="{{env('DOC_BASE_URL')}}">Documentation</a>
 </div>
 </body>
 </html>
