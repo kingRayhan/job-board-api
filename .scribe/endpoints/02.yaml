@@ -19,12 +19,12 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":[{"id":"a53f220b-f276-4a01-aaca-756cd2a3ef1a","name":"ut","slug":"ut"},{"id":"92747dd5-289f-41c0-8ad6-05c1317b2c0a","name":"deleniti","slug":"deleniti"}]}'
+        content: '{"data":[{"id":"a53f220b-f276-4a01-aaca-756cd2a3ef1a","name":"ut","slug":"ut"},{"id":"92747dd5-289f-41c0-8ad6-05c1317b2c0a","name":"deleniti","slug":"deleniti"},{"id":"ad1a1482-0b63-44bf-8639-1921b479324c","name":"Hel","slug":"hel"},{"id":"79204257-a809-49bf-afe5-375c74154b52","name":"Hell","slug":"hell"},{"id":"7149bdc9-ee41-4127-bf08-ead06695ecf9","name":"Hello","slug":"hello"},{"id":"b9ef7a5f-6303-4ff9-8df7-52ad03d0cff0","name":"hi t","slug":"hi-t"},{"id":"913f1b6f-77b5-4839-b7c6-e222fa09e78e","name":"hi th","slug":"hi-th"},{"id":"6e7d5123-2942-4a06-be9a-5c581f85ec92","name":"hi the","slug":"hi-the"},{"id":"b9b8fddb-ddb6-4ba7-b9b3-0c7e93dd3cff","name":"hi ther","slug":"hi-ther"},{"id":"0234695e-695a-427b-888b-3c01b0b3fd8a","name":"hi there","slug":"hi-there"},{"id":"e6b505de-b0ba-468c-b83e-3e824987ebec","name":"hello everyone","slug":"hello-everyone"},{"id":"1ae56577-4d95-4443-a643-ac33016eefd5","name":"php","slug":"php"},{"id":"18e9f939-ecdd-42b1-93b1-ba8df63387a4","name":"adfdfsdfsdfs","slug":"adfdfsdfsdfs"},{"id":"14244edb-0a35-419b-a7b9-16359d3b7025","name":"asdasdasdas","slug":"asdasdasdas"},{"id":"3ffe4d3c-52b7-41a7-9fba-0c0b466d962c","name":"adasdasdasds","slug":"adasdasdasds"},{"id":"37cfc144-bcd8-4191-8825-1382c20da18c","name":"Heyyyyyyyyy","slug":"heyyyyyyyyy"},{"id":"873f6481-fa07-4bfb-9673-7b7142629d68","name":"ada","slug":"ada"},{"id":"87e31f93-7389-4127-95f2-582c4d2edbd9","name":"adas","slug":"adas"},{"id":"a38d0603-652f-4465-95b9-1476c02a1555","name":"adasa","slug":"adasa"},{"id":"2a33a24c-6237-49b8-a0b5-46c3f015cb96","name":"adasas","slug":"adasas"},{"id":"1eb93364-0631-439f-910e-5aaf3fd5e9eb","name":"adasasa","slug":"adasasa"},{"id":"f1127ca5-7185-485e-8250-d79abb7613ef","name":"adasasas","slug":"adasasas"},{"id":"43c9834b-cda5-4e55-96a7-236dbf280458","name":"adasasasd","slug":"adasasasd"},{"id":"4c43258f-8123-41a9-98f9-2c318312d85a","name":"adasasasda","slug":"adasasasda"},{"id":"4a2f298b-ef6d-4740-8c45-48e9e1a0b735","name":"adasasasdad","slug":"adasasasdad"},{"id":"30e8ed0c-f63f-43c5-8f39-d9018438bd1a","name":"adasasasdada","slug":"adasasasdada"},{"id":"1b5ab92f-80f4-4fe7-979b-373b3b144eb9","name":"adasasasdadas","slug":"adasasasdadas"},{"id":"cdae6001-2ee8-44a2-ab61-1231d395c226","name":"adasasasdadasd","slug":"adasasasdadasd"},{"id":"40aa43d2-3f80-4a1b-9e8d-17eb2fba323b","name":"adasasasdadasda","slug":"adasasasdadasda"},{"id":"909754a5-cbd6-4eca-b8c9-9d486030be6b","name":"adasasasdadasdas","slug":"adasasasdadasdas"},{"id":"f7a741c6-603b-4ef7-a71b-a831877f8349","name":"adasasasdadasdasd","slug":"adasasasdadasdasd"},{"id":"51aa893a-9b1f-4349-a330-22d7907da47f","name":"adasasasdadasdasda","slug":"adasasasdadasdasda"},{"id":"482ae725-dbbc-4017-9f7e-b0e812e072bf","name":"adasasasdadasdasdaa","slug":"adasasasdadasdasdaa"},{"id":"993f1c25-520a-48f4-ba34-a505f2fcbeb3","name":"adasasasdadasdasdaas","slug":"adasasasdadasdasdaas"},{"id":"a895d33e-41e7-45d1-b6ef-e5d4ca819c09","name":"adasasasdadasdasdaasd","slug":"adasasasdadasdasdaasd"},{"id":"d9fad740-445e-4ce4-ace1-1fcaf8ca9c90","name":"adasasasdadasdasdaasda","slug":"adasasasdadasdasdaasda"},{"id":"8259fdaf-9a28-44b8-afd9-7a0eb883317f","name":"hey","slug":"hey"},{"id":"b2b515c7-842c-4d7c-9b4d-97a82e708e41","name":"heyy","slug":"heyy"},{"id":"364cd818-6413-455f-8503-0e40a1ef841a","name":"dfdsfsdfdsfa","slug":"dfdsfsdfdsfa"},{"id":"abcbfa13-d076-4a26-bb68-392941c9b476","name":"laravel","slug":"laravel"},{"id":"9673fa3a-b91e-40e1-bc36-db4b1b3d9b78","name":"fuck me","slug":"fuck-me"},{"id":"648e6b92-840e-4656-93c8-68b53022e189","name":"Netflix","slug":"netflix"},{"id":"eed9583d-6d4c-4db4-a7b6-03c91141f26e","name":"Netd","slug":"netd"},{"id":"d2aab5f0-0789-41ff-ac8a-55ef0fd683ff","name":"Robin","slug":"robin"},{"id":"d56157aa-8765-40ab-bb01-fffdb7b2b23f","name":"dfdfd","slug":"dfdfd"},{"id":"d498e42e-d284-4fa0-8713-50daee2649e0","name":"dsds","slug":"dsds"},{"id":"59233c7d-4884-42ff-b5a4-15269bcaaf01","name":"sazid","slug":"sazid"},{"id":"0c51c960-95cb-442f-841c-91fb28100bea","name":"looooo","slug":"looooo"},{"id":"342a1dd2-407d-4b27-9b1f-4f939d4c561e","name":"ads","slug":"ads"},{"id":"dda56254-346a-4266-b8a5-df26997b1f4b","name":"dasdsadas","slug":"dasdsadas"},{"id":"a6d10116-618b-4736-ac86-22a9a825dc8c","name":"adsdasdasdasd","slug":"adsdasdasdasd"},{"id":"f77533ad-2d34-4afa-bf9b-166de5ac05ca","name":"FucK","slug":"fuck"},{"id":"c37bb74a-9f51-40dc-a4f8-371c5fb9c6f3","name":"inventore","slug":"inventore"},{"id":"f830e75e-6d35-4a74-b257-703fba8fbe92","name":"temporibus","slug":"temporibus"},{"id":"8ce9bdea-c05f-4dfb-9f40-edf57a8beb34","name":"dolore","slug":"dolore"},{"id":"28571832-a2b7-4876-9bb4-d3a5ded53a46","name":"sequi","slug":"sequi"},{"id":"e2ec3b79-2d14-413b-99fc-2655fa4b5954","name":"ullam","slug":"ullam"},{"id":"4d6bcc8f-22c4-45f8-a050-ce388df8a199","name":"beatae","slug":"beatae"},{"id":"7046a3dd-2849-40ba-aa4c-574cf76399a5","name":"nihil","slug":"nihil"},{"id":"b1b09849-8599-4e61-805f-7354ea2a3df4","name":"consequatur","slug":"consequatur"},{"id":"cfd39d33-05aa-43bd-b461-ed77316b1241","name":"mollitia","slug":"mollitia"},{"id":"8c16d154-45cf-4107-a656-cf37d9a91a44","name":"quo","slug":"quo"}]}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '54'
+          x-ratelimit-remaining: '57'
           access-control-allow-origin: '*'
         description: null
     responseFields: []
@@ -47,15 +47,463 @@ endpoints:
         name: name
         description: 'Must be at least 3 characters.'
         required: true
-        example: bnf
+        example: t
         type: string
         custom: []
       slug:
         name: slug
         description: ''
         required: true
-        example: illo
+        example: aut
         type: string
         custom: []
     responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/tags/{tag_slug}'
+    metadata:
+      title: 'Jobs of a tag'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      tag_slug:
+        name: tag_slug
+        description: ''
+        required: true
+        example: minima
+        type: string
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 404
+        content: |-
+          {
+              "message": "No query results for model [App\\Models\\Tag] 1",
+              "exception": "Symfony\\Component\\HttpKernel\\Exception\\NotFoundHttpException",
+              "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php",
+              "line": 355,
+              "trace": [
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php",
+                      "line": 331,
+                      "function": "prepareException",
+                      "class": "Illuminate\\Foundation\\Exceptions\\Handler",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/nunomaduro/collision/src/Adapters/Laravel/ExceptionHandler.php",
+                      "line": 54,
+                      "function": "render",
+                      "class": "Illuminate\\Foundation\\Exceptions\\Handler",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php",
+                      "line": 51,
+                      "function": "render",
+                      "class": "NunoMaduro\\Collision\\Adapters\\Laravel\\ExceptionHandler",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+                      "line": 172,
+                      "function": "handleException",
+                      "class": "Illuminate\\Routing\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php",
+                      "line": 126,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php",
+                      "line": 102,
+                      "function": "handleRequest",
+                      "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php",
+                      "line": 54,
+                      "function": "handleRequestUsingNamedLimiter",
+                      "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+                      "line": 167,
+                      "function": "handle",
+                      "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+                      "line": 103,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Routing/Router.php",
+                      "line": 726,
+                      "function": "then",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Routing/Router.php",
+                      "line": 701,
+                      "function": "runRouteWithinStack",
+                      "class": "Illuminate\\Routing\\Router",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Routing/Router.php",
+                      "line": 665,
+                      "function": "runRoute",
+                      "class": "Illuminate\\Routing\\Router",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Routing/Router.php",
+                      "line": 654,
+                      "function": "dispatchToRoute",
+                      "class": "Illuminate\\Routing\\Router",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php",
+                      "line": 167,
+                      "function": "dispatch",
+                      "class": "Illuminate\\Routing\\Router",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+                      "line": 128,
+                      "function": "Illuminate\\Foundation\\Http\\{closure}",
+                      "class": "Illuminate\\Foundation\\Http\\Kernel",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php",
+                      "line": 21,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php",
+                      "line": 31,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+                      "line": 167,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php",
+                      "line": 21,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php",
+                      "line": 40,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+                      "line": 167,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\TrimStrings",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php",
+                      "line": 27,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+                      "line": 167,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php",
+                      "line": 86,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+                      "line": 167,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/fruitcake/laravel-cors/src/HandleCors.php",
+                      "line": 52,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+                      "line": 167,
+                      "function": "handle",
+                      "class": "Fruitcake\\Cors\\HandleCors",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php",
+                      "line": 39,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+                      "line": 167,
+                      "function": "handle",
+                      "class": "Illuminate\\Http\\Middleware\\TrustProxies",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+                      "line": 103,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php",
+                      "line": 142,
+                      "function": "then",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php",
+                      "line": 111,
+                      "function": "sendRequestThroughRouter",
+                      "class": "Illuminate\\Foundation\\Http\\Kernel",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php",
+                      "line": 299,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Kernel",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php",
+                      "line": 287,
+                      "function": "callLaravelOrLumenRoute",
+                      "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php",
+                      "line": 89,
+                      "function": "makeApiCall",
+                      "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php",
+                      "line": 45,
+                      "function": "makeResponseCall",
+                      "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php",
+                      "line": 35,
+                      "function": "makeResponseCallIfConditionsPass",
+                      "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php",
+                      "line": 222,
+                      "function": "__invoke",
+                      "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php",
+                      "line": 179,
+                      "function": "iterateThroughStrategies",
+                      "class": "Knuckles\\Scribe\\Extracting\\Extractor",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php",
+                      "line": 116,
+                      "function": "fetchResponses",
+                      "class": "Knuckles\\Scribe\\Extracting\\Extractor",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php",
+                      "line": 117,
+                      "function": "processRoute",
+                      "class": "Knuckles\\Scribe\\Extracting\\Extractor",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php",
+                      "line": 75,
+                      "function": "extractEndpointsInfoFromLaravelApp",
+                      "class": "Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php",
+                      "line": 51,
+                      "function": "extractEndpointsInfoAndWriteToDisk",
+                      "class": "Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/knuckleswtf/scribe/src/Commands/GenerateDocumentation.php",
+                      "line": 48,
+                      "function": "get",
+                      "class": "Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php",
+                      "line": 36,
+                      "function": "handle",
+                      "class": "Knuckles\\Scribe\\Commands\\GenerateDocumentation",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Container/Util.php",
+                      "line": 41,
+                      "function": "Illuminate\\Container\\{closure}",
+                      "class": "Illuminate\\Container\\BoundMethod",
+                      "type": "::"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php",
+                      "line": 93,
+                      "function": "unwrapIfClosure",
+                      "class": "Illuminate\\Container\\Util",
+                      "type": "::"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php",
+                      "line": 37,
+                      "function": "callBoundMethod",
+                      "class": "Illuminate\\Container\\BoundMethod",
+                      "type": "::"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Container/Container.php",
+                      "line": 653,
+                      "function": "call",
+                      "class": "Illuminate\\Container\\BoundMethod",
+                      "type": "::"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Console/Command.php",
+                      "line": 136,
+                      "function": "call",
+                      "class": "Illuminate\\Container\\Container",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/symfony/console/Command/Command.php",
+                      "line": 291,
+                      "function": "execute",
+                      "class": "Illuminate\\Console\\Command",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Console/Command.php",
+                      "line": 121,
+                      "function": "run",
+                      "class": "Symfony\\Component\\Console\\Command\\Command",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/symfony/console/Application.php",
+                      "line": 989,
+                      "function": "run",
+                      "class": "Illuminate\\Console\\Command",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/symfony/console/Application.php",
+                      "line": 299,
+                      "function": "doRunCommand",
+                      "class": "Symfony\\Component\\Console\\Application",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/symfony/console/Application.php",
+                      "line": 171,
+                      "function": "doRun",
+                      "class": "Symfony\\Component\\Console\\Application",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Console/Application.php",
+                      "line": 102,
+                      "function": "run",
+                      "class": "Symfony\\Component\\Console\\Application",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php",
+                      "line": 129,
+                      "function": "run",
+                      "class": "Illuminate\\Console\\Application",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/rayhan/code/vuejs-bootcamp/job-board-api/artisan",
+                      "line": 37,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Console\\Kernel",
+                      "type": "->"
+                  }
+              ]
+          }
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '56'
+          access-control-allow-origin: '*'
+        description: null
     responseFields: []

@@ -16,10 +16,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-//         \App\Models\User::factory(10)->create()->each(function ($user){
-//             Job::factory(30)->create(['user_id' => $user->id]);
-//         });
-
-        Tag::factory(10)->create();
+         \App\Models\User::factory(10)->create()->each(function ($user){
+             Job::factory(30)->create(['user_id' => $user->id]);
+         });
     }
 }

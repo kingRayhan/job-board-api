@@ -32,16 +32,16 @@ class StoreJobRequest extends FormRequest
             'description' => ['string', 'nullable'],
             'company_logo' => ['required', 'url'],
             'type' => ['required', 'string',
-                            Rule::in([
-                                'full_time',
-                                'part_time',
-                                'contract',
-                                'temporary',
-                                'internship',
-                                'volunteer',
-                                'remote'
-                            ])
-                       ],
+                Rule::in([
+                    'full_time',
+                    'part_time',
+                    'contract',
+                    'temporary',
+                    'internship',
+                    'volunteer',
+                    'remote'
+                ])
+            ],
             'tags' => ['array', Rule::exists('tags', 'id')]
         ];
     }

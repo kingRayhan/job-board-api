@@ -133,6 +133,9 @@
                                     <li class="tocify-item level-2" data-unique="tag-POSTapi-tags">
                         <a href="#tag-POSTapi-tags">Create tag</a>
                     </li>
+                                    <li class="tocify-item level-2" data-unique="tag-GETapi-tags--tag_slug-">
+                        <a href="#tag-GETapi-tags--tag_slug-">Jobs of a tag</a>
+                    </li>
                                                     </ul>
                             </ul>
                     <ul id="tocify-header-5" class="tocify-header">
@@ -158,7 +161,7 @@
                             <li><a href="http://github.com/knuckleswtf/scribe">Documentation powered by Scribe ✍</a></li>
                     </ul>
         <ul class="toc-footer" id="last-updated">
-        <li>Last updated: February 25 2022</li>
+        <li>Last updated: February 26 2022</li>
     </ul>
 </div>
 
@@ -302,10 +305,10 @@ access-control-allow-origin: *
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"edamxzuyvzegubdavuclwlqxllfukkpzylattlwtgxpneoh\",
-    \"email\": \"iagirpbfzjfrirzgkkyiuxspmhsgnwsaxbpbhevifpsxbcceumhbdksddxfwxpuiuxobyactshumfrvoayjgbkmzsueziwdwtgqlugogamcgzfesythmcrblydictpnpbcwjgplyuhwlphbbsajnbdlghehilmshkrbqganbczfbtpscohliliphghajswbnvgvinwulntmtrzi\",
-    \"password\": \"eum\",
-    \"password_confirmation\": \"harum\"
+    \"name\": \"xuihfndqttovfdlrpmotmxutocejufrvjocybdwzsibtpzyfyrxowjtsekzzcpefneiecwvztvrksnwoobfecsfqocyprwqgvkzzwenbpiingqsxlnidablftfaxfuahgvbrmxigswksfcdflwirdzxrpmfxyjbaniiujwwapowbiocqnjomtdhlbrznfmqfbqnccrcudrzbbqiijpwptnhcudbnkepmodgtqumfgsdnkxdipyqhq\",
+    \"email\": \"hwxqubdolleefhxuthvdmdv\",
+    \"password\": \"tenetur\",
+    \"password_confirmation\": \"rerum\"
 }"
 </code></pre></div>
 
@@ -321,10 +324,10 @@ const headers = {
 };
 
 let body = {
-    "name": "edamxzuyvzegubdavuclwlqxllfukkpzylattlwtgxpneoh",
-    "email": "iagirpbfzjfrirzgkkyiuxspmhsgnwsaxbpbhevifpsxbcceumhbdksddxfwxpuiuxobyactshumfrvoayjgbkmzsueziwdwtgqlugogamcgzfesythmcrblydictpnpbcwjgplyuhwlphbbsajnbdlghehilmshkrbqganbczfbtpscohliliphghajswbnvgvinwulntmtrzi",
-    "password": "eum",
-    "password_confirmation": "harum"
+    "name": "xuihfndqttovfdlrpmotmxutocejufrvjocybdwzsibtpzyfyrxowjtsekzzcpefneiecwvztvrksnwoobfecsfqocyprwqgvkzzwenbpiingqsxlnidablftfaxfuahgvbrmxigswksfcdflwirdzxrpmfxyjbaniiujwwapowbiocqnjomtdhlbrznfmqfbqnccrcudrzbbqiijpwptnhcudbnkepmodgtqumfgsdnkxdipyqhq",
+    "email": "hwxqubdolleefhxuthvdmdv",
+    "password": "tenetur",
+    "password_confirmation": "rerum"
 };
 
 fetch(url, {
@@ -382,7 +385,7 @@ fetch(url, {
                 <input type="text"
                name="name"
                data-endpoint="POSTapi-auth-register"
-               value="edamxzuyvzegubdavuclwlqxllfukkpzylattlwtgxpneoh"
+               value="xuihfndqttovfdlrpmotmxutocejufrvjocybdwzsibtpzyfyrxowjtsekzzcpefneiecwvztvrksnwoobfecsfqocyprwqgvkzzwenbpiingqsxlnidablftfaxfuahgvbrmxigswksfcdflwirdzxrpmfxyjbaniiujwwapowbiocqnjomtdhlbrznfmqfbqnccrcudrzbbqiijpwptnhcudbnkepmodgtqumfgsdnkxdipyqhq"
                data-component="body" hidden>
     <br>
 <p>Must not be greater than 255 characters.</p>
@@ -392,7 +395,7 @@ fetch(url, {
                 <input type="text"
                name="email"
                data-endpoint="POSTapi-auth-register"
-               value="iagirpbfzjfrirzgkkyiuxspmhsgnwsaxbpbhevifpsxbcceumhbdksddxfwxpuiuxobyactshumfrvoayjgbkmzsueziwdwtgqlugogamcgzfesythmcrblydictpnpbcwjgplyuhwlphbbsajnbdlghehilmshkrbqganbczfbtpscohliliphghajswbnvgvinwulntmtrzi"
+               value="hwxqubdolleefhxuthvdmdv"
                data-component="body" hidden>
     <br>
 <p>Must be a valid email address. Must not be greater than 255 characters.</p>
@@ -402,7 +405,7 @@ fetch(url, {
                 <input type="text"
                name="password"
                data-endpoint="POSTapi-auth-register"
-               value="eum"
+               value="tenetur"
                data-component="body" hidden>
     <br>
 
@@ -412,7 +415,7 @@ fetch(url, {
                 <input type="text"
                name="password_confirmation"
                data-endpoint="POSTapi-auth-register"
-               value="harum"
+               value="rerum"
                data-component="body" hidden>
     <br>
 <p>The value and <code>password</code> must match.</p>
@@ -436,8 +439,8 @@ fetch(url, {
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"email\": \"santiago.mertz@example.net\",
-    \"password\": \"voluptas\"
+    \"email\": \"walker78@example.org\",
+    \"password\": \"in\"
 }"
 </code></pre></div>
 
@@ -453,8 +456,8 @@ const headers = {
 };
 
 let body = {
-    "email": "santiago.mertz@example.net",
-    "password": "voluptas"
+    "email": "walker78@example.org",
+    "password": "in"
 };
 
 fetch(url, {
@@ -512,7 +515,7 @@ fetch(url, {
                 <input type="text"
                name="email"
                data-endpoint="POSTapi-auth-login"
-               value="santiago.mertz@example.net"
+               value="walker78@example.org"
                data-component="body" hidden>
     <br>
 <p>Must be a valid email address.</p>
@@ -522,7 +525,7 @@ fetch(url, {
                 <input type="text"
                name="password"
                data-endpoint="POSTapi-auth-login"
-               value="voluptas"
+               value="in"
                data-component="body" hidden>
     <br>
 
@@ -546,7 +549,7 @@ fetch(url, {
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"email\": \"quas\"
+    \"email\": \"odio\"
 }"
 </code></pre></div>
 
@@ -562,7 +565,7 @@ const headers = {
 };
 
 let body = {
-    "email": "quas"
+    "email": "odio"
 };
 
 fetch(url, {
@@ -620,7 +623,7 @@ fetch(url, {
                 <input type="text"
                name="email"
                data-endpoint="POSTapi-auth-forgot-password"
-               value="quas"
+               value="odio"
                data-component="body" hidden>
     <br>
 <ul>
@@ -646,10 +649,10 @@ fetch(url, {
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"token\": \"ut\",
-    \"email\": \"ducimus\",
-    \"password\": \"et\",
-    \"password_confirmation\": \"rerum\"
+    \"token\": \"sint\",
+    \"email\": \"corporis\",
+    \"password\": \"est\",
+    \"password_confirmation\": \"qui\"
 }"
 </code></pre></div>
 
@@ -665,10 +668,10 @@ const headers = {
 };
 
 let body = {
-    "token": "ut",
-    "email": "ducimus",
-    "password": "et",
-    "password_confirmation": "rerum"
+    "token": "sint",
+    "email": "corporis",
+    "password": "est",
+    "password_confirmation": "qui"
 };
 
 fetch(url, {
@@ -726,7 +729,7 @@ fetch(url, {
                 <input type="text"
                name="token"
                data-endpoint="POSTapi-auth-reset-password"
-               value="ut"
+               value="sint"
                data-component="body" hidden>
     <br>
 <ul>
@@ -738,7 +741,7 @@ fetch(url, {
                 <input type="text"
                name="email"
                data-endpoint="POSTapi-auth-reset-password"
-               value="ducimus"
+               value="corporis"
                data-component="body" hidden>
     <br>
 <ul>
@@ -750,7 +753,7 @@ fetch(url, {
                 <input type="text"
                name="password"
                data-endpoint="POSTapi-auth-reset-password"
-               value="et"
+               value="est"
                data-component="body" hidden>
     <br>
 <ul>
@@ -762,7 +765,7 @@ fetch(url, {
                 <input type="text"
                name="password_confirmation"
                data-endpoint="POSTapi-auth-reset-password"
-               value="rerum"
+               value="qui"
                data-component="body" hidden>
     <br>
 <ul>
@@ -784,14 +787,14 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/auth/verify-email/recusandae/sequi" \
+    --get "http://localhost:8000/api/auth/verify-email/voluptatem/beatae" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/auth/verify-email/recusandae/sequi"
+    "http://localhost:8000/api/auth/verify-email/voluptatem/beatae"
 );
 
 const headers = {
@@ -870,7 +873,7 @@ access-control-allow-origin: *
                 <input type="text"
                name="id"
                data-endpoint="GETapi-auth-verify-email--id---hash-"
-               value="recusandae"
+               value="voluptatem"
                data-component="url" hidden>
     <br>
 <p>The ID of the verify email.</p>
@@ -880,7 +883,7 @@ access-control-allow-origin: *
                 <input type="text"
                name="hash"
                data-endpoint="GETapi-auth-verify-email--id---hash-"
-               value="sequi"
+               value="beatae"
                data-component="url" hidden>
     <br>
 
@@ -1078,7 +1081,7 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/jobs?limit=16&amp;user_id=laborum&amp;page=8" \
+    --get "http://localhost:8000/api/jobs?limit=15&amp;user_id=aut&amp;tag_id=aspernatur&amp;page=7" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -1089,9 +1092,10 @@ fetch(url, {
 );
 
 const params = {
-    "limit": "16",
-    "user_id": "laborum",
-    "page": "8",
+    "limit": "15",
+    "user_id": "aut",
+    "tag_id": "aspernatur",
+    "page": "7",
 };
 Object.keys(params)
     .forEach(key =&gt; url.searchParams.append(key, params[key]));
@@ -1119,7 +1123,7 @@ fetch(url, {
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 56
+x-ratelimit-remaining: 59
 access-control-allow-origin: *
  </code></pre>
         </details>         <pre>
@@ -1179,7 +1183,7 @@ access-control-allow-origin: *
                 <input type="number"
                name="limit"
                data-endpoint="GETapi-jobs"
-               value="16"
+               value="15"
                data-component="query" hidden>
     <br>
 <ul>
@@ -1191,7 +1195,7 @@ access-control-allow-origin: *
                 <input type="text"
                name="user_id"
                data-endpoint="GETapi-jobs"
-               value="laborum"
+               value="aut"
                data-component="query" hidden>
     <br>
 <ul>
@@ -1199,11 +1203,23 @@ access-control-allow-origin: *
 </ul>
             </p>
                     <p>
+                <b><code>tag_id</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
+                <input type="text"
+               name="tag_id"
+               data-endpoint="GETapi-jobs"
+               value="aspernatur"
+               data-component="query" hidden>
+    <br>
+<ul>
+<li>Filtered jobs by tag id.</li>
+</ul>
+            </p>
+                    <p>
                 <b><code>page</code></b>&nbsp;&nbsp;<small>integer</small>     <i>optional</i> &nbsp;
                 <input type="number"
                name="page"
                data-endpoint="GETapi-jobs"
-               value="8"
+               value="7"
                data-component="query" hidden>
     <br>
 <ul>
@@ -1231,14 +1247,14 @@ access-control-allow-origin: *
     --header "Accept: application/json" \
     --data "{
     \"title\": \"dolorem\",
-    \"location\": \"autem\",
-    \"link\": \"http:\\/\\/barton.com\\/ut-placeat-ex-ut-qui-eum.html\",
-    \"company_name\": \"itaque\",
-    \"description\": \"et\",
-    \"company_logo\": \"http:\\/\\/www.king.org\\/laborum-dolorem-harum-ratione-et.html\",
-    \"type\": \"contract\",
+    \"location\": \"est\",
+    \"link\": \"http:\\/\\/bergstrom.com\\/\",
+    \"company_name\": \"eius\",
+    \"description\": \"incidunt\",
+    \"company_logo\": \"http:\\/\\/kihn.info\\/facere-ex-maxime-aspernatur-repellendus-assumenda\",
+    \"type\": \"temporary\",
     \"tags\": [
-        \"explicabo\"
+        \"ut\"
     ]
 }"
 </code></pre></div>
@@ -1256,14 +1272,14 @@ const headers = {
 
 let body = {
     "title": "dolorem",
-    "location": "autem",
-    "link": "http:\/\/barton.com\/ut-placeat-ex-ut-qui-eum.html",
-    "company_name": "itaque",
-    "description": "et",
-    "company_logo": "http:\/\/www.king.org\/laborum-dolorem-harum-ratione-et.html",
-    "type": "contract",
+    "location": "est",
+    "link": "http:\/\/bergstrom.com\/",
+    "company_name": "eius",
+    "description": "incidunt",
+    "company_logo": "http:\/\/kihn.info\/facere-ex-maxime-aspernatur-repellendus-assumenda",
+    "type": "temporary",
     "tags": [
-        "explicabo"
+        "ut"
     ]
 };
 
@@ -1340,7 +1356,7 @@ fetch(url, {
                 <input type="text"
                name="location"
                data-endpoint="POSTapi-jobs"
-               value="autem"
+               value="est"
                data-component="body" hidden>
     <br>
 
@@ -1350,7 +1366,7 @@ fetch(url, {
                 <input type="text"
                name="link"
                data-endpoint="POSTapi-jobs"
-               value="http://barton.com/ut-placeat-ex-ut-qui-eum.html"
+               value="http://bergstrom.com/"
                data-component="body" hidden>
     <br>
 <p>Must be a valid URL.</p>
@@ -1360,7 +1376,7 @@ fetch(url, {
                 <input type="text"
                name="company_name"
                data-endpoint="POSTapi-jobs"
-               value="itaque"
+               value="eius"
                data-component="body" hidden>
     <br>
 
@@ -1370,7 +1386,7 @@ fetch(url, {
                 <input type="text"
                name="description"
                data-endpoint="POSTapi-jobs"
-               value="et"
+               value="incidunt"
                data-component="body" hidden>
     <br>
 
@@ -1380,7 +1396,7 @@ fetch(url, {
                 <input type="text"
                name="company_logo"
                data-endpoint="POSTapi-jobs"
-               value="http://www.king.org/laborum-dolorem-harum-ratione-et.html"
+               value="http://kihn.info/facere-ex-maxime-aspernatur-repellendus-assumenda"
                data-component="body" hidden>
     <br>
 <p>Must be a valid URL.</p>
@@ -1390,7 +1406,7 @@ fetch(url, {
                 <input type="text"
                name="type"
                data-endpoint="POSTapi-jobs"
-               value="contract"
+               value="temporary"
                data-component="body" hidden>
     <br>
 <p>Must be one of <code>full_time</code>, <code>part_time</code>, <code>contract</code>, <code>temporary</code>, <code>internship</code>, <code>volunteer</code>, or <code>remote</code>.</p>
@@ -1423,14 +1439,14 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/jobs/officia" \
+    --get "http://localhost:8000/api/jobs/rerum" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/jobs/officia"
+    "http://localhost:8000/api/jobs/rerum"
 );
 
 const headers = {
@@ -1456,7 +1472,7 @@ fetch(url, {
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 55
+x-ratelimit-remaining: 58
 access-control-allow-origin: *
  </code></pre>
         </details>         <pre>
@@ -1922,7 +1938,7 @@ access-control-allow-origin: *
                 <input type="text"
                name="job_slug"
                data-endpoint="GETapi-jobs--job_slug-"
-               value="officia"
+               value="rerum"
                data-component="url" hidden>
     <br>
 
@@ -1943,14 +1959,14 @@ access-control-allow-origin: *
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://localhost:8000/api/jobs/aut" \
+    "http://localhost:8000/api/jobs/nostrum" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/jobs/aut"
+    "http://localhost:8000/api/jobs/nostrum"
 );
 
 const headers = {
@@ -2020,7 +2036,7 @@ fetch(url, {
                 <input type="text"
                name="job_id"
                data-endpoint="DELETEapi-jobs--job_id-"
-               value="aut"
+               value="nostrum"
                data-component="url" hidden>
     <br>
 <p>The ID of the job.</p>
@@ -2041,19 +2057,19 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "http://localhost:8000/api/jobs/qui" \
+    "http://localhost:8000/api/jobs/inventore" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"title\": \"accusantium\",
-    \"location\": \"labore\",
-    \"link\": \"http:\\/\\/mckenzie.org\\/quasi-quaerat-quos-commodi-rerum-eum-non-minima\",
-    \"company_name\": \"commodi\",
-    \"description\": \"possimus\",
-    \"company_logo\": \"http:\\/\\/www.stanton.com\\/dolorem-impedit-dolores-dolorem-quas-qui-nihil-porro-veniam\",
+    \"title\": \"est\",
+    \"location\": \"numquam\",
+    \"link\": \"https:\\/\\/www.olson.info\\/id-dolores-nesciunt-eum-et\",
+    \"company_name\": \"perspiciatis\",
+    \"description\": \"sit\",
+    \"company_logo\": \"http:\\/\\/heaney.com\\/ipsa-eos-quia-architecto-dolorum-aliquid-voluptatum-voluptatibus\",
     \"type\": \"contract\",
     \"tags\": [
-        \"laborum\"
+        \"mollitia\"
     ]
 }"
 </code></pre></div>
@@ -2061,7 +2077,7 @@ fetch(url, {
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/jobs/qui"
+    "http://localhost:8000/api/jobs/inventore"
 );
 
 const headers = {
@@ -2070,15 +2086,15 @@ const headers = {
 };
 
 let body = {
-    "title": "accusantium",
-    "location": "labore",
-    "link": "http:\/\/mckenzie.org\/quasi-quaerat-quos-commodi-rerum-eum-non-minima",
-    "company_name": "commodi",
-    "description": "possimus",
-    "company_logo": "http:\/\/www.stanton.com\/dolorem-impedit-dolores-dolorem-quas-qui-nihil-porro-veniam",
+    "title": "est",
+    "location": "numquam",
+    "link": "https:\/\/www.olson.info\/id-dolores-nesciunt-eum-et",
+    "company_name": "perspiciatis",
+    "description": "sit",
+    "company_logo": "http:\/\/heaney.com\/ipsa-eos-quia-architecto-dolorum-aliquid-voluptatum-voluptatibus",
     "type": "contract",
     "tags": [
-        "laborum"
+        "mollitia"
     ]
 };
 
@@ -2145,7 +2161,7 @@ fetch(url, {
                 <input type="text"
                name="job_id"
                data-endpoint="PUTapi-jobs--job_id-"
-               value="qui"
+               value="inventore"
                data-component="url" hidden>
     <br>
 <p>The ID of the job.</p>
@@ -2156,7 +2172,7 @@ fetch(url, {
                 <input type="text"
                name="title"
                data-endpoint="PUTapi-jobs--job_id-"
-               value="accusantium"
+               value="est"
                data-component="body" hidden>
     <br>
 
@@ -2166,7 +2182,7 @@ fetch(url, {
                 <input type="text"
                name="location"
                data-endpoint="PUTapi-jobs--job_id-"
-               value="labore"
+               value="numquam"
                data-component="body" hidden>
     <br>
 
@@ -2176,7 +2192,7 @@ fetch(url, {
                 <input type="text"
                name="link"
                data-endpoint="PUTapi-jobs--job_id-"
-               value="http://mckenzie.org/quasi-quaerat-quos-commodi-rerum-eum-non-minima"
+               value="https://www.olson.info/id-dolores-nesciunt-eum-et"
                data-component="body" hidden>
     <br>
 <p>Must be a valid URL.</p>
@@ -2186,7 +2202,7 @@ fetch(url, {
                 <input type="text"
                name="company_name"
                data-endpoint="PUTapi-jobs--job_id-"
-               value="commodi"
+               value="perspiciatis"
                data-component="body" hidden>
     <br>
 
@@ -2196,7 +2212,7 @@ fetch(url, {
                 <input type="text"
                name="description"
                data-endpoint="PUTapi-jobs--job_id-"
-               value="possimus"
+               value="sit"
                data-component="body" hidden>
     <br>
 
@@ -2206,7 +2222,7 @@ fetch(url, {
                 <input type="text"
                name="company_logo"
                data-endpoint="PUTapi-jobs--job_id-"
-               value="http://www.stanton.com/dolorem-impedit-dolores-dolorem-quas-qui-nihil-porro-veniam"
+               value="http://heaney.com/ipsa-eos-quia-architecto-dolorum-aliquid-voluptatum-voluptatibus"
                data-component="body" hidden>
     <br>
 <p>Must be a valid URL.</p>
@@ -2286,7 +2302,7 @@ fetch(url, {
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 54
+x-ratelimit-remaining: 57
 access-control-allow-origin: *
  </code></pre>
         </details>         <pre>
@@ -2302,6 +2318,306 @@ access-control-allow-origin: *
             &quot;id&quot;: &quot;92747dd5-289f-41c0-8ad6-05c1317b2c0a&quot;,
             &quot;name&quot;: &quot;deleniti&quot;,
             &quot;slug&quot;: &quot;deleniti&quot;
+        },
+        {
+            &quot;id&quot;: &quot;ad1a1482-0b63-44bf-8639-1921b479324c&quot;,
+            &quot;name&quot;: &quot;Hel&quot;,
+            &quot;slug&quot;: &quot;hel&quot;
+        },
+        {
+            &quot;id&quot;: &quot;79204257-a809-49bf-afe5-375c74154b52&quot;,
+            &quot;name&quot;: &quot;Hell&quot;,
+            &quot;slug&quot;: &quot;hell&quot;
+        },
+        {
+            &quot;id&quot;: &quot;7149bdc9-ee41-4127-bf08-ead06695ecf9&quot;,
+            &quot;name&quot;: &quot;Hello&quot;,
+            &quot;slug&quot;: &quot;hello&quot;
+        },
+        {
+            &quot;id&quot;: &quot;b9ef7a5f-6303-4ff9-8df7-52ad03d0cff0&quot;,
+            &quot;name&quot;: &quot;hi t&quot;,
+            &quot;slug&quot;: &quot;hi-t&quot;
+        },
+        {
+            &quot;id&quot;: &quot;913f1b6f-77b5-4839-b7c6-e222fa09e78e&quot;,
+            &quot;name&quot;: &quot;hi th&quot;,
+            &quot;slug&quot;: &quot;hi-th&quot;
+        },
+        {
+            &quot;id&quot;: &quot;6e7d5123-2942-4a06-be9a-5c581f85ec92&quot;,
+            &quot;name&quot;: &quot;hi the&quot;,
+            &quot;slug&quot;: &quot;hi-the&quot;
+        },
+        {
+            &quot;id&quot;: &quot;b9b8fddb-ddb6-4ba7-b9b3-0c7e93dd3cff&quot;,
+            &quot;name&quot;: &quot;hi ther&quot;,
+            &quot;slug&quot;: &quot;hi-ther&quot;
+        },
+        {
+            &quot;id&quot;: &quot;0234695e-695a-427b-888b-3c01b0b3fd8a&quot;,
+            &quot;name&quot;: &quot;hi there&quot;,
+            &quot;slug&quot;: &quot;hi-there&quot;
+        },
+        {
+            &quot;id&quot;: &quot;e6b505de-b0ba-468c-b83e-3e824987ebec&quot;,
+            &quot;name&quot;: &quot;hello everyone&quot;,
+            &quot;slug&quot;: &quot;hello-everyone&quot;
+        },
+        {
+            &quot;id&quot;: &quot;1ae56577-4d95-4443-a643-ac33016eefd5&quot;,
+            &quot;name&quot;: &quot;php&quot;,
+            &quot;slug&quot;: &quot;php&quot;
+        },
+        {
+            &quot;id&quot;: &quot;18e9f939-ecdd-42b1-93b1-ba8df63387a4&quot;,
+            &quot;name&quot;: &quot;adfdfsdfsdfs&quot;,
+            &quot;slug&quot;: &quot;adfdfsdfsdfs&quot;
+        },
+        {
+            &quot;id&quot;: &quot;14244edb-0a35-419b-a7b9-16359d3b7025&quot;,
+            &quot;name&quot;: &quot;asdasdasdas&quot;,
+            &quot;slug&quot;: &quot;asdasdasdas&quot;
+        },
+        {
+            &quot;id&quot;: &quot;3ffe4d3c-52b7-41a7-9fba-0c0b466d962c&quot;,
+            &quot;name&quot;: &quot;adasdasdasds&quot;,
+            &quot;slug&quot;: &quot;adasdasdasds&quot;
+        },
+        {
+            &quot;id&quot;: &quot;37cfc144-bcd8-4191-8825-1382c20da18c&quot;,
+            &quot;name&quot;: &quot;Heyyyyyyyyy&quot;,
+            &quot;slug&quot;: &quot;heyyyyyyyyy&quot;
+        },
+        {
+            &quot;id&quot;: &quot;873f6481-fa07-4bfb-9673-7b7142629d68&quot;,
+            &quot;name&quot;: &quot;ada&quot;,
+            &quot;slug&quot;: &quot;ada&quot;
+        },
+        {
+            &quot;id&quot;: &quot;87e31f93-7389-4127-95f2-582c4d2edbd9&quot;,
+            &quot;name&quot;: &quot;adas&quot;,
+            &quot;slug&quot;: &quot;adas&quot;
+        },
+        {
+            &quot;id&quot;: &quot;a38d0603-652f-4465-95b9-1476c02a1555&quot;,
+            &quot;name&quot;: &quot;adasa&quot;,
+            &quot;slug&quot;: &quot;adasa&quot;
+        },
+        {
+            &quot;id&quot;: &quot;2a33a24c-6237-49b8-a0b5-46c3f015cb96&quot;,
+            &quot;name&quot;: &quot;adasas&quot;,
+            &quot;slug&quot;: &quot;adasas&quot;
+        },
+        {
+            &quot;id&quot;: &quot;1eb93364-0631-439f-910e-5aaf3fd5e9eb&quot;,
+            &quot;name&quot;: &quot;adasasa&quot;,
+            &quot;slug&quot;: &quot;adasasa&quot;
+        },
+        {
+            &quot;id&quot;: &quot;f1127ca5-7185-485e-8250-d79abb7613ef&quot;,
+            &quot;name&quot;: &quot;adasasas&quot;,
+            &quot;slug&quot;: &quot;adasasas&quot;
+        },
+        {
+            &quot;id&quot;: &quot;43c9834b-cda5-4e55-96a7-236dbf280458&quot;,
+            &quot;name&quot;: &quot;adasasasd&quot;,
+            &quot;slug&quot;: &quot;adasasasd&quot;
+        },
+        {
+            &quot;id&quot;: &quot;4c43258f-8123-41a9-98f9-2c318312d85a&quot;,
+            &quot;name&quot;: &quot;adasasasda&quot;,
+            &quot;slug&quot;: &quot;adasasasda&quot;
+        },
+        {
+            &quot;id&quot;: &quot;4a2f298b-ef6d-4740-8c45-48e9e1a0b735&quot;,
+            &quot;name&quot;: &quot;adasasasdad&quot;,
+            &quot;slug&quot;: &quot;adasasasdad&quot;
+        },
+        {
+            &quot;id&quot;: &quot;30e8ed0c-f63f-43c5-8f39-d9018438bd1a&quot;,
+            &quot;name&quot;: &quot;adasasasdada&quot;,
+            &quot;slug&quot;: &quot;adasasasdada&quot;
+        },
+        {
+            &quot;id&quot;: &quot;1b5ab92f-80f4-4fe7-979b-373b3b144eb9&quot;,
+            &quot;name&quot;: &quot;adasasasdadas&quot;,
+            &quot;slug&quot;: &quot;adasasasdadas&quot;
+        },
+        {
+            &quot;id&quot;: &quot;cdae6001-2ee8-44a2-ab61-1231d395c226&quot;,
+            &quot;name&quot;: &quot;adasasasdadasd&quot;,
+            &quot;slug&quot;: &quot;adasasasdadasd&quot;
+        },
+        {
+            &quot;id&quot;: &quot;40aa43d2-3f80-4a1b-9e8d-17eb2fba323b&quot;,
+            &quot;name&quot;: &quot;adasasasdadasda&quot;,
+            &quot;slug&quot;: &quot;adasasasdadasda&quot;
+        },
+        {
+            &quot;id&quot;: &quot;909754a5-cbd6-4eca-b8c9-9d486030be6b&quot;,
+            &quot;name&quot;: &quot;adasasasdadasdas&quot;,
+            &quot;slug&quot;: &quot;adasasasdadasdas&quot;
+        },
+        {
+            &quot;id&quot;: &quot;f7a741c6-603b-4ef7-a71b-a831877f8349&quot;,
+            &quot;name&quot;: &quot;adasasasdadasdasd&quot;,
+            &quot;slug&quot;: &quot;adasasasdadasdasd&quot;
+        },
+        {
+            &quot;id&quot;: &quot;51aa893a-9b1f-4349-a330-22d7907da47f&quot;,
+            &quot;name&quot;: &quot;adasasasdadasdasda&quot;,
+            &quot;slug&quot;: &quot;adasasasdadasdasda&quot;
+        },
+        {
+            &quot;id&quot;: &quot;482ae725-dbbc-4017-9f7e-b0e812e072bf&quot;,
+            &quot;name&quot;: &quot;adasasasdadasdasdaa&quot;,
+            &quot;slug&quot;: &quot;adasasasdadasdasdaa&quot;
+        },
+        {
+            &quot;id&quot;: &quot;993f1c25-520a-48f4-ba34-a505f2fcbeb3&quot;,
+            &quot;name&quot;: &quot;adasasasdadasdasdaas&quot;,
+            &quot;slug&quot;: &quot;adasasasdadasdasdaas&quot;
+        },
+        {
+            &quot;id&quot;: &quot;a895d33e-41e7-45d1-b6ef-e5d4ca819c09&quot;,
+            &quot;name&quot;: &quot;adasasasdadasdasdaasd&quot;,
+            &quot;slug&quot;: &quot;adasasasdadasdasdaasd&quot;
+        },
+        {
+            &quot;id&quot;: &quot;d9fad740-445e-4ce4-ace1-1fcaf8ca9c90&quot;,
+            &quot;name&quot;: &quot;adasasasdadasdasdaasda&quot;,
+            &quot;slug&quot;: &quot;adasasasdadasdasdaasda&quot;
+        },
+        {
+            &quot;id&quot;: &quot;8259fdaf-9a28-44b8-afd9-7a0eb883317f&quot;,
+            &quot;name&quot;: &quot;hey&quot;,
+            &quot;slug&quot;: &quot;hey&quot;
+        },
+        {
+            &quot;id&quot;: &quot;b2b515c7-842c-4d7c-9b4d-97a82e708e41&quot;,
+            &quot;name&quot;: &quot;heyy&quot;,
+            &quot;slug&quot;: &quot;heyy&quot;
+        },
+        {
+            &quot;id&quot;: &quot;364cd818-6413-455f-8503-0e40a1ef841a&quot;,
+            &quot;name&quot;: &quot;dfdsfsdfdsfa&quot;,
+            &quot;slug&quot;: &quot;dfdsfsdfdsfa&quot;
+        },
+        {
+            &quot;id&quot;: &quot;abcbfa13-d076-4a26-bb68-392941c9b476&quot;,
+            &quot;name&quot;: &quot;laravel&quot;,
+            &quot;slug&quot;: &quot;laravel&quot;
+        },
+        {
+            &quot;id&quot;: &quot;9673fa3a-b91e-40e1-bc36-db4b1b3d9b78&quot;,
+            &quot;name&quot;: &quot;fuck me&quot;,
+            &quot;slug&quot;: &quot;fuck-me&quot;
+        },
+        {
+            &quot;id&quot;: &quot;648e6b92-840e-4656-93c8-68b53022e189&quot;,
+            &quot;name&quot;: &quot;Netflix&quot;,
+            &quot;slug&quot;: &quot;netflix&quot;
+        },
+        {
+            &quot;id&quot;: &quot;eed9583d-6d4c-4db4-a7b6-03c91141f26e&quot;,
+            &quot;name&quot;: &quot;Netd&quot;,
+            &quot;slug&quot;: &quot;netd&quot;
+        },
+        {
+            &quot;id&quot;: &quot;d2aab5f0-0789-41ff-ac8a-55ef0fd683ff&quot;,
+            &quot;name&quot;: &quot;Robin&quot;,
+            &quot;slug&quot;: &quot;robin&quot;
+        },
+        {
+            &quot;id&quot;: &quot;d56157aa-8765-40ab-bb01-fffdb7b2b23f&quot;,
+            &quot;name&quot;: &quot;dfdfd&quot;,
+            &quot;slug&quot;: &quot;dfdfd&quot;
+        },
+        {
+            &quot;id&quot;: &quot;d498e42e-d284-4fa0-8713-50daee2649e0&quot;,
+            &quot;name&quot;: &quot;dsds&quot;,
+            &quot;slug&quot;: &quot;dsds&quot;
+        },
+        {
+            &quot;id&quot;: &quot;59233c7d-4884-42ff-b5a4-15269bcaaf01&quot;,
+            &quot;name&quot;: &quot;sazid&quot;,
+            &quot;slug&quot;: &quot;sazid&quot;
+        },
+        {
+            &quot;id&quot;: &quot;0c51c960-95cb-442f-841c-91fb28100bea&quot;,
+            &quot;name&quot;: &quot;looooo&quot;,
+            &quot;slug&quot;: &quot;looooo&quot;
+        },
+        {
+            &quot;id&quot;: &quot;342a1dd2-407d-4b27-9b1f-4f939d4c561e&quot;,
+            &quot;name&quot;: &quot;ads&quot;,
+            &quot;slug&quot;: &quot;ads&quot;
+        },
+        {
+            &quot;id&quot;: &quot;dda56254-346a-4266-b8a5-df26997b1f4b&quot;,
+            &quot;name&quot;: &quot;dasdsadas&quot;,
+            &quot;slug&quot;: &quot;dasdsadas&quot;
+        },
+        {
+            &quot;id&quot;: &quot;a6d10116-618b-4736-ac86-22a9a825dc8c&quot;,
+            &quot;name&quot;: &quot;adsdasdasdasd&quot;,
+            &quot;slug&quot;: &quot;adsdasdasdasd&quot;
+        },
+        {
+            &quot;id&quot;: &quot;f77533ad-2d34-4afa-bf9b-166de5ac05ca&quot;,
+            &quot;name&quot;: &quot;FucK&quot;,
+            &quot;slug&quot;: &quot;fuck&quot;
+        },
+        {
+            &quot;id&quot;: &quot;c37bb74a-9f51-40dc-a4f8-371c5fb9c6f3&quot;,
+            &quot;name&quot;: &quot;inventore&quot;,
+            &quot;slug&quot;: &quot;inventore&quot;
+        },
+        {
+            &quot;id&quot;: &quot;f830e75e-6d35-4a74-b257-703fba8fbe92&quot;,
+            &quot;name&quot;: &quot;temporibus&quot;,
+            &quot;slug&quot;: &quot;temporibus&quot;
+        },
+        {
+            &quot;id&quot;: &quot;8ce9bdea-c05f-4dfb-9f40-edf57a8beb34&quot;,
+            &quot;name&quot;: &quot;dolore&quot;,
+            &quot;slug&quot;: &quot;dolore&quot;
+        },
+        {
+            &quot;id&quot;: &quot;28571832-a2b7-4876-9bb4-d3a5ded53a46&quot;,
+            &quot;name&quot;: &quot;sequi&quot;,
+            &quot;slug&quot;: &quot;sequi&quot;
+        },
+        {
+            &quot;id&quot;: &quot;e2ec3b79-2d14-413b-99fc-2655fa4b5954&quot;,
+            &quot;name&quot;: &quot;ullam&quot;,
+            &quot;slug&quot;: &quot;ullam&quot;
+        },
+        {
+            &quot;id&quot;: &quot;4d6bcc8f-22c4-45f8-a050-ce388df8a199&quot;,
+            &quot;name&quot;: &quot;beatae&quot;,
+            &quot;slug&quot;: &quot;beatae&quot;
+        },
+        {
+            &quot;id&quot;: &quot;7046a3dd-2849-40ba-aa4c-574cf76399a5&quot;,
+            &quot;name&quot;: &quot;nihil&quot;,
+            &quot;slug&quot;: &quot;nihil&quot;
+        },
+        {
+            &quot;id&quot;: &quot;b1b09849-8599-4e61-805f-7354ea2a3df4&quot;,
+            &quot;name&quot;: &quot;consequatur&quot;,
+            &quot;slug&quot;: &quot;consequatur&quot;
+        },
+        {
+            &quot;id&quot;: &quot;cfd39d33-05aa-43bd-b461-ed77316b1241&quot;,
+            &quot;name&quot;: &quot;mollitia&quot;,
+            &quot;slug&quot;: &quot;mollitia&quot;
+        },
+        {
+            &quot;id&quot;: &quot;8c16d154-45cf-4107-a656-cf37d9a91a44&quot;,
+            &quot;name&quot;: &quot;quo&quot;,
+            &quot;slug&quot;: &quot;quo&quot;
         }
     ]
 }</code>
@@ -2366,8 +2682,8 @@ access-control-allow-origin: *
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"bnf\",
-    \"slug\": \"illo\"
+    \"name\": \"t\",
+    \"slug\": \"aut\"
 }"
 </code></pre></div>
 
@@ -2383,8 +2699,8 @@ const headers = {
 };
 
 let body = {
-    "name": "bnf",
-    "slug": "illo"
+    "name": "t",
+    "slug": "aut"
 };
 
 fetch(url, {
@@ -2450,7 +2766,7 @@ fetch(url, {
                 <input type="text"
                name="name"
                data-endpoint="POSTapi-tags"
-               value="bnf"
+               value="t"
                data-component="body" hidden>
     <br>
 <p>Must be at least 3 characters.</p>
@@ -2460,12 +2776,531 @@ fetch(url, {
                 <input type="text"
                name="slug"
                data-endpoint="POSTapi-tags"
-               value="illo"
+               value="aut"
                data-component="body" hidden>
     <br>
 
         </p>
         </form>
+
+            <h2 id="tag-GETapi-tags--tag_slug-">Jobs of a tag</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETapi-tags--tag_slug-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost:8000/api/tags/minima" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/tags/minima"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-tags--tag_slug-">
+            <blockquote>
+            <p>Example response (404):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary>
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 56
+access-control-allow-origin: *
+ </code></pre>
+        </details>         <pre>
+
+<code class="language-json">{
+    &quot;message&quot;: &quot;No query results for model [App\\Models\\Tag] 1&quot;,
+    &quot;exception&quot;: &quot;Symfony\\Component\\HttpKernel\\Exception\\NotFoundHttpException&quot;,
+    &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php&quot;,
+    &quot;line&quot;: 355,
+    &quot;trace&quot;: [
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php&quot;,
+            &quot;line&quot;: 331,
+            &quot;function&quot;: &quot;prepareException&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Exceptions\\Handler&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/nunomaduro/collision/src/Adapters/Laravel/ExceptionHandler.php&quot;,
+            &quot;line&quot;: 54,
+            &quot;function&quot;: &quot;render&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Exceptions\\Handler&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php&quot;,
+            &quot;line&quot;: 51,
+            &quot;function&quot;: &quot;render&quot;,
+            &quot;class&quot;: &quot;NunoMaduro\\Collision\\Adapters\\Laravel\\ExceptionHandler&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 172,
+            &quot;function&quot;: &quot;handleException&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php&quot;,
+            &quot;line&quot;: 126,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php&quot;,
+            &quot;line&quot;: 102,
+            &quot;function&quot;: &quot;handleRequest&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Middleware\\ThrottleRequests&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php&quot;,
+            &quot;line&quot;: 54,
+            &quot;function&quot;: &quot;handleRequestUsingNamedLimiter&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Middleware\\ThrottleRequests&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 167,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Middleware\\ThrottleRequests&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 103,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Routing/Router.php&quot;,
+            &quot;line&quot;: 726,
+            &quot;function&quot;: &quot;then&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Routing/Router.php&quot;,
+            &quot;line&quot;: 701,
+            &quot;function&quot;: &quot;runRouteWithinStack&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Routing/Router.php&quot;,
+            &quot;line&quot;: 665,
+            &quot;function&quot;: &quot;runRoute&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Routing/Router.php&quot;,
+            &quot;line&quot;: 654,
+            &quot;function&quot;: &quot;dispatchToRoute&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php&quot;,
+            &quot;line&quot;: 167,
+            &quot;function&quot;: &quot;dispatch&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 128,
+            &quot;function&quot;: &quot;Illuminate\\Foundation\\Http\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Kernel&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php&quot;,
+            &quot;line&quot;: 21,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php&quot;,
+            &quot;line&quot;: 31,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 167,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php&quot;,
+            &quot;line&quot;: 21,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php&quot;,
+            &quot;line&quot;: 40,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 167,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\TrimStrings&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php&quot;,
+            &quot;line&quot;: 27,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 167,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php&quot;,
+            &quot;line&quot;: 86,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 167,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/fruitcake/laravel-cors/src/HandleCors.php&quot;,
+            &quot;line&quot;: 52,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 167,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Fruitcake\\Cors\\HandleCors&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php&quot;,
+            &quot;line&quot;: 39,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 167,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Http\\Middleware\\TrustProxies&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 103,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php&quot;,
+            &quot;line&quot;: 142,
+            &quot;function&quot;: &quot;then&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php&quot;,
+            &quot;line&quot;: 111,
+            &quot;function&quot;: &quot;sendRequestThroughRouter&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Kernel&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php&quot;,
+            &quot;line&quot;: 299,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Kernel&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php&quot;,
+            &quot;line&quot;: 287,
+            &quot;function&quot;: &quot;callLaravelOrLumenRoute&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php&quot;,
+            &quot;line&quot;: 89,
+            &quot;function&quot;: &quot;makeApiCall&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php&quot;,
+            &quot;line&quot;: 45,
+            &quot;function&quot;: &quot;makeResponseCall&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php&quot;,
+            &quot;line&quot;: 35,
+            &quot;function&quot;: &quot;makeResponseCallIfConditionsPass&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php&quot;,
+            &quot;line&quot;: 222,
+            &quot;function&quot;: &quot;__invoke&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php&quot;,
+            &quot;line&quot;: 179,
+            &quot;function&quot;: &quot;iterateThroughStrategies&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Extractor&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php&quot;,
+            &quot;line&quot;: 116,
+            &quot;function&quot;: &quot;fetchResponses&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Extractor&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php&quot;,
+            &quot;line&quot;: 117,
+            &quot;function&quot;: &quot;processRoute&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Extractor&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php&quot;,
+            &quot;line&quot;: 75,
+            &quot;function&quot;: &quot;extractEndpointsInfoFromLaravelApp&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php&quot;,
+            &quot;line&quot;: 51,
+            &quot;function&quot;: &quot;extractEndpointsInfoAndWriteToDisk&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/knuckleswtf/scribe/src/Commands/GenerateDocumentation.php&quot;,
+            &quot;line&quot;: 48,
+            &quot;function&quot;: &quot;get&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php&quot;,
+            &quot;line&quot;: 36,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Commands\\GenerateDocumentation&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Container/Util.php&quot;,
+            &quot;line&quot;: 41,
+            &quot;function&quot;: &quot;Illuminate\\Container\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Container\\BoundMethod&quot;,
+            &quot;type&quot;: &quot;::&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php&quot;,
+            &quot;line&quot;: 93,
+            &quot;function&quot;: &quot;unwrapIfClosure&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Container\\Util&quot;,
+            &quot;type&quot;: &quot;::&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php&quot;,
+            &quot;line&quot;: 37,
+            &quot;function&quot;: &quot;callBoundMethod&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Container\\BoundMethod&quot;,
+            &quot;type&quot;: &quot;::&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Container/Container.php&quot;,
+            &quot;line&quot;: 653,
+            &quot;function&quot;: &quot;call&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Container\\BoundMethod&quot;,
+            &quot;type&quot;: &quot;::&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Console/Command.php&quot;,
+            &quot;line&quot;: 136,
+            &quot;function&quot;: &quot;call&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Container\\Container&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/symfony/console/Command/Command.php&quot;,
+            &quot;line&quot;: 291,
+            &quot;function&quot;: &quot;execute&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Console\\Command&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Console/Command.php&quot;,
+            &quot;line&quot;: 121,
+            &quot;function&quot;: &quot;run&quot;,
+            &quot;class&quot;: &quot;Symfony\\Component\\Console\\Command\\Command&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/symfony/console/Application.php&quot;,
+            &quot;line&quot;: 989,
+            &quot;function&quot;: &quot;run&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Console\\Command&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/symfony/console/Application.php&quot;,
+            &quot;line&quot;: 299,
+            &quot;function&quot;: &quot;doRunCommand&quot;,
+            &quot;class&quot;: &quot;Symfony\\Component\\Console\\Application&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/symfony/console/Application.php&quot;,
+            &quot;line&quot;: 171,
+            &quot;function&quot;: &quot;doRun&quot;,
+            &quot;class&quot;: &quot;Symfony\\Component\\Console\\Application&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Console/Application.php&quot;,
+            &quot;line&quot;: 102,
+            &quot;function&quot;: &quot;run&quot;,
+            &quot;class&quot;: &quot;Symfony\\Component\\Console\\Application&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php&quot;,
+            &quot;line&quot;: 129,
+            &quot;function&quot;: &quot;run&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Console\\Application&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/rayhan/code/vuejs-bootcamp/job-board-api/artisan&quot;,
+            &quot;line&quot;: 37,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Console\\Kernel&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        }
+    ]
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-tags--tag_slug-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-tags--tag_slug-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-tags--tag_slug-"></code></pre>
+</span>
+<span id="execution-error-GETapi-tags--tag_slug-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-tags--tag_slug-"></code></pre>
+</span>
+<form id="form-GETapi-tags--tag_slug-" data-method="GET"
+      data-path="api/tags/{tag_slug}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-tags--tag_slug-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-tags--tag_slug-"
+                    onclick="tryItOut('GETapi-tags--tag_slug-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-tags--tag_slug-"
+                    onclick="cancelTryOut('GETapi-tags--tag_slug-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-tags--tag_slug-" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/tags/{tag_slug}</code></b>
+        </p>
+                    <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <p>
+                <b><code>tag_slug</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="tag_slug"
+               data-endpoint="GETapi-tags--tag_slug-"
+               value="minima"
+               data-component="url" hidden>
+    <br>
+
+            </p>
+                    </form>
 
         <h1 id="upload">Upload</h1>
 
@@ -2488,7 +3323,7 @@ fetch(url, {
     "http://localhost:8000/api/uploads" \
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
-    --form "file=@/tmp/php0TBbfN" </code></pre></div>
+    --form "file=@/tmp/phpxvOj0H" </code></pre></div>
 
 
 <div class="javascript-example">
@@ -2590,7 +3425,7 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://localhost:8000/api/uploads?url=cumque" \
+    "http://localhost:8000/api/uploads?url=architecto" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -2601,7 +3436,7 @@ fetch(url, {
 );
 
 const params = {
-    "url": "cumque",
+    "url": "architecto",
 };
 Object.keys(params)
     .forEach(key =&gt; url.searchParams.append(key, params[key]));
@@ -2673,7 +3508,7 @@ fetch(url, {
                 <input type="text"
                name="url"
                data-endpoint="DELETEapi-uploads"
-               value="cumque"
+               value="architecto"
                data-component="query" hidden>
     <br>
 <ul>

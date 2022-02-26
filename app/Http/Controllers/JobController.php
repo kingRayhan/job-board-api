@@ -19,24 +19,33 @@ class JobController extends Controller
     /**
      * List of jobs
      *
-     * @queryParam limit int - How many resource to show per page. `Default: 10`
-     * @queryParam user_id string - Filtered jobs posted by a particular user.
-     * @queryParam page int - Page number
+     * @queryParam limit   int     - How many resource to show per page. `Default: 10`
+     * @queryParam user_id string  - Filtered jobs posted by a particular user.
+     * @queryParam tag_id  string  - Filtered jobs by tag id.
+     * @queryParam page    int     - Page number
      */
     public function index()
     {
         request()->validate([
-           'user_id' => ['uuid', Rule::exists('users', 'id'), 'nullable']
+            'user_id' => ['uuid', Rule::exists('users', 'id'), 'nullable']
         ]);
 
-        $jobs = Job::with(['user', 'tags'])->whereHas('user', function ($query){
-            if(request()->get('user_id')){
-                return $query->where('id', request()->get('user_id'));
-            }
-        })
+        $jobs = Job::with(['user', 'tags'])
+            ->whereHas('user', function ($query) {
+                if (request()->get('user_id')) {
+                    return $query->where('id', request()->get('user_id'));
+                }
+            })
+            ->whereHas('tags', function ($query) {
+                if (request()->get('tag_id')) {
+                    return $query->whereIn('id', [request()->get('tag_id')]);
+                }
+            })
             ->orderBy('pinned', 'desc')
             ->orderBy('created_at', 'desc')
             ->paginate(request()->get('limit', 10));
+
+
         return JobListResouce::collection($jobs);
     }
 
@@ -47,14 +56,14 @@ class JobController extends Controller
      * Store a newly created resource in storage.
      *
      * @authenticated
-     * @param  \App\Http\Requests\StoreJobRequest  $request
+     * @param \App\Http\Requests\StoreJobRequest $request
      * @return \Illuminate\Http\Response
      */
     public function store(StoreJobRequest $request)
     {
         $job = auth()->user()->jobs()->create($request->except('user_id'));
 
-        if($request->get('tags')){
+        if ($request->get('tags')) {
             $job->tags()->sync($request->tags);
         }
 
@@ -66,7 +75,7 @@ class JobController extends Controller
      *
      * Display the specified resource.
      *
-     * @param  \App\Models\Job  $job
+     * @param \App\Models\Job $job
      * @return JobDetailsResource
      */
     public function show(Job $job)
@@ -80,8 +89,8 @@ class JobController extends Controller
      * Update the specified resource in storage.
      *
      * @authenticated
-     * @param  \App\Http\Requests\UpdateJobRequest  $request
-     * @param  \App\Models\Job  $job
+     * @param \App\Http\Requests\UpdateJobRequest $request
+     * @param \App\Models\Job $job
      * @return \Illuminate\Http\Response
      */
     public function update(UpdateJobRequest $request, Job $job)
@@ -90,7 +99,7 @@ class JobController extends Controller
 
         $job->update($request->all());
 
-        if($request->get('tags')){
+        if ($request->get('tags')) {
             $job->tags()->sync($request->tags);
         }
 
@@ -102,7 +111,7 @@ class JobController extends Controller
      *
      * Remove the specified resource from storage.
      * @authenticated
-     * @param  \App\Models\Job  $job
+     * @param \App\Models\Job $job
      * @return \Illuminate\Http\Response
      */
     public function destroy(Job $job)

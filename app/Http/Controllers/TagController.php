@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreTagRequest;
 use App\Http\Requests\UpdateTagRequest;
+use App\Http\Resources\JobListResouce;
 use App\Http\Resources\TagPublicResource;
 use App\Http\Resources\TagResouce;
 use App\Models\Tag;
@@ -52,6 +53,19 @@ class TagController extends Controller
     public function show(Tag $tag)
     {
         //
+    }
+
+    /**
+     * Jobs of a tag
+     *
+     * @param Tag $tag
+     * @return \Illuminate\Contracts\Pagination\LengthAwarePaginator
+     * @throws \Psr\Container\ContainerExceptionInterface
+     * @throws \Psr\Container\NotFoundExceptionInterface
+     */
+    public function jobs(Tag $tag)
+    {
+        return JobListResouce::collection($tag->jobs()->with(['tags', 'user'])->paginate(request()->get('limit', 10)));
     }
 
     /**

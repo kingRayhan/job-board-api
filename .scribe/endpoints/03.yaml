@@ -43,7 +43,7 @@ endpoints:
         name: url
         description: '- File url to delete'
         required: false
-        example: cumque
+        example: architecto
         type: string
         custom: []
     bodyParameters: []

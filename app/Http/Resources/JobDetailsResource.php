@@ -25,7 +25,7 @@ class JobDetailsResource extends JsonResource
                 'logo' => $this->company_logo
             ],
             'user' => new UserPublicResource($this->user),
-            'tags' => TagPublicResource::collection($this->tags),
+            'tags' => TagResouce::collection($this->tags),
             'highlighted' => $this->highlighted,
             'pinned' => $this->pinned,
             'type' => $this->type,
